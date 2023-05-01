@@ -1,0 +1,20 @@
+{
+  "systemParams": "linux-x64-108",
+  "modulesFolders": [
+    "Source"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "@popperjs/core@^2.11.7",
+    "bootstrap-icons@^1.10.5",
+    "bootstrap@5.3.0-alpha3"
+  ],
+  "lockfileEntries": {
+    "@popperjs/core@^2.11.7": "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.7.tgz#ccab5c8f7dc557a52ca3288c10075c9ccd37fff7",
+    "bootstrap-icons@^1.10.5": "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.10.5.tgz#5a1bbb1bb2212397d416587db1d422cc9501847c",
+    "bootstrap@5.3.0-alpha3": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.0-alpha3.tgz#ad64d9a663c53ab7aca99c560e0bd16b5e023441"
+  },
+  "files": [],
+  "artifacts": {}
+}
