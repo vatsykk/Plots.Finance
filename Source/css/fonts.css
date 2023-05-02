@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Founders Grotesk Bold;
+    src: url(/Source/fonts/FoundersGrotesk-Bold.woff);
+  }
+@font-face {
+    font-family: Founders Grotesk Bold;
+    src: url(/Source/fonts/FoundersGrotesk-Bold.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk italic;
+    src: url(/Source/fonts/FoundersGrotesk-BoldItalic.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk italic;
+    src: url(/Source/fonts/FoundersGrotesk-BoldItalic.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk Light;
+    src: url(/Source/fonts/FoundersGrotesk-Light.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk Light;
+    src: url(/Source/fonts/FoundersGrotesk-Light.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk Light italic;
+    src: url(/Source/fonts/FoundersGrotesk-LightItalic.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk Light italic;
+    src: url(/Source/fonts/FoundersGrotesk-LightItalic.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk Medium;
+    src: url(/Source/fonts/FoundersGrotesk-Medium.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk Medium;
+    src: url(/Source/fonts/FoundersGrotesk-Medium.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk Medium italic;
+    src: url(/Source/fonts/FoundersGrotesk-MediumItalic.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk Medium italic;
+    src: url(/Source/fonts/FoundersGrotesk-MediumItalic.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk Regular;
+    src: url(/Source/fonts/FoundersGrotesk-Regular.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk Regular;
+    src: url(/Source/fonts/FoundersGrotesk-Regular.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk Regular italic;
+    src: url(/Source/fonts/FoundersGrotesk-RegularItalic.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk Regular italic;
+    src: url(/Source/fonts/FoundersGrotesk-RegularItalic.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk SemiBold;
+    src: url(/Source/fonts/FoundersGrotesk-Semibold.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk SemiBold;
+    src: url(/Source/fonts/FoundersGrotesk-Semibold.woff2);
+  }
+  @font-face {
+    font-family: Founders Grotesk SemiBold italic;
+    src: url(/Source/fonts/FoundersGrotesk-SemiboldItalic.woff);
+  }
+  @font-face {
+    font-family: Founders Grotesk SemiBold italic;
+    src: url(/Source/fonts/FoundersGrotesk-SemiboldItalic.woff2);
+  }

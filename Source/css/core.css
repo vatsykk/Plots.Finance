@@ -2,6 +2,7 @@
  * Globals
  */
 
+@import url(/Source/css/fonts.css);
 
 /* Custom default button */
 .btn-light,
@@ -93,8 +94,8 @@ body {
  }
 
  .title-0 {
+  font-family: Founders Grotesk Bold;
   font-style: normal;
-  font-weight: 700;
   font-size: 90px;
   line-height: 113px;
   padding-top: 5%;
@@ -103,6 +104,7 @@ body {
 }
 
 .tittle-content {
+font-family: Founders Grotesk Regular;
 font-style: normal;
 font-weight: 400;
 font-size: 46px;
@@ -112,8 +114,8 @@ color: var(--bs-body-color);
 }
 
 .title-1 {
+  font-family: Founders Grotesk Medium;
   font-style: normal;
-  font-weight: 600;
   font-size: 80px;
   line-height: 113px;
   text-align: right;
@@ -137,10 +139,14 @@ color: var(--bs-body-color);
   margin-bottom: 5%;
  }
 
+ /*
+ * Special Button
+ */
+
 .btn-plots {
   --bs-btn-padding-x: 3.50rem;
   --bs-btn-padding-y: 1.1rem;
-  --bs-btn-font-family: 'Test Founders Grotesk';
+  --bs-btn-font-family: 'Founders Grotesk Regular';
   --bs-btn-font-size: 24px;
   --bs-btn-font-style: normal;
   --bs-btn-font-weight: 400;
@@ -174,6 +180,9 @@ color: var(--bs-body-color);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+/*
+ * Special Css for the landing  page
+ */
 .landing-button {
   padding-top: 3%;
   padding-bottom: 4%;
@@ -182,7 +191,7 @@ color: var(--bs-body-color);
 .landing-image {
   max-width: 100%;
   max-height: 100%;
-  display: block; /* remove extra space below image */
+  display: block;
 }
 
 .landing-content {
@@ -209,7 +218,12 @@ color: var(--bs-body-color);
   padding-bottom: 5%;
   padding-left: 4%;
   padding-right: 4%;
+  font-family: Founders Grotesk Regular;
 }
+
+/*
+ * Dark Plots Theme Still need Adjust
+ */
 
 [data-bs-theme="dark"] {
   color-scheme: dark;
