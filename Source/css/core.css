@@ -59,6 +59,12 @@ body {
  * Special Containers
  */
 
+ @media (min-width: 1400px){
+ .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+   max-width: 1740px;
+  }
+}
+
  .container-0 {
  
  }
@@ -96,7 +102,7 @@ body {
  .title-0 {
   font-family: Founders Grotesk Bold;
   font-style: normal;
-  font-size: 90px;
+  font-size: 96px;
   line-height: 113px;
   padding-top: 5%;
   padding-bottom: 2%;
@@ -107,7 +113,7 @@ body {
 font-family: Founders Grotesk Regular;
 font-style: normal;
 font-weight: 400;
-font-size: 46px;
+font-size: 48px;
 line-height: 57px;
 letter-spacing: 0.04em;
 color: var(--bs-body-color);
@@ -144,9 +150,9 @@ color: var(--bs-body-color);
  */
 
 .btn-plots {
-  --bs-btn-padding-x: 3.50rem;
-  --bs-btn-padding-y: 1.1rem;
-  --bs-btn-font-family: 'Founders Grotesk Regular';
+  --bs-btn-padding-x: 3.00rem;
+  --bs-btn-padding-y: 1.00rem;
+  --bs-btn-font-family: 'Founders Grotesk Light';
   --bs-btn-font-size: 24px;
   --bs-btn-font-style: normal;
   --bs-btn-font-weight: 400;
@@ -178,6 +184,7 @@ color: var(--bs-body-color);
   border-radius: 35.5px;
   background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  padding-top: 1.6%;
 }
 
 /*
@@ -192,6 +199,8 @@ color: var(--bs-body-color);
   max-width: 100%;
   max-height: 100%;
   display: block;
+  margin-left: auto;
+margin-right: auto;
 }
 
 .landing-content {
