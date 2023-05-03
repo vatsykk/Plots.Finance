@@ -1,4 +1,8 @@
 
+.background-landing {
+    background: rgb(0,0,0);
+    background: linear-gradient(130deg, rgb(0, 0, 0) 78%, rgb(164, 0, 154) 100%, rgb(0, 0, 0) 100%);  
+}
 
 .title-0 {
     font-family: Founders Grotesk Bold;
