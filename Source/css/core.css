@@ -14,7 +14,6 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-
 /*
  * Base structure
  */
@@ -23,12 +22,12 @@ body {
   font-family: Founders Grotesk Regular;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-image: var(--bs-body-image);;
 }
 
 .cover-container {
   max-width: 42em;
 }
-
 
 /*
  * Header
@@ -56,6 +55,36 @@ body {
 
 .bd-mode-toggle {
   z-index: 1500;
+}
+
+a {
+  color: var(--bs-body-color);
+}
+
+a:hover {
+  color: rgb(0, 117, 163);
+}
+
+footer {
+  margin-top: 20%;
+  padding-bottom: 4%;
+}
+
+.footer-menu-title {
+font-family: Founders Grotesk Regular;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+}
+
+.footer-menu-item {
+font-family: Founders Grotesk Regular; 
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+
 }
 
 /*

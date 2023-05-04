@@ -153,52 +153,50 @@
 </section>
 </main>
 
-<footer class="bd-footer py-4 py-md-5 mt-5">
-    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+<footer class="footer">
+    <div class="container text-body-secondary">
       <div class="row">
-        <div class="col-lg-3 mb-3">
+        <div class="col-lg-2 mb-3">
           <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
-            <span class="fs-5">Plots</span>
+            <img class="landing-image-footer" src="/Source/img/logo-footer.png"><span class="title-footer">Plots</span>
           </a>
-          <ul class="list-unstyled small">
-            <li class="mb-2">Twitter</li>
-            <li class="mb-2">Discord</li>
-            <li class="mb-2">Reddit</li>          
-        </ul>
+            <img class="landing-image-icon" src="/Source/img/twitter.png">
+            <img class="landing-image-icon" src="/Source/img/discord.png">
+            <img class="landing-image-icon" src="/Source/img/reddit.png">         
         </div>
         <div class="col-4 col-lg-2 offset-lg-1 mb-3">
-          <h5>Services</h5>
+          <h5 class="footer-menu-title">Services</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">Swap</a></li>
-            <li class="mb-2"><a href="#">Earn</a></li>
-            <li class="mb-2"><a href="#">Lending & Borrowing</a></li>
-            <li class="mb-2"><a href="#">Payments</a></li>
-            <li class="mb-2"><a href="#">Analytics</a></li>
+            <li class="footer-menu-item"><a href="#">Swap</a></li>
+            <li class="footer-menu-item"><a href="#">Earn</a></li>
+            <li class="footer-menu-item"><a href="#">Lending & Borrowing</a></li>
+            <li class="footer-menu-item"><a href="#">Payments</a></li>
+            <li class="footer-menu-item"><a href="#">Analytics</a></li>
           </ul>
         </div>
         <div class="col-4 col-lg-2 mb-3">
-          <h5>Developers</h5>
+          <h5 class="footer-menu-title">Developers</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">GitBook</a></li>
-            <li class="mb-2"><a href="#">GitHub</a></li>
-            <li class="mb-2"><a href="#">Development</a></li>
+            <li class="footer-menu-item"><a href="#">GitBook</a></li>
+            <li class="footer-menu-item"><a href="#">GitHub</a></li>
+            <li class="footer-menu-item"><a href="#">Development</a></li>
           </ul>
         </div>
         <div class="col-4 col-lg-2 mb-3">
-          <h5>Help</h5>
+          <h5 class="footer-menu-title">Help</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">About us</a></li>
-            <li class="mb-2"><a href="#">Discord Support</a></li>
-            <li class="mb-2"><a href="#">Twitter Support</a></li>
-            <li class="mb-2"><a href="#">Forum Support</a></li>
+            <li class="footer-menu-item"><a href="#">About us</a></li>
+            <li class="footer-menu-item"><a href="#">Discord Support</a></li>
+            <li class="footer-menu-item"><a href="#">Twitter Support</a></li>
+            <li class="footer-menu-item"><a href="#">Forum Support</a></li>
           </ul>
         </div>
         <div class="col-4 col-lg-2 mb-3">
-          <h5>Governance</h5>
+          <h5 class="footer-menu-title">Governance</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">Forum & Proposals</a></li>
-            <li class="mb-2"><a href="#">Vote</a></li>
-            <li class="mb-2"><a href="#">Partners</a></li>
+            <li class="footer-menu-item"><a href="#">Forum & Proposals</a></li>
+            <li class="footer-menu-item"><a href="#">Vote</a></li>
+            <li class="footer-menu-item"><a href="#">Partners</a></li>
           </ul>
         </div>
       </div>
@@ -258,85 +256,7 @@
       <!-- JS Loads -->
     <script src="/Source/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="/Source/@popperjs/core/dist/umd/popper.js" integrity="sha384-grSmhim7l2CkmGXtqSePI7cwM/7NymZ7eQkKk3WwaZyjfkef6IziTCUrHtz0NfwD"></script>
-    <script>
-/*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
+    <script src="/Source/Js/Theme.js"></script>
 
- (() => {
-  'use strict'
-
-  const storedTheme = localStorage.getItem('theme')
-
-  const getPreferredTheme = () => {
-    if (storedTheme) {
-      return storedTheme
-    }
-
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
-
-  const setTheme = function (theme) {
-    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-bs-theme', 'dark')
-    } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
-    }
-  }
-
-  setTheme(getPreferredTheme())
-
-  const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme')
-
-    if (!themeSwitcher) {
-      return
-    }
-
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
-    const activeThemeIcon = document.querySelector('.theme-icon-active use')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
-
-    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-      element.classList.remove('active')
-      element.setAttribute('aria-pressed', 'false')
-    })
-
-    btnToActive.classList.add('active')
-    btnToActive.setAttribute('aria-pressed', 'true')
-    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
-    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
-
-    if (focus) {
-      themeSwitcher.focus()
-    }
-  }
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (storedTheme !== 'light' || storedTheme !== 'dark') {
-      setTheme(getPreferredTheme())
-    }
-  })
-
-  window.addEventListener('DOMContentLoaded', () => {
-    showActiveTheme(getPreferredTheme())
-
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          localStorage.setItem('theme', theme)
-          setTheme(theme)
-          showActiveTheme(theme, true)
-        })
-      })
-  })
-})()
-
-      </script>
     </body>  
 </html>

@@ -5,19 +5,20 @@
  [data-bs-theme="dark"] {
     color-scheme: dark;
     --bs-body-color: #ffffff;
-    --bs-body-color-rgb: 173,181,189;
-    --bs-body-bg: #000000;
-    --bs-body-bg-rgb: 33,37,41;
+    --bs-body-color-rgb: 255,255,255;
+    --bs-body-bg: #000;
+    --bs-body-image: linear-gradient(130deg, rgb(0, 0, 0) 78%, rgb(164, 0, 154) 100%, rgb(0, 0, 0) 100%);
+    --bs-body-bg-rgb: 0,0,0,;
     --bs-emphasis-color: #fff;
     --bs-emphasis-color-rgb: 255,255,255;
-    --bs-secondary-color: rgba(255, 255, 255, 0.75);
-    --bs-secondary-color-rgb: 173,181,189;
+    --bs-secondary-color: rgba(255, 255, 255, 1.00);
+    --bs-secondary-color-rgb: 255,255,255;
     --bs-secondary-bg: #000000;
-    --bs-secondary-bg-rgb: 52,58,64;
+    --bs-secondary-bg-rgb: 0,0,0;
     --bs-tertiary-color: rgba(173, 181, 189, 0.5);
     --bs-tertiary-color-rgb: 173,181,189;
     --bs-tertiary-bg: #000000;
-    --bs-tertiary-bg-rgb: 43,48,53;
+    --bs-tertiary-bg-rgb: 0,0,0;
     --bs-primary-text-emphasis: #6ea8fe;
     --bs-secondary-text-emphasis: #a7acb1;
     --bs-success-text-emphasis: #75b798;
@@ -54,3 +55,5 @@
     --bs-form-invalid-color: #ea868f;
     --bs-form-invalid-border-color: #ea868f;
   }
+
+  

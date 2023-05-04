@@ -1,9 +1,8 @@
-
-.background-landing {
-    background: rgb(0,0,0);
-    background: linear-gradient(130deg, rgb(0, 0, 0) 78%, rgb(164, 0, 154) 100%, rgb(0, 0, 0) 100%);  
-}
-
+/*
+  .background-landing {
+    background-image: linear-gradient(130deg, rgb(0, 0, 0) 78%, rgb(164, 0, 154) 100%, rgb(0, 0, 0) 100%)  
+ }
+  */
 .title-0 {
     font-family: Founders Grotesk Bold;
     font-style: normal;
@@ -55,6 +54,14 @@
     line-height: 76px;
     text-align: center;
     letter-spacing: 0.04em;
+  }
+
+  .title-footer {
+    font-family: Founders Grotesk Medium;
+    font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 76px;  
   }
 
   /*
@@ -179,6 +186,22 @@
     margin-left: auto;
   margin-right: auto;
   }
+
+  .landing-image-footer {
+    max-width: 20%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .landing-image-icon {
+    max-width: 12%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+  }
   
   .landing-content {
     max-width: 1320px;
@@ -206,4 +229,5 @@
     padding-right: 4%;
     font-family: Founders Grotesk Regular;
   }
+  
   
