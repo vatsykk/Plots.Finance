@@ -22,7 +22,7 @@ body {
   font-family: Founders Grotesk Regular;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  background-image: var(--bs-body-image);;
+  background-image: var(--bs-body-image);
 }
 
 .cover-container {
@@ -51,7 +51,6 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
-
 
 .bd-mode-toggle {
   z-index: 1500;
@@ -86,6 +85,10 @@ font-size: 16px;
 line-height: 19px;
 
 }
+
+svg {
+  filter: var(--bs-svg-color);
+} 
 
 /*
  * Special Containers

@@ -54,6 +54,9 @@
     --bs-form-valid-border-color: #75b798;
     --bs-form-invalid-color: #ea868f;
     --bs-form-invalid-border-color: #ea868f;
+    --bs-svg-color: invert(0);
   }
 
-  
+  [data-bs-theme="light"] {
+    --bs-svg-color: invert(1);
+}
