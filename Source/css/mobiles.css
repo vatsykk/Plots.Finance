@@ -1,0 +1,29 @@
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1740px;
+     }
+}
+
+@media only screen and (min-width: 1400px)  {
+    .footer-col {
+        flex: 0 0 auto;
+        width: 12%;
+        text-align: center;
+      }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .footer-col {
+        flex: 0 0 auto;
+        width: 15%;
+        text-align: center;
+      }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .footer-col {
+        flex: 0 0 auto;
+        width: 15%;
+        text-align: center;
+      }
+}
