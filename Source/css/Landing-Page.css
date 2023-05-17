@@ -4,7 +4,7 @@
  }
   */
 .title-0 {
-    font-family: Founders Grotesk Bold;
+    font-family: Uni Bold;
     font-style: normal;
     font-size: 96px;
     line-height: 113px;
@@ -69,14 +69,14 @@ line-height: 76px;
  */
 
 .content-landing {
-    font-family: Founders Grotesk Regular;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 57px;
-    letter-spacing: 0.04em;
-    color: var(--bs-body-color);
-  }
+  font-family: Movie Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--bs-body-color);
+}
   
   .landing-content-right {
     max-width: 1330px;
@@ -105,14 +105,13 @@ line-height: 76px;
     font-family: Founders Grotesk Regular;
   }
   
-  .tittle-content {
-    font-family: Founders Grotesk Regular;
+  .title-content {
+    font-family: Movie Regular;
     font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 57px;
-    letter-spacing: 0.04em;
-    color: var(--bs-body-color);
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.75);
     }
   
    /*
@@ -185,7 +184,7 @@ line-height: 76px;
   }
   
   .landing-image {
-    max-width: 100%;
+    max-width: 50%;
     max-height: 100%;
     display: block;
     margin-left: auto;
@@ -209,22 +208,9 @@ line-height: 76px;
   }
   
   .landing-content {
-    max-width: 1320px;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
     margin-left: auto;
-    background: linear-gradient(100.12deg, rgba(255, 90, 249, 0.25) -31.57%, rgba(0, 155, 255, 0.25) 134.36%);
-    border-radius: 139px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 57px;
-    text-align: center;
-    letter-spacing: 0.04em;
     color: var(--bs-body-color);
     margin-top: 5%;
     margin-bottom: 6%;
@@ -232,7 +218,11 @@ line-height: 76px;
     padding-bottom: 5%;
     padding-left: 4%;
     padding-right: 4%;
-    font-family: Founders Grotesk Regular;
+    font-family: Movie Regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
   }
-  
   
