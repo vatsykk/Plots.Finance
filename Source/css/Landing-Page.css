@@ -19,6 +19,25 @@
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+}
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .navbar-nav {
@@ -87,12 +106,12 @@
   }
   
   .title-landing-0 {
-  font-family: Founders Grotesk Medium;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 76px;
-  letter-spacing: 0.04em;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
   }
   
   .title-landing-1 {
@@ -265,18 +284,17 @@ line-height: 76px;
   }
   
   .footer-menu-title {
-  font-family: Founders Grotesk Regular;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
   }
   
   .footer-menu-item {
-  font-family: Founders Grotesk Regular; 
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px; 
   }
