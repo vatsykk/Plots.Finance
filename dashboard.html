@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+  <!-- Character Set and View -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plots Fi - Dashboard</title>
+<meta name="description" content="No Description Yet.">
+<meta name="author" content="Wedergarten">
+  <!-- OpenGrah -->
+<meta property="og:title" content="Plots Fi">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://plots.kanzen.co/">
+<meta property="og:description" content="No Description Yet.">
+<meta property="og:image" content="/Source/img/logo.png">
+  <!-- Favicons -->
+<link rel="icon" href="/Source/img/favicon.ico">
+<link rel="icon" href="/Source/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/Source/img/apple-touch-icon.png">
+  <!-- CSS Loads -->
+  <link href="/Source/bootstrap/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" rel="stylesheet" crossorigin="anonymous">
+  <link href="/Source/bootstrap-icons/font/bootstrap-icons.min.css" integrity="sha-384-sAjZvrYXacB9bJ0LVUOAvlGp7N5A9s6krO+1oZ2bSc1hG7q3UpoTU50kWYTKDOQC" rel="stylesheet" crossorigin="anonymous">
+  <link href="/Source/css/core.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/qxq2irv.css">
+  <style>
+    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-height: 100vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-offcanvas-bg: var(--bs-body-bg);
+  --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-title-line-height: 1.5;
+}
+
+iframe {
+  border: 0;
+  height: 100%;
+}
+
+.title-dashboard{
+font-family: 'Uniwars';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.06em;
+}
+
+.landing-image-icon {
+  max-width: 4%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+}
+  </style>
+
+</head>
+<body class="background-landing">
+  <main>
+    <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg" aria-label="Plots.Finance">
+        <div class="container-fluid">
+          <svg class="landing-image-icon" width="44" height="72" viewBox="0 0 44 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.2751 1.31652C0.226309 5.8092 18.3468 77.199 7.06436 71.6347C4.78108 69.2026 2.98221 66.3279 1.77048 63.1748C0.558756 60.0216 -0.0420815 56.6518 0.00228999 53.2579C0.0466615 49.8639 0.735372 46.5122 2.02908 43.3943C3.32279 40.2764 5.19616 37.4533 7.54218 35.0863C13.9436 28.6259 25.9919 44.24 38.0905 38.5216C55.8017 31.293 23.9892 -2.97227 14.2751 1.31652Z" fill="url(#paint0_linear_4_665)"/>
+            <defs>
+            <linearGradient id="paint0_linear_4_665" x1="-46.9587" y1="-2.45306" x2="83.0927" y2="75.4025" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF56F9"/>
+            <stop offset="0.9999" stop-color="#40FFFF"/>
+            <stop offset="1" stop-color="#009BFF"/>
+            </linearGradient>
+            </defs>            </svg>
+          <a class="navbar-brand" href="#">PLOTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlotsMenu" aria-controls="offcanvasPlotsMenu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasPlotsMenu" aria-labelledby="offcanvasPlotsMenu">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasPlotsMenu">Offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+<section id="top">
+    <div class="container-fluid">
+
+        <div class="d-flex gap-2 justify-content-center py-5">
+            <button class="btn btn-primary rounded-pill px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#gamers" aria-controls="gamers">GAMERS</button>
+            <button class="btn btn-secondary rounded-pill px-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#investors" aria-controls="investors">INVESTORS</button>
+          </div>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="gamers" aria-labelledby="gamers">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="gamers">Gamers WaitList</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <iframe class="container-fluid" src="https://rcyrah42j0m.typeform.com/to/q5cYanW1"></iframe>
+  </div>
+</div>
+  <div class="offcanvas offcanvas-top" tabindex="-2" id="investors" aria-labelledby="investor">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="investor">Investors WaitList</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <iframe class="container-fluid" src="https://rcyrah42j0m.typeform.com/to/QYI5WHP0"></iframe>
+    </div>
+</div>
+<h1 class="title-dashboard">Welcome to the frontier of virtual land ownership!</h1>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="d-flex gap-2 justify-content-center py-5">
+            <svg class="landing-image-icon" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.9212 4.06764C29.8371 3.86292 29.6958 3.68825 29.515 3.56565C29.3342 3.44305 29.122 3.37799 28.9052 3.37869H24.7314C24.2306 2.48378 23.5353 1.71894 22.6994 1.14342C21.8635 0.567889 20.9095 0.197116 19.9113 0.0598108C18.913 -0.0774942 17.8973 0.0223536 16.9428 0.351622C15.9883 0.680891 15.1206 1.23074 14.4069 1.9586C13.782 2.58255 13.2852 3.32811 12.9457 4.15147C12.6062 4.97484 12.4308 5.85939 12.4298 6.75316V7.61084C6.84193 6.12045 2.27002 1.50867 2.22883 1.45242C2.08522 1.30773 1.90551 1.20627 1.70936 1.15916C1.51322 1.11204 1.30821 1.12108 1.11674 1.18528C0.925888 1.24748 0.75498 1.36131 0.622067 1.51475C0.489154 1.66819 0.399171 1.85554 0.361622 2.05702C-0.832841 8.83408 1.15793 13.3756 3.03887 15.9908C3.98229 17.3132 5.12731 18.4716 6.43005 19.4215C4.32944 21.8539 1.08928 23.1194 1.06183 23.1334C0.906881 23.1923 0.7669 23.2862 0.652313 23.4081C0.537726 23.5301 0.451487 23.6769 0.40002 23.8377C0.348553 23.9986 0.333187 24.1692 0.355064 24.337C0.376942 24.5047 0.4355 24.6652 0.526376 24.8066C0.636212 24.9753 1.0481 25.5237 2.05035 26.0439C3.29973 26.6766 4.94726 27 6.93804 27C16.6173 27 24.7177 19.3653 25.5415 9.5371L29.6878 5.30495C29.8368 5.14231 29.9378 4.9398 29.9791 4.72084C30.0204 4.50187 30.0003 4.27541 29.9212 4.06764V4.06764ZM23.7017 8.24355C23.5104 8.43789 23.3976 8.69897 23.3859 8.97469C22.823 17.8186 15.6013 24.7504 6.93804 24.7504C5.48271 24.7504 4.46673 24.5535 3.7528 24.3145C5.33169 23.4427 7.5284 21.9242 8.95627 19.7449C9.03915 19.613 9.09418 19.4648 9.11783 19.3098C9.14147 19.1548 9.13321 18.9965 9.09356 18.845C9.0536 18.692 8.98289 18.5492 8.88596 18.4257C8.78904 18.3022 8.66802 18.2008 8.53065 18.1279C8.51693 18.1139 6.48496 17.0312 4.74132 14.5707C2.76428 11.7868 1.92678 8.39822 2.25629 4.48945C4.42554 6.31729 8.57184 9.29808 13.3497 10.1136C13.5075 10.1395 13.6689 10.1304 13.8228 10.0867C13.9768 10.043 14.1198 9.96586 14.2421 9.86049C14.3616 9.75338 14.4577 9.62159 14.5239 9.47377C14.5902 9.32595 14.6252 9.16545 14.6265 9.00281V6.75316C14.6286 5.72113 14.977 4.72119 15.6134 3.92098C16.2498 3.12077 17.1355 2.56893 18.1219 2.35798C19.1084 2.14703 20.1357 2.2898 21.0316 2.76234C21.9275 3.23489 22.6376 4.00848 23.0427 4.95344C23.1303 5.15444 23.2728 5.32516 23.4531 5.44493C23.6334 5.56471 23.8438 5.62841 24.0587 5.62834H26.2554L23.7017 8.24355Z" fill="white"/>
+                </svg>
+                <svg class="landing-image-icon" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.98438 21.5161C15.5328 25.7903 20.6618 25.7903 29.2102 21.5161" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M24.0815 24.0806L25.7912 27.5C25.7912 27.5 32.9223 25.2295 35.1944 21.5161C35.1944 19.8065 36.1006 7.58739 30.0654 3.56452C27.5009 1.85484 23.2267 1 23.2267 1L21.517 4.41935H18.0977" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.1612 24.0806L10.4516 27.5C10.4516 27.5 3.32049 25.2295 1.04833 21.5161C1.04833 19.8065 0.142196 7.58739 6.17736 3.56452C8.74187 1.85484 13.0161 1 13.0161 1L14.7257 4.41935H18.1451" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.1133 18.097C10.6977 18.097 9.54883 16.5668 9.54883 14.6777C9.54883 12.7885 10.6977 11.2583 12.1133 11.2583C13.529 11.2583 14.6779 12.7885 14.6779 14.6777C14.6779 16.5668 13.529 18.097 12.1133 18.097ZM24.0811 18.097C22.6655 18.097 21.5166 16.5668 21.5166 14.6777C21.5166 12.7885 22.6655 11.2583 24.0811 11.2583C25.4967 11.2583 26.6456 12.7885 26.6456 14.6777C26.6456 16.5668 25.4967 18.097 24.0811 18.097Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="landing-image-icon" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 2.18891C8.42208 2.18891 1.47758 9.098 1.47758 17.6065C1.47758 23.854 5.22183 29.2302 10.6108 31.6485C11.1747 31.9021 11.7257 31.8015 12.1564 31.4785C12.3946 31.293 12.5866 31.0549 12.7173 30.7828C12.8481 30.5108 12.9141 30.2121 12.9101 29.9102V29.1027L10.9877 28.8421C10.9734 28.8402 10.9593 28.8378 10.9452 28.835C9.8855 28.6282 9.17008 28.2556 8.64592 27.7187C8.20533 27.2667 7.93617 26.7256 7.70808 26.2666L7.62875 26.1065C7.41794 25.6668 7.18775 25.2366 6.93883 24.8173C6.74758 24.5142 6.59883 24.3583 6.4515 24.2606C6.0775 24.0127 5.71767 23.5919 5.71767 23.0663C5.71639 22.9151 5.74878 22.7654 5.81248 22.6282C5.87619 22.491 5.96962 22.3696 6.086 22.273C6.30566 22.0991 6.57942 22.0078 6.8595 22.0152C7.174 22.0152 7.47008 22.1115 7.71658 22.222C7.96875 22.3353 8.2195 22.4855 8.45325 22.6413C9.02275 23.021 9.58375 23.4701 10.0583 24.024C10.5527 24.5992 10.9027 24.9647 11.4297 25.0397C11.8632 25.1021 12.3052 25.1035 12.6494 25.0879C12.6973 24.8154 12.7762 24.5492 12.8846 24.2946C12.4641 24.1965 12.0494 24.0754 11.6422 23.9319C10.7157 23.6032 9.68292 23.0918 8.98875 22.3169C8.22658 21.4641 7.75483 20.7033 7.49133 19.8137C7.23492 18.9467 7.19242 18.0074 7.19242 16.8514C7.19242 15.0806 7.95883 13.5888 8.534 12.7969C8.31302 12.1036 8.1542 11.392 8.05942 10.6705C7.99664 10.2155 7.99712 9.75402 8.06083 9.29916C8.13167 8.88408 8.30875 8.37408 8.77483 8.06666C9.22392 7.76775 9.75092 7.7805 10.1617 7.857C10.5882 7.93775 11.0316 8.11483 11.4396 8.31741C12.104 8.64608 12.7642 9.08525 13.2586 9.45783C14.1114 9.20708 15.6202 8.88408 16.9844 8.85433H17.0156C18.3812 8.88408 19.822 9.20708 20.6536 9.45641C21.1494 9.08525 21.8082 8.64466 22.4712 8.31741C22.8792 8.11483 23.3212 7.93775 23.749 7.857C24.1598 7.7805 24.6868 7.76775 25.1373 8.06525C25.602 8.37408 25.7805 8.88408 25.8499 9.29916C25.9222 9.73125 25.9052 10.2143 25.8499 10.6705C25.7556 11.3919 25.5972 12.1035 25.3767 12.7969C25.9519 13.5902 26.7183 15.082 26.7183 16.8514C26.7183 18.0074 26.6758 18.9467 26.4208 19.8122C26.1559 20.7047 25.6842 21.4641 24.922 22.3169C24.2278 23.0918 23.1951 23.6032 22.2686 23.9319C21.7768 24.1048 21.2742 24.2453 20.7641 24.3527C20.9383 24.8797 21.0007 25.3061 21.0007 25.5512V29.9287C21.0007 30.5945 21.3109 31.1626 21.7515 31.4941C22.1793 31.8185 22.729 31.9191 23.2928 31.6726C28.7328 29.2756 32.521 23.8852 32.521 17.6051C32.521 9.098 25.5793 2.18891 17 2.18891ZM13.4243 26.506C13.056 26.5584 13.4229 26.506 13.4229 26.506H13.4187L13.4073 26.5088L13.3663 26.5145C13.1558 26.5392 12.9446 26.5567 12.733 26.5669C12.2288 26.5932 11.7233 26.5728 11.2228 26.506C10.1022 26.3473 9.42083 25.554 8.98025 25.0383L8.93775 24.9902C8.7937 24.8231 8.63896 24.6655 8.4745 24.5184C8.62042 24.7876 8.772 25.0879 8.93492 25.4109L8.94908 25.4392L9.02133 25.5866C9.26925 26.0796 9.43217 26.4082 9.70275 26.6831C9.96625 26.9522 10.3771 27.2129 11.2072 27.3772L13.7487 27.7215C13.9263 27.7455 14.089 27.8331 14.2068 27.9681C14.3245 28.1031 14.3893 28.2762 14.3891 28.4553V29.9102C14.3891 31.0436 13.8578 32.0537 13.0432 32.6657C12.6156 32.9925 12.1068 33.1963 11.5718 33.2552C11.0368 33.3141 10.4959 33.2259 10.0073 33C4.11117 30.3551 0 24.466 0 17.6065C0 8.26783 7.61742 0.708496 17 0.708496C26.3826 0.708496 34 8.26783 34 17.6065C34 24.5014 29.8364 30.4061 23.8892 33.0283C23.4003 33.2499 22.8603 33.3344 22.3271 33.2728C21.7938 33.2112 21.2873 33.0057 20.8618 32.6784C20.4411 32.3545 20.1012 31.9376 19.8686 31.4602C19.6361 30.9829 19.5174 30.4582 19.5217 29.9272V25.5497C19.5217 25.4506 19.4522 24.8782 19.0655 24.109C19.0121 24.0023 18.9852 23.8844 18.9871 23.7651C18.989 23.6458 19.0196 23.5288 19.0763 23.4238C19.133 23.3189 19.2141 23.2292 19.3129 23.1623C19.4116 23.0953 19.525 23.0532 19.6435 23.0394C20.3698 22.9484 21.0841 22.7793 21.7742 22.5351C22.6157 22.2376 23.3707 21.8296 23.8198 21.3281C24.4871 20.5829 24.82 20.0106 25.0028 19.3915C25.1926 18.7497 25.2407 18.0032 25.2407 16.8514C25.2407 15.235 24.3907 13.8764 23.9998 13.4387C23.911 13.3397 23.8505 13.2187 23.8246 13.0884C23.7986 12.958 23.8083 12.8231 23.8524 12.6977C24.1042 11.984 24.2823 11.2463 24.3837 10.4962C24.429 10.1067 24.4318 9.78083 24.3922 9.54566C24.3833 9.45968 24.3573 9.37635 24.3157 9.30058C24.2181 9.2837 24.1181 9.28805 24.0224 9.31333C23.7816 9.35866 23.4742 9.472 23.1257 9.64483C22.4315 9.98766 21.709 10.4948 21.2613 10.8575C21.1626 10.9376 21.0448 10.9908 20.9195 11.0119C20.7941 11.033 20.6654 11.0213 20.5459 10.9779C19.3989 10.6027 18.2058 10.3868 17 10.3362C15.5734 10.3702 13.9272 10.7753 13.3648 10.9779C13.2453 11.0213 13.1166 11.033 12.9913 11.0119C12.8659 10.9908 12.7481 10.9376 12.6494 10.8575C12.0705 10.3914 11.4458 9.98512 10.7851 9.64483C10.5013 9.49583 10.1994 9.38439 9.88692 9.31333C9.79167 9.28825 9.69215 9.28391 9.59508 9.30058C9.55344 9.37633 9.52743 9.45967 9.51858 9.54566C9.47892 9.78083 9.48175 10.1067 9.52708 10.4962C9.62918 11.2462 9.80717 11.9838 10.0583 12.6977C10.1476 12.9527 10.0923 13.2361 9.911 13.4387C9.52 13.8764 8.67 15.235 8.67 16.8514C8.67 18.0017 8.71817 18.7497 8.908 19.3915C9.09217 20.0106 9.42367 20.5815 10.0895 21.3281C10.54 21.8296 11.2937 22.2376 12.1366 22.5351C12.8262 22.7791 13.54 22.9482 14.2658 23.0394C14.4152 23.0554 14.5561 23.1165 14.6698 23.2146C14.7835 23.3127 14.8647 23.4431 14.9026 23.5884C14.9404 23.7337 14.9331 23.8871 14.8816 24.0282C14.8301 24.1693 14.7369 24.2914 14.6143 24.3782C14.3806 24.5453 14.2262 24.8457 14.1397 25.1927C14.0951 25.3714 14.0686 25.5542 14.0604 25.7382V25.7651C14.0622 25.9447 13.9987 26.1189 13.8817 26.2552C13.7647 26.3914 13.6022 26.4806 13.4243 26.506Z" fill="white"/>
+                    </svg>
+          </div>
+</div>
+  </footer>
+      <!-- JS Loads -->
+    <script src="/Source/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="/Source/@popperjs/core/dist/umd/popper.js" integrity="sha384-grSmhim7l2CkmGXtqSePI7cwM/7NymZ7eQkKk3WwaZyjfkef6IziTCUrHtz0NfwD"></script>
+    <script src="/Source/Js/Theme.js"></script>
+
+    </body>  
+</html>
