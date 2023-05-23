@@ -121,6 +121,8 @@
   --bs-nav-link-menu: #fff;
   --bs-svg-color: invert(0);
 }
-  [data-bs-theme="light"] {
+  /* Disable logo Colors invert
+    [data-bs-theme="light"] {
     --bs-svg-color: invert(1);
 }
+*/
