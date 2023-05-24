@@ -1,3 +1,5 @@
+
+
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 3rem;
@@ -19,8 +21,6 @@
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  padding-left: 5.5%;
-  padding-right: 5.5%;
 }
 
 .nav-link {
@@ -59,6 +59,7 @@
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
+  padding-left: 3rem !important;
   font-family: 'Uniwars';
   font-style: normal;
   font-weight: 600;
@@ -142,6 +143,15 @@ font-size: 64px;
 line-height: 76px;  
   }
 
+  .title-content {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.75);
+    }
+
   /*
  * Content BOX Text
  */
@@ -192,15 +202,25 @@ line-height: 76px;
     padding-right: 2%;
     font-family: Founders Grotesk Regular;
   }
-  
-  .title-content {
-    font-family: 'Video';
+
+  .landing-content {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--bs-body-color);
+    margin-top: 5%;
+    margin-bottom: 6%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: Video;
     font-style: normal;
     font-weight: 300;
     font-size: 36px;
     line-height: 45px;
-    color: rgba(255, 255, 255, 0.75);
-    }
+    text-align: center;
+  }
   
    /*
    * Special Text colours
@@ -272,8 +292,24 @@ line-height: 76px;
   }
 
   .btn-spacer {
-    padding-left: 4%;
+    padding-left: 1.5%;
     padding-right: 0%;
+  }
+
+  .btn-dark-light {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-left: 1.5%;
+    padding-right: 0%;
+  }
+  .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
   }
   
   /*
@@ -306,25 +342,6 @@ line-height: 76px;
     margin-left: auto;
     margin-right: auto;
     display: inline;
-  }
-  
-  .landing-content {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    color: var(--bs-body-color);
-    margin-top: 5%;
-    margin-bottom: 6%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 4%;
-    padding-right: 4%;
-    font-family: Video;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 45px;
-    text-align: center;
   }
   
   footer {
