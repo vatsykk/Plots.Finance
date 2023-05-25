@@ -39,6 +39,36 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+.nav-footer {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--bs-nav-link-menu);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-b {
+  --bs-nav-link-padding-x: 1rem;
+--bs-nav-link-padding-y: 0.5rem;
+--bs-nav-link-font-weight: ;
+--bs-nav-link-color: var(--bs-link-color);
+--bs-nav-link-hover-color: var(--bs-link-hover-color);
+--bs-nav-link-disabled-color: var(--bs-secondary-color);
+display: flex;
+flex-wrap: wrap;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 2rem;
   padding-left: 2rem;
