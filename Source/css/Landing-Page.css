@@ -29,8 +29,8 @@
   font-family: 'Video';
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
   color: var(--bs-nav-link-menu);
   text-decoration: none;
@@ -42,7 +42,7 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 2rem;
   padding-left: 2rem;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
 }
 
 .navbar-nav {
@@ -247,22 +247,21 @@ line-height: 76px;
 
    .btn-menu {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 35.5px;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-family: 'Uniwars';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: var(--bs-button-menu);
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 35.5px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
   .btn-menu:hover {
     color: var(--bs-btn-hover-color);
     background-color: var(--bs-btn-hover-bg);
@@ -315,6 +314,11 @@ line-height: 76px;
   /*
    * Special Css for the landing  page
    */
+   .col-lg-2-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
   .landing-button {
     padding-top: 3%;
     padding-bottom: 4%;
