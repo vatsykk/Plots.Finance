@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 
-contract VLND {
+contract VLND_V1 {
     //Mintable ERC20
     uint256 public tokenCap;
     uint256 public totalSupply;
