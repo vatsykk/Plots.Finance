@@ -116,9 +116,168 @@
       }
 }
 
+@media only screen and (max-width: 399px)  {
+  .navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    padding-left: 1.5rem !important;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;
+    padding-left: 2.5%;
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .footer-col {
+    flex: 0 0 auto;
+    width: 15%;
+    text-align: center;
+  }
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    list-style: none;
+  }
+  .landing-image-icon {
+    max-width: 12%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+  }
+  .btn-menu {
+    background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+      background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 35.5px;
+    padding-top: 5.5%;
+    padding-bottom: 5.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--bs-button-menu);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 5%;
+  }
+  .btn-dark-light {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-left: 1.5%;
+    padding-right: 0%;
+    padding-top: 10%;
+  }
+  .container-fluid {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) *1.0);
+    padding-left: calc(var(--bs-gutter-x) * 1.0);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .title-0 {
+    padding-top: 0%;
+    padding-bottom: 2%;
+    color: var(--bs-body-color);
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 50px;
+  }
+  .title-1 {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 115px;
+    text-align: right;
+    background: linear-gradient(93.21deg, #FD4FF7 40.31%, rgb(64, 255, 255) 100%);
+      background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .title-2 {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 115px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    background: linear-gradient(93.21deg, #FD4FF7 10%, rgb(64, 255, 255) 40%);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .title-landing-0 {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .content-landing {
+    font-family: Video;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--bs-body-color);
+  }
+  .landing-content {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--bs-body-color);
+    margin-top: 5%;
+    margin-bottom: 6%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: Video;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .title-content {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
 
-
-@media only screen and (min-width: 380px) and (max-width: 990px) {
+@media only screen and (min-width: 400px) and (max-width: 990px) {
   .footer-col {
       flex: 0 0 auto;
       width: 15%;
