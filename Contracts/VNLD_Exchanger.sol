@@ -2,7 +2,7 @@ pragma solidity ^0.8.4;
 
 
 
-contract VNLD_Exchange {
+contract VNLD_Exchanger {
     address payable CLS;
     address payable wETC;
     uint256 public CLS_Sale_Allocation;
