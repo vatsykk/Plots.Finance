@@ -1,0 +1,103 @@
+
+/*Button up*/
+
+#button-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 5px;
+    transform: rotate(359deg);
+    transform-origin: left top;
+    z-index: 999;
+    background-color: #201818;
+
+}
+
+#button-up svg{
+    color: #838383;
+}
+
+
+/*Blur Bubbles*/
+
+.c1{
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    left: 146px;
+    top: 275px;
+    z-index: -1;
+
+    background: linear-gradient(138.05deg, #FF56F9 -75.47%, #009BFF 130.05%);
+    filter: blur(112.5px);
+}
+
+.c2{
+    position: absolute;
+    width: 236px;
+    height: 236px;
+    left: 563px;
+    top: 463px;
+    z-index: -1;
+    
+    background: linear-gradient(137.53deg, #40FFFF -2.05%, #FF56F9 98.78%);
+    filter: blur(75px);
+}
+
+.c3{
+    position: absolute;
+    width: 351px;
+    height: 351px;
+    left: 662px;
+    top: 230px;
+    z-index: -1;
+    
+    background: linear-gradient(137.63deg, #009BFF -30.67%, #FF56F9 143.06%);
+    filter: blur(100px);
+}
+
+
+.c4{
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    left: 330px;
+    top: 1479px;
+    z-index: -1;
+    
+    background: linear-gradient(138.05deg, #FF56F9 -75.47%, #009BFF 130.05%);
+    filter: blur(75px);
+}
+.c5{
+    position: absolute;
+    width: 236px;
+    height: 236px;
+    left: 751px;
+    top: 1671px;
+    z-index: -1;
+
+    background: linear-gradient(137.53deg, #40FFFF -2.05%, #FF56F9 98.78%);
+    filter: blur(75px);
+}
+.c6{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 423px;
+    height: 423px;
+    left: 850px;
+    top: 1366px;
+    z-index: -1;
+
+    background: linear-gradient(137.63deg, #009BFF -30.67%, #FF56F9 143.06%);
+    border: 1px solid #000000;
+    filter: blur(75px);
+}
