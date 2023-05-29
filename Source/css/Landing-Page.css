@@ -127,15 +127,14 @@ list-style: none;
     background-image: linear-gradient(130deg, rgb(0, 0, 0) 78%, rgb(164, 0, 154) 100%, rgb(0, 0, 0) 100%)  
  }
   */
-.title-0 {
-  padding-top: 5%;
-  padding-bottom: 2%;
-  color: var(--bs-body-color);
-  font-family: 'Uniwars';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 96px;
-  line-height: 115px;
+  .title-0 {
+    padding-bottom: 6%;
+    color: var(--bs-body-color);
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 115px;
   }
   
   .title-1 {
@@ -146,12 +145,25 @@ list-style: none;
     line-height: 115px;
     text-align: right;
     background: linear-gradient(93.21deg, #FD4FF7 40.31%, rgb(64, 255, 255) 100%);
+      background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    filter: brightness(1.5) blur(0.7px);
   }
   
+  .title-1-2 {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 6%;
+  }
+
   .title-2 {
     font-family: 'Uniwars';
     font-style: normal;
@@ -160,11 +172,26 @@ list-style: none;
     line-height: 115px;
     letter-spacing: 0.15em;
     text-align: left;
-    background: linear-gradient(93.21deg, #FD4FF7 10%, rgb(64, 255, 255) 40%);
+    background: linear-gradient(93.21deg, #FF95FC 20%, rgb(190, 255, 255) 40%);
+      background-clip: border-box;
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    filter: brightness(1.5);
+    margin-top: 10.5%;
+  }
+
+  .title-2-2 {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10%;
   }
   
   .title-landing-0 {
@@ -201,7 +228,8 @@ list-style: none;
     font-size: 36px;
     line-height: 45px;
     color: rgba(255, 255, 255, 0.75);
-    }
+    padding-bottom: 3%;
+  }
 
   /*
  * Content BOX Text
@@ -215,6 +243,12 @@ list-style: none;
   line-height: 40px;
   text-align: center;
   color: var(--bs-body-color);
+}
+
+.special-circle{
+border: 3px dashed rgba(255, 255, 255, 0.5);
+filter: blur(2.5px);
+border-radius: 50% !important;
 }
   
 .container-fluid {
@@ -265,7 +299,7 @@ list-style: none;
   }
 
   .landing-content {
-    width: 100%;
+    width: 60%;
     margin-right: auto;
     margin-left: auto;
     color: var(--bs-body-color);
@@ -288,9 +322,9 @@ list-style: none;
    */
   
    .spacer-title {
-    margin-top: 5%;
-    margin-bottom: 5%;
-   }
+    margin-top: 3.5%;
+    margin-bottom: 10%;
+  }
   
    .spacer-0 {
     margin-top: 2%;
