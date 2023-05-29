@@ -249,6 +249,8 @@ list-style: none;
 border: 3px dashed rgba(255, 255, 255, 0.5);
 filter: blur(2.5px);
 border-radius: 50% !important;
+width: 1265px;
+height: 1265px;
 }
   
 .container-fluid {
