@@ -3,18 +3,18 @@ pragma solidity ^0.8.4;
 
 
 contract VNLD_Exchanger {
-    address payable CLS;
+    address payable VLND;
     address payable wETC;
-    uint256 public CLS_Sale_Allocation;
+    uint256 public VLND_Sale_Allocation;
     uint256 public Total_wETC_Deposited; 
     uint256 public Allocation_Exchange_Rate = 0;
-    uint256 public Total_CLS_Distributed;
+    uint256 public Total_VLND_Distributed;
     address public CrowdSale_Operator;
     uint256 public Crowdsale_End_Unix;
     
     //DEV WALLETS
     
-    address LiquidityAddress = 0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341; //This address will be used to add the 80% of crowdsale funds as liquidity for wETC-CLS
+    address LiquidityAddress = 0xC61A70Fb5F8A967C71c1E9A42374FbE460D0a341; //This address will be used to add the 80% of crowdsale funds as liquidity for wETC-VLND
     
     address Dev_1 = 0x19b2a627Dd49587E021290b3eEF38ea8DE541eE5; //Personal Wallet of one of the developers () 62%
     address Dev_2 = 0xb24f9473Fee391c8FE0ED3fF423E135AaEC8023E; //Personal Wallet of one of the developers () 4.5%
@@ -33,15 +33,15 @@ contract VNLD_Exchanger {
     Mode Crowdsale_Mode;
     //Crowdsale Modes
     //1: Before sale preperation Mode
-    //2: Sale is Open to buy CLS
-    //3: Sale is over, CLS buyer withdrawal period
+    //2: Sale is Open to buy VLND
+    //3: Sale is over, VLND buyer withdrawal period
     //99 Emergency Shutdown mode, in case any issues or bugs need to be dealt with, Safe for buyers, and ETC withdrawls will be available
     
     
     //Crowdsale Contract constructor
-    constructor(uint256 Sale_Allocation, address payable _CLS, address payable _wETC){
-        CLS_Sale_Allocation = Sale_Allocation;
-        CLS = _CLS;
+    constructor(uint256 Sale_Allocation, address payable _VLND, address payable _wETC){
+        VLND_Sale_Allocation = Sale_Allocation;
+        VLND = _VLND;
         wETC = _wETC;
         Crowdsale_Mode = Mode("Before sale preperation", 1);
         CrowdSale_Operator = msg.sender;
@@ -52,7 +52,7 @@ contract VNLD_Exchanger {
     event CrowdsaleEnded(address Operator, uint256 wETCraised, uint256 BlockTimestamp);
     event wETCdeposited(address Depositor, uint256 Amount);
     event wETCwithdrawn(address Withdrawee, uint256 Amount);
-    event CLSwithdrawn(address Withdrawee, uint256 Amount);
+    event VLNDwithdrawn(address Withdrawee, uint256 Amount);
     event VariableChange(string Change);
     
     
@@ -94,23 +94,23 @@ contract VNLD_Exchanger {
         return(success);
     }
     
-    function WithdrawCLS() public returns(uint256 _CLSwithdrawn){
+    function WithdrawVLND() public returns(uint256 _VLNDwithdrawn){
         require(Crowdsale_Mode.Sale_Mode == 3);
         require(block.timestamp > Crowdsale_End_Unix);
         require(wETC_Deposited[msg.sender] >= 1000000000000000);
         
         
-        uint256 CLStoMintandSend;
-        CLStoMintandSend = (((wETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
-        require((Total_CLS_Distributed + CLStoMintandSend) <= CLS_Sale_Allocation);
+        uint256 VLNDtoMintandSend;
+        VLNDtoMintandSend = (((wETC_Deposited[msg.sender] / 100000000) * Allocation_Exchange_Rate) / 100000000);
+        require((Total_VLND_Distributed + VLNDtoMintandSend) <= VLND_Sale_Allocation);
         
         wETC_Deposited[msg.sender] = 0;
         
-        ERC20(CLS).Mint(msg.sender, CLStoMintandSend);
+        ERC20(VLND).Mint(msg.sender, VLNDtoMintandSend);
         
-        Total_CLS_Distributed = (Total_CLS_Distributed + CLStoMintandSend);
-        emit CLSwithdrawn(msg.sender, CLStoMintandSend);
-        return(CLStoMintandSend);
+        Total_VLND_Distributed = (Total_VLND_Distributed + VLNDtoMintandSend);
+        emit VLNDwithdrawn(msg.sender, VLNDtoMintandSend);
+        return(VLNDtoMintandSend);
     }
     
     
@@ -118,30 +118,30 @@ contract VNLD_Exchanger {
     //Operator Functions
     function StartCrowdsale() public returns(bool success){
         require(msg.sender == CrowdSale_Operator);
-        require(ERC20(CLS).CheckMinter(address(this)) == 1);
+        require(ERC20(VLND).CheckMinter(address(this)) == 1);
         require(Crowdsale_Mode.Sale_Mode == 1);
         require(Setup == 1);
         
         Crowdsale_End_Unix = (block.timestamp + 86400);
-        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLS");
+        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy VLND");
         Crowdsale_Mode.Sale_Mode = 2;
         
-        emit CrowdsaleStarted(msg.sender, CLS_Sale_Allocation, Crowdsale_End_Unix);
+        emit CrowdsaleStarted(msg.sender, VLND_Sale_Allocation, Crowdsale_End_Unix);
         return success;
         
     }
     
     function EndCrowdsale() public returns(bool success){
         require(msg.sender == CrowdSale_Operator);
-        require(ERC20(CLS).CheckMinter(address(this)) == 1);
+        require(ERC20(VLND).CheckMinter(address(this)) == 1);
         require(Crowdsale_Mode.Sale_Mode == 2);
         require(block.timestamp > Crowdsale_End_Unix);
         
-        Crowdsale_Mode.Sale_Mode_Text = ("Sale is over, Time to withdraw CLS!");
+        Crowdsale_Mode.Sale_Mode_Text = ("Sale is over, Time to withdraw VLND!");
         Crowdsale_Mode.Sale_Mode = 3;
         
         
-        Allocation_Exchange_Rate = (((CLS_Sale_Allocation * 100000000) / (Total_wETC_Deposited / 100000000))); 
+        Allocation_Exchange_Rate = (((VLND_Sale_Allocation * 100000000) / (Total_wETC_Deposited / 100000000))); 
         
         emit CrowdsaleEnded(msg.sender, Total_wETC_Deposited, block.timestamp);
         return(success);
@@ -200,7 +200,7 @@ contract VNLD_Exchanger {
         
         if (Multisig == true){
             
-        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy CLS");
+        Crowdsale_Mode.Sale_Mode_Text = ("Sale is Open to buy VLND");
         Crowdsale_Mode.Sale_Mode = 2;
         
         return(success);
@@ -210,12 +210,12 @@ contract VNLD_Exchanger {
     //Add Resume Crowdsale
     
       //Redundancy
-    function ChangeCLSaddy(address payable NewAddy)public returns(bool success, address CLSaddy){
+    function ChangeVLNDaddy(address payable NewAddy)public returns(bool success, address VLNDaddy){
         require(msg.sender == CrowdSale_Operator);
         require(Crowdsale_Mode.Sale_Mode != 3);
-        CLS = NewAddy;
-        emit VariableChange("Changed CLS Address");
-        return(true, CLS);
+        VLND = NewAddy;
+        emit VariableChange("Changed VLND Address");
+        return(true, VLND);
     }
       //Redundancy
     function ChangeWETCaddy(address payable NewAddy)public returns(bool success, address wETCaddy){
@@ -223,7 +223,7 @@ contract VNLD_Exchanger {
         require(Crowdsale_Mode.Sale_Mode == 1);
         wETC = NewAddy;
         emit VariableChange("Changed wETC Address");
-        return(true, CLS);
+        return(true, VLND);
     }
     
     //Call Functions
