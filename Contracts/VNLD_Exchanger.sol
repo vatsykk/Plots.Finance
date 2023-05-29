@@ -2,7 +2,7 @@ pragma solidity ^0.8.4;
 
 
 
-contract CLS_Crowdsale {
+contract VNLD_Exchange {
     address payable CLS;
     address payable wETC;
     uint256 public CLS_Sale_Allocation;
