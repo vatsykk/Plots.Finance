@@ -1,8 +1,3 @@
-@media (min-width: 1400px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1740px;
-     }
-}
 
 @media only screen and (max-width: 1687px)  {
   .navbar-brand-footer-link {
