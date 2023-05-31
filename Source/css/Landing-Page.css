@@ -250,6 +250,10 @@ list-style: none;
   border-radius: 50% !important;
   width: 1265px;
   height: 1265px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 6%;
+  padding-right: 6%;
 }
   
 .container-fluid {
