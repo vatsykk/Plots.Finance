@@ -175,12 +175,13 @@ list-style: none;
     background: linear-gradient(93.21deg, #FF95FC 20%, rgb(190, 255, 255) 40%);
       background-clip: border-box;
     background-clip: border-box;
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     filter: brightness(1.5);
-    margin-top: 10.5%;
+    margin-top: 14%;
   }
 
   .title-2-2 {
@@ -202,7 +203,7 @@ list-style: none;
     line-height: 77px;
     text-align: center;
     position: initial;
-    margin-top: -10%;
+    margin-top: -11%;
     margin-bottom: 13%;
   }
   
@@ -261,7 +262,7 @@ list-style: none;
 }
 
 .special-circle {
-  border: 3px dashed rgba(255, 255, 255, 0.5);
+  outline: 3px dashed rgba(255, 255, 255, 0.5);
   border-radius: 50% !important;
   width: 1265px;
   height: 1265px;
@@ -270,7 +271,20 @@ list-style: none;
   padding-left: 10%;
   padding-right: 10%;
 }
-  
+  /*
+ * Disable for now future update fix this
+
+.special-circle-border {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: 8px solid white;
+  border-top: 0;
+  border-top: 0;
+border-left: 0;
+border-right: 0;
+  box-sizing: border-box;
+}
+ */
 .container-fluid {
   --bs-gutter-x: 1rem;
   --bs-gutter-y: 0;
@@ -318,15 +332,27 @@ list-style: none;
     font-family: Founders Grotesk Regular;
   }
 
-  .landing-content {
+  .landing-content-0 {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
     color: var(--bs-body-color);
-    margin-top: 5%;
-    margin-bottom: 6%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    margin-top: 12%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: Video;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .landing-content-1 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--bs-body-color);
+    padding-top: 6%;
     padding-left: 4%;
     padding-right: 4%;
     font-family: Video;
@@ -531,6 +557,12 @@ list-style: none;
   .landing-button {
     padding-top: 3%;
     padding-bottom: 4%;
+  }
+
+  .landing-button-0 {
+    position: initial;
+    margin-top: 20%;
+    margin-bottom: -19%;
   }
   
   .landing-image {
