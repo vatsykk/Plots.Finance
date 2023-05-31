@@ -201,6 +201,9 @@ list-style: none;
     font-size: 64px;
     line-height: 77px;
     text-align: center;
+    position: initial;
+    margin-top: -10%;
+    margin-bottom: 13%;
   }
   
   .title-landing-1 {
@@ -235,7 +238,7 @@ list-style: none;
  * Content BOX Text
  */
 
-.content-landing {
+.content-landing-0 {
   font-family: Video;
   font-style: normal;
   font-weight: 400;
@@ -243,6 +246,18 @@ list-style: none;
   line-height: 40px;
   text-align: center;
   color: var(--bs-body-color);
+  padding-bottom: 6%;
+}
+
+.content-landing-1 {
+  font-family: Video;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--bs-body-color);
+  padding-bottom: 6%;
 }
 
 .special-circle {
@@ -252,8 +267,8 @@ list-style: none;
   height: 1265px;
   display: table-cell;
   vertical-align: middle;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
   
 .container-fluid {
