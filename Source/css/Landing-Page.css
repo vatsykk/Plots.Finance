@@ -271,6 +271,10 @@ list-style: none;
   vertical-align: middle;
   padding-left: 10%;
   padding-right: 10%;
+  background-image: url(/Source/img/circle.png);
+background-size: 101%;
+background-repeat: no-repeat;
+background-position: center;
 }
   /*
  * Disable for now future update fix this
@@ -389,11 +393,13 @@ border-right: 0;
     float: right;
   }
   .static-img-03 {
-    position: static;
-    width: 14%;
+    width: 36%;
     height: 100%;
-    margin-top: 2%;
-    float: center;
+    margin-top: -99%;
+    display: block;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
    /*
