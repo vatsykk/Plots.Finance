@@ -176,12 +176,13 @@ list-style: none;
       background-clip: border-box;
     background-clip: border-box;
     background-clip: border-box;
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     filter: brightness(1.5);
-    margin-top: 14%;
+    margin-top: 24%;
   }
 
   .title-2-2 {
@@ -361,6 +362,31 @@ border-right: 0;
     font-size: 36px;
     line-height: 45px;
     text-align: center;
+  }
+
+    /*
+   * Static img
+   */
+   .static-img-00 {
+    position: static;
+    width: 36%;
+    height: 100%;
+    padding-top: 2%;
+  }
+  .static-img-01 {
+    position: static;
+    width: 14%;
+    height: 100%;
+    margin-top: -18%;
+    float: right;
+  }
+
+  .static-img-02 {
+    position: static;
+    width: 14%;
+    height: 100%;
+    margin-top: 2%;
+    float: right;
   }
 
    /*
