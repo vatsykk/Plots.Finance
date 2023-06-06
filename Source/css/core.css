@@ -22,6 +22,11 @@ body {
   background-image: var(--bs-body-image);
 }
 
+.accordion-button::after {
+  --bs-accordion-btn-icon: url("/Source/img/+.svg") !important;
+  --bs-accordion-btn-active-icon: url("/Source/img/-.svg") !important;
+}
+
 /*
  * Header
  */

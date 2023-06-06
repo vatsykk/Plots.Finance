@@ -10,7 +10,6 @@
     }
     .btn-plots {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
-        background-color: rgba(0, 0, 0, 0);
       border-radius: 35.5px;
       padding-top: 0.7%;
       padding-bottom: 0.7%;
@@ -329,7 +328,7 @@ margin-right: 14%;
       width: 100%;
       padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
       font-size: 2.5rem;
-      color: var(--bs-accordion-btn-color);
+      color: var(--bs-accordion-btn-color) !important;
       text-align: left;
       background-color: var(--bs-accordion-btn-bg);
       border: 0;
@@ -840,7 +839,7 @@ margin-right: 14%;
       width: 100%;
       padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
       font-size: 2.5rem;
-      color: var(--bs-accordion-btn-color);
+      color: var(--bs-accordion-btn-color) !important;
       text-align: left;
       background-color: var(--bs-accordion-btn-bg);
       border: 0;
@@ -1368,7 +1367,7 @@ transition: color .15s ease-in-out,background-color .15s
       padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
       font-size: 36px;
       line-height: 45px;
-      color: var(--bs-accordion-btn-color);
+      color: var(--bs-accordion-btn-color) !important;
       text-align: left;
       background-color: var(--bs-accordion-btn-bg);
       border: 0;
@@ -1659,7 +1658,7 @@ transition: color .15s ease-in-out,background-color .15s
       line-height: 29px;
       text-align: right;
       color: rgba(255, 255, 255, 0.5);
-      margin-right: 29%;
+      margin-right: 33%;
     }
     .landing-content-0 {
       width: 70%;
@@ -1884,7 +1883,7 @@ transition: color .15s ease-in-out,background-color .15s
       padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
       font-size: 28px;
       line-height: 45px;
-      color: var(--bs-accordion-btn-color);
+      color: var(--bs-accordion-btn-color) !important;
       text-align: left;
       background-color: var(--bs-accordion-btn-bg);
       border: 0;
@@ -2175,7 +2174,7 @@ transition: color .15s ease-in-out,background-color .15s
       line-height: 29px;
       text-align: right;
       color: rgba(255, 255, 255, 0.5);
-      margin-right: 29%;
+      margin-right: 33%;
     }
     .landing-content-0 {
       width: 70%;
@@ -2321,11 +2320,11 @@ transition: color .15s ease-in-out,background-color .15s
       --bs-accordion-btn-padding-y: 3rem;
       --bs-accordion-btn-color: var(--bs-body-color);
       --bs-accordion-btn-bg: var(--bs-accordion-bg);
-      --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      --bs-accordion-btn-icon: url("/Source/img/+.svg");
+      --bs-accordion-btn-active-icon: url("/Source/img/-.svg");
       --bs-accordion-btn-icon-width: 1.25rem;
       --bs-accordion-btn-icon-transform: rotate(-180deg);
       --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-      --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052c65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
       --bs-accordion-btn-focus-border-color: #86b7fe;
       --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
       --bs-accordion-body-padding-x: 1.25rem;
@@ -2400,7 +2399,7 @@ transition: color .15s ease-in-out,background-color .15s
       padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
       font-size: 28px;
       line-height: 45px;
-      color: var(--bs-accordion-btn-color);
+      color: var(--bs-accordion-btn-color) !important;
       text-align: left;
       background-color: var(--bs-accordion-btn-bg);
       border: 0;
