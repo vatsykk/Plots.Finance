@@ -582,7 +582,7 @@ margin-right: 14%;
       font-size: 54px;
       line-height: 64px;
       color: rgba(255, 255, 255, 0.75);
-      padding-bottom: 2%;
+      padding-bottom: 7%;
     }
     .title-1 {
       font-family: 'Uniwars';
@@ -3032,6 +3032,21 @@ transition: color .15s ease-in-out,background-color .15s
 * Cellphones and Tablets
 */
 @media screen and (max-width: 376px)  {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    text-align: center !important;
+  }
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 1.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    list-style: none;
+  }
   .landing-image-icon {
     max-width: 20%;
     max-height: 100%;
@@ -3079,6 +3094,7 @@ transition: color .15s ease-in-out,background-color .15s
   .btn-menu {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
       background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 35.5px;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -3092,6 +3108,8 @@ transition: color .15s ease-in-out,background-color .15s
     color: #fff;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    margin-top: 4%;
+    margin-bottom: 12%;
   }
 
   .spacer-img {
@@ -3377,6 +3395,21 @@ transition: color .15s ease-in-out,background-color .15s
 
 }
 @media screen and (max-width: 415px)  {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    text-align: center !important;
+  }
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 1.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    list-style: none;
+  }
   .landing-image-icon {
     max-width: 20%;
     max-height: 100%;
@@ -3437,6 +3470,8 @@ transition: color .15s ease-in-out,background-color .15s
     color: #fff;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    margin-top: 4%;
+    margin-bottom: 10%;
   }
 
   .spacer-img {
@@ -3781,7 +3816,21 @@ transition: color .15s ease-in-out,background-color .15s
 }
 
 @media screen and (max-width: 428px)  {
-
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    text-align: center !important;
+  }
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 1.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    list-style: none;
+  }
   .landing-image-icon {
     max-width: 20%;
     max-height: 100%;
@@ -3842,6 +3891,8 @@ transition: color .15s ease-in-out,background-color .15s
     color: #fff;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    margin-top: 4%;
+    margin-bottom: 10%;
   }
 
   .spacer-img {
@@ -4125,3 +4176,4 @@ transition: color .15s ease-in-out,background-color .15s
   padding-top: 0rem !important;
 }
 }
+
