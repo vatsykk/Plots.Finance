@@ -132,7 +132,7 @@ background: transparent !important;
     font-family: 'Video';
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     margin-top: 0.5%;
-    background-image: unset !important;
+    background-image: unset;
   }
   .footer-dash{
     font: 100;
