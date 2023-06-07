@@ -54,7 +54,9 @@
     --bs-form-valid-border-color: #75b798;
     --bs-form-invalid-color: #ea868f;
     --bs-form-invalid-border-color: #ea868f;
-
+    
+    --bs-btn-color: black;
+    --bs-btn-hover-color: white;
     --bs-button-menu: #000;
     --bs-nav-link-menu: #fff;
     --bs-text-content-body: #999999;

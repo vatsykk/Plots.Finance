@@ -1,0 +1,58 @@
+/*
+* content
+*/
+
+.title-dashboard {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-bottom: -20%;
+  }
+
+.btn-dashboard {
+    background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+    border-radius: 35.5px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: var(--bs-btn-color);
+  }
+  .btn-dashboard:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
+  }
+
+  .py-5 {
+    padding-top: 12rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  .landing-image-icon-dash {
+    max-width: 32%;
+    max-height: 100%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    display: inline;
+    width: 39px !important;
+    height: 48px !important;
+  }
+  body {
+    font-family: 'Video';
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    margin-top: 0.5%;
+    background-image: unset !important;
+  }
+  .footer-dash{
+    font: 100;
+  }
