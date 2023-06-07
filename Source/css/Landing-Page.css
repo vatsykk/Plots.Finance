@@ -1064,6 +1064,52 @@ transition: color .15s ease-in-out,background-color .15s
       text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
       margin-top: 2.5%;
     }
+        /*
+    * Bubbles Head
+    */
+    .bubbles-0 {
+      position: absolute;
+      width: auto;
+      height: 669px;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      padding-left: 0%;
+      padding-right: 0%;
+      margin-top: -5%;
+      margin-bottom: 5%;
+      margin-left: -6%;
+      margin-right: 5%;
+    }
+    .bubbles-1 {
+      position: absolute;
+      width: auto;
+      height: 535px;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      padding-left: 3%;
+      padding-right: 0%;
+      margin-top: -6%;
+      margin-bottom: 5%;
+      margin-left: 25%;
+      margin-right: 5%;
+    }
+.bubbles-3 {
+  position: absolute;
+  width: auto;
+  height: 434px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-top: 6%;
+  margin-bottom: 0%;
+  margin-left: 19%;
+  margin-right: 5%;
+}
+
+        /*
+    * menu
+    */
     .btn-menu {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
       border-radius: 35.5px;
@@ -1080,6 +1126,9 @@ transition: color .15s ease-in-out,background-color .15s
       margin-left: 1.5rem;
       margin-right: 1.5rem;
     }
+        /*
+    * General titles
+    */
     .title-0 {
       padding-bottom: 6%;
       color: var(--bs-body-color);
@@ -1088,6 +1137,7 @@ transition: color .15s ease-in-out,background-color .15s
       font-weight: 600;
       font-size: 96px;
       line-height: 115px;
+      position: relative;
     }
     .title-content {
       font-family: 'Video';
@@ -1097,6 +1147,7 @@ transition: color .15s ease-in-out,background-color .15s
       line-height: 45px;
       color: rgba(255, 255, 255, 0.75);
       padding-bottom: 6%;
+      position: relative;
     }
     .title-1 {
       font-family: 'Uniwars';
@@ -1227,11 +1278,12 @@ transition: color .15s ease-in-out,background-color .15s
     }
     .btn-plots {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+        background-color: rgba(0, 0, 0, 0);
       border-radius: 35.5px;
       padding-top: 1%;
       padding-bottom: 1%;
-      padding-left: 2%;
-      padding-right: 2%;
+      padding-left: 3%;
+      padding-right: 3%;
       font-family: 'Uniwars';
       font-style: normal;
       font-weight: 600;
@@ -1325,6 +1377,7 @@ transition: color .15s ease-in-out,background-color .15s
       --bs-accordion-active-bg: transparent !important;
       font-size: 24px;
       line-height: 30px;
+      color: var(--bs-text-content-body) !important;
     }
     .accordion-button {
       position: relative;
@@ -1572,7 +1625,7 @@ transition: color .15s ease-in-out,background-color .15s
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2rem;
     padding-left: 2rem;
-    padding-top: 1.2rem;
+    padding-top: 0.0rem;
   }
   }
 
@@ -3758,6 +3811,9 @@ transition: color .15s ease-in-out,background-color .15s
 }
 @media screen and (max-width: 390px)  {
 
+  .mv-hide{
+    visibility: hidden;
+  }
   .title-1 {
     font-family: 'Uniwars';
     font-style: normal;
