@@ -122,23 +122,24 @@
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
   }
-.btn-dash-wallet {
+  .btn-dash-wallet {
     color: var(--bs-nav-link-menu);
     font-family: 'Video';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-align: left;
-padding-top: 0.5%;
-padding-bottom: 0.5%;
-padding-left: 1%;
-padding-right: 2%;
-display: block;
-word-wrap: break-word;
-width: 100%;
-background: transparent !important;
-}
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: block;
+    word-wrap: break-word;
+    width: 100%;
+    background: transparent !important;
+    border-radius: 0.4rem;
+  }
 .img-svg-dash{
     float: right;
 }
