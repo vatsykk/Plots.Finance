@@ -119,7 +119,7 @@
   --bs-form-invalid-border-color: #ea868f;
 
   --bs-button-menu: #000;
-  --bs-text-content-body: #999999;
+  --bs-text-content-body: rgba(255, 255, 255, 0.749);
   --bs-nav-link-menu: #fff;
   --bs-svg-color: invert(0);
 }
