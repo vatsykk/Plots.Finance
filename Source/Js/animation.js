@@ -1,17 +1,6 @@
-document.getElementById('button-up').addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-});
-
-
-
-
-
-const burbuja1 = document.getElementById("blur-bubble-1");
-const burbuja2 = document.getElementById("blur-bubble-2");
-const burbuja3 = document.getElementById("blur-bubble-3");
+const burbuja1 = document.getElementById("c0");
+const burbuja2 = document.getElementById("c1");
+const burbuja3 = document.getElementById("c3");
 anime({
   targets: burbuja1,
   translateY: 75,
