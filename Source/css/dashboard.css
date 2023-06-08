@@ -30,19 +30,28 @@
    color: #000;
    text-shadow: #fff 3px 0 10px;
  }
+
+.container-fluid {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) *2.0);
+  padding-left: calc(var(--bs-gutter-x) * 2.0);
+  margin-right: auto;
+  margin-left: auto;
+height: 100%;
+}
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
  .accordion-button::after {
    --bs-accordion-btn-icon: url("/Source/img/+.svg") !important;
    --bs-accordion-btn-active-icon: url("/Source/img/-.svg") !important;
  }
- .container-fluid {
-    --bs-gutter-x: 1rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) *10.0);
-    padding-left: calc(var(--bs-gutter-x) * 10.0);
-    margin-right: auto;
-    margin-left: auto;
-  }
   /**
 * MENU
 */*
@@ -112,11 +121,11 @@
     margin-bottom: 10%;
   }
 
-.btn-dashboard {
+  .btn-dashboard {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
     border-radius: 35.5px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     padding-left: 3%;
     padding-right: 3%;
     font-family: 'Uniwars';
@@ -220,42 +229,44 @@
 margin-left: 1%;
 margin-right: 1%;
 }
-  .btn-dash-menu {
-    border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px #000 inset;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    padding-left: 1%;
-    padding-right: 2%;
-    font-family: 'Uniwars';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: var(--bs-nav-link-menu);
-  }
+.btn-dash-menu {
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #000 inset;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--bs-nav-link-menu);
+}
   .btn-dash-menu:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
   }
 
   .py-5 {
-    padding-top: 12rem !important;
-    padding-bottom: 10rem !important;
+    padding-top: 10rem !important;
+    padding-bottom: 7rem !important;
   }
 
   .landing-image-icon-dash {
-    max-width: 32%;
+    max-width: 100%;
     max-height: 100%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
     display: inline;
-    width: 39px !important;
-    height: 48px !important;
+    width: 50px !important;
+    height: 54px !important;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .footer-dash{
