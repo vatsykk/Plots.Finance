@@ -3,10 +3,8 @@
  */
  @import url(/Source/bootstrap/css/bootstrap.min.css);
  @import url(/Source/css/Dark-Plots.css);
- @import url(/Source/css/mobiles.css);
  @import url(/Source/css/dashboard.css);
  @import url(/Source/bootstrap-icons/font/bootstrap-icons.min.css);
- @import url(/Source/css/animation.css);
  
  /* Custom default button *
  
@@ -135,11 +133,11 @@ text-align: right;
   .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    padding: 1.8rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--bs-body-color);
+    color: #000;
     background-color: #fff;
     background-clip: padding-box;
     border: 0px;
@@ -147,14 +145,16 @@ text-align: right;
     -moz-appearance: none;
     appearance: none;
     border-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
   .form-control:focus {
     color: #000000;
     background-color: #ffffff;
-    border-color: #86b7fe;
+    border-color: #000;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+    box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.25);
   }
   .input-group-text {
     display: flex;
@@ -163,14 +163,21 @@ text-align: right;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--bs-body-color);
+    color: #000;
     text-align: center;
     white-space: nowrap;
     background-color: #fff;
     border: 0px;
     border-radius: 2rem;
   }
-  
+  .input-group-text:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+  }
+
   .btn-dashboard {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
     border-radius: 35.5px;
@@ -189,6 +196,29 @@ text-align: right;
   .btn-dashboard:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
+    text-shadow: #fff 3px 0 10px;
+  }
+  .btn-swap {
+    background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+    border-radius: 35.5px;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    text-align: center;
+    color: var(--bs-btn-color);
+    float: right;
+  }
+  .btn-swap:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
+    text-shadow: #fff 3px 0 10px;
   }
   .btn-dash-wallet {
     font: 'Video';
@@ -300,6 +330,7 @@ margin-right: 1%;
   .btn-dash-menu:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
+    text-shadow: #fff 3px 0 10px;
   }
 
   .py-5 {
@@ -328,22 +359,11 @@ body {
 }
 
 .form-signin {
-  max-width: 375px;
+  max-width: 720px;
   padding: 1rem;
+  min-width: 320px;
 }
 
 .form-signin .form-floating:focus-within {
   z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
