@@ -220,6 +220,21 @@ text-align: right;
     color: var(--bs-btn-hover-color);
     text-shadow: #fff 3px 0 10px;
   }
+  .btn-swap-max {
+    background: transparent !important;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    border: 0px;
+  }
+  .btn-swap-max:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
+    text-shadow: #fff 3px 0 10px;
+  }
   .btn-dash-wallet {
     font: 'Video';
     font-style: normal;
