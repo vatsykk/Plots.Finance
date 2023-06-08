@@ -108,7 +108,7 @@ height: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    padding-left: 2.5%;
+    padding-left: 0%;
     color: var(--bs-navbar-brand-color);
     text-decoration: none;
     white-space: nowrap;
