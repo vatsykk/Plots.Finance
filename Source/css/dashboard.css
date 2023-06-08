@@ -201,10 +201,10 @@ text-align: right;
   .btn-swap {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
     border-radius: 35.5px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 8%;
+    padding-right: 8%;
     font-family: 'Uniwars';
     font-style: normal;
     font-weight: 400;
