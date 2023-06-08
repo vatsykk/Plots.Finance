@@ -168,6 +168,30 @@
     --bs-modal-footer-border-color: var(--bs-border-color);
     --bs-modal-footer-border-width: var(--bs-border-width);
   }
+  .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-height: unset !important;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+  }
+  .container-fluid-iframe {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) *10.0);
+    padding-left: calc(var(--bs-gutter-x) * 10.0);
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+  }
 .modal-body {
     position: relative;
     flex: 1 1 auto;
