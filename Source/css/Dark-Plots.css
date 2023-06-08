@@ -120,9 +120,11 @@
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f;
 
+  --bs-btn-color: black;
+  --bs-btn-hover-color: white;
   --bs-button-menu: #000;
-  --bs-text-content-body: rgba(255, 255, 255, 0.749);
   --bs-nav-link-menu: #fff;
+  --bs-text-content-body: #999999;
   --bs-svg-color: invert(0);
 }
   /* Disable logo Colors invert

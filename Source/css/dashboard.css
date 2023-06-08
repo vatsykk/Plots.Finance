@@ -60,7 +60,7 @@
     font-family: 'Uniwars';
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 58px;
     padding-left: 2.5%;
     color: var(--bs-navbar-brand-color);
@@ -121,10 +121,10 @@
   .btn-dashboard:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
+    color
   }
   .btn-dash-wallet {
-    color: var(--bs-nav-link-menu);
-    font-family: 'Video';
+    font: 'Video';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -139,10 +139,13 @@
     width: 100%;
     background: transparent !important;
     border-radius: 0.4rem;
+    color: var(--bs-nav-link-menu);
   }
-.img-svg-dash{
-    float: right;
-}
+.img-dash{
+        float: right;
+        width: 24px;
+        height: 24px;
+      }
 .modal {
     --bs-modal-margin: 1.75rem;
     --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
