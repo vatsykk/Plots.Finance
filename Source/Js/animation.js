@@ -1,31 +1,31 @@
-const burbuja1 = document.getElementById("c0");
-const burbuja2 = document.getElementById("c1");
+const burbuja0 = document.getElementById("c0");
+const burbuja1 = document.getElementById("c1");
 const burbuja3 = document.getElementById("c3");
 anime({
-  targets: burbuja1,
-  translateY: 75,
-  duration: 2500,
+  targets: burbuja0,
+  translateY: '13%',
+  duration: 2900,
   loop: true,
   direction: 'alternate',
-  easing: 'easeOutCubic',
+  easing: 'linear',
 });
 
 anime({
-  targets: burbuja2,
-  translateY: 75,
-  duration: 2500,
+  targets: burbuja1,
+  translateY: '35%',
+  duration: 3200,
   loop: true,
   direction: 'alternate',
-  easing: 'easeOutCubic',
-  delay: 250,
+  easing: 'linear',
+  delay: 550,
 });
 
 anime({
   targets: burbuja3,
-  translateY: 75,
-  duration: 2500,
+  translateY: '15%',
+  duration: 3500,
   loop: true,
   direction: 'alternate',
-  easing: 'easeOutCubic',
-  delay: 500,
+  easing: 'linear',
+  delay: 200,
 });
