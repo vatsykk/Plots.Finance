@@ -201,8 +201,8 @@ text-align: right;
   .btn-swap {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
     border-radius: 35.5px;
-    padding-top: 4.5%;
-    padding-bottom: 4.5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'Uniwars';
@@ -243,6 +243,19 @@ text-align: right;
         width: 24px;
         height: 24px;
       }
+.swap-spacer-0{
+    text-align: right;
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+  .swap-spacer-1 {
+    margin-right: 35%;
+    width: 63px;
+    height: auto;
+  }
+  .swap-spacer-2 {
+    margin-top: 4%;
+  }
 .modal {
     --bs-modal-margin: 1.75rem;
     --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
