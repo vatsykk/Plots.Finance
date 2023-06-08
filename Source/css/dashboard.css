@@ -21,6 +21,15 @@
    background-image: unset !important;
    margin-top: 0.5%;
  }
+ a {
+    color: var(--bs-body-color);
+    text-decoration: unset;
+  }
+  
+  a:hover {
+   color: #000;
+   text-shadow: #fff 3px 0 10px;
+ }
  .accordion-button::after {
    --bs-accordion-btn-icon: url("/Source/img/+.svg") !important;
    --bs-accordion-btn-active-icon: url("/Source/img/-.svg") !important;
@@ -121,7 +130,6 @@
   .btn-dashboard:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
-    color
   }
   .btn-dash-wallet {
     font: 'Video';

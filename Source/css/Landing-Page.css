@@ -34,9 +34,14 @@
  }
  
  a:hover {
-   color: rgb(0, 117, 163);
- }
+  color: #000;
+  text-shadow: #fff 3px 0 10px;
+}
  
+ .nav-link:focus, .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);;
+}
+
  svg {
    filter: var(--bs-svg-color);
  } 
@@ -66,13 +71,12 @@
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      text-color: #fff;
+      color: var(--bs-btn-color);
     }
   
     .btn-plots:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
       color: var(--bs-btn-hover-color);
-      background-color: var(--bs-btn-hover-bg);
-      border-color: var(--bs-btn-hover-border-color);
     }
     .btn-menu {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
@@ -92,9 +96,8 @@
       margin-right: 1.5rem;
     }
     .btn-menu:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
       color: var(--bs-btn-hover-color);
-      background-color: var(--bs-btn-hover-bg);
-      border-color: var(--bs-btn-hover-border-color);
     }
            /*
        * Special spacers
@@ -772,7 +775,11 @@ margin-right: 14%;
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      color: var(--bs-body-color);
+      color: var(--bs-btn-color);
+    }
+    .btn-plots:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+      color: var(--bs-btn-hover-color);
     }
     /*
     * FAQ
@@ -1343,7 +1350,11 @@ transition: color .15s ease-in-out,background-color .15s
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      color: var(--bs-body-color);
+      color: var(--bs-btn-color);
+    }    
+    .btn-plots:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+      color: var(--bs-btn-hover-color);
     }
     /*
     * FAQ
@@ -1564,7 +1575,7 @@ transition: color .15s ease-in-out,background-color .15s
     .px-2 {
       padding-right: 3rem !important;
       padding-left: .0rem !important;
-      padding-bottom: 3rem;
+      padding-bottom: 1rem;
       padding-top: 0rem !important;
     }
     .navbar-brand-footer {
@@ -1900,7 +1911,11 @@ transition: color .15s ease-in-out,background-color .15s
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      color: var(--bs-body-color);
+      color: var(--bs-btn-color);
+    }
+    .btn-plots:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+      color: var(--bs-btn-hover-color);
     }
     /*
     * FAQ
@@ -2457,7 +2472,11 @@ transition: color .15s ease-in-out,background-color .15s
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      color: var(--bs-body-color);
+      color: var(--bs-btn-color);
+    }
+    .btn-plots:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+      color: var(--bs-btn-hover-color);
     }
     /*
     * FAQ
@@ -3121,7 +3140,11 @@ transition: color .15s ease-in-out,background-color .15s
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: var(--bs-body-color);
+    color: var(--bs-btn-color);
+  }
+  .btn-plots:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
   }
   .navbar-brand {
     padding-top: var(--bs-navbar-brand-padding-y);
@@ -3667,7 +3690,11 @@ transition: color .15s ease-in-out,background-color .15s
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: var(--bs-body-color);
+    color: var(--bs-btn-color);
+  }
+  .btn-plots:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
   }
   .btn-menu {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
@@ -4049,7 +4076,11 @@ transition: color .15s ease-in-out,background-color .15s
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: var(--bs-body-color);
+    color: var(--bs-btn-color);
+  }
+  .btn-plots:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
   }
   .btn-menu {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
@@ -4570,7 +4601,11 @@ transition: color .15s ease-in-out,background-color .15s
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: var(--bs-body-color);
+    color: var(--bs-btn-color);
+  }
+  .btn-plots:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
   }
   .btn-menu {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
