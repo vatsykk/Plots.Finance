@@ -251,11 +251,13 @@ text-align: right;
     line-height: 38px;
     text-align: center;
     color: var(--bs-btn-color);
+    border: transparent;
   }
   .btn-dashboard:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
     text-shadow: #fff 3px 0 10px;
+    border: transparent;
   }
 
   .btn-dashboard-disabled {
@@ -272,6 +274,7 @@ text-align: right;
     line-height: 38px;
     text-align: center;
     color: var(--bs-btn-color);
+    border: transparent;
   }
   .btn-swap {
     background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
@@ -289,11 +292,13 @@ text-align: right;
     text-align: center;
     color: var(--bs-btn-color);
     float: right;
+    border: transparent;
   }
   .btn-swap:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
     text-shadow: #fff 3px 0 10px;
+    border: transparent;
   }
   .btn-swap-max {
     background: transparent !important;
@@ -304,6 +309,7 @@ text-align: right;
     line-height: 38px;
     text-align: center;
     border: 0px;
+    border: transparent;
   }
   .btn-swap-max:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
@@ -327,6 +333,7 @@ text-align: right;
     background: transparent !important;
     border-radius: 0.4rem;
     color: var(--bs-nav-link-menu);
+    border: transparent;
   }
   .btn-dash-menu {
     border: solid 3px transparent;
@@ -345,6 +352,7 @@ text-align: right;
     line-height: 19px;
     text-align: center;
     color: var(--bs-nav-link-menu);
+    border: transparent;
   }
     .btn-dash-menu:hover {
       background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
@@ -1339,6 +1347,7 @@ text-align: right;
       line-height: 38px;
       text-align: center;
       color: var(--bs-btn-color);
+      border: transparent;
     }
     .btn-dashboard-disabled {
       background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
@@ -1354,6 +1363,7 @@ text-align: right;
       line-height: 38px;
       text-align: center;
       color: var(--bs-btn-color);
+      border: transparent;
     }
   }
   @media screen and (max-width: 320px) {
@@ -1424,6 +1434,7 @@ text-align: right;
       line-height: 38px;
       text-align: center;
       color: var(--bs-btn-color);
+      border: transparent;
     }
     .btn-dashboard-disabled {
       background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
@@ -1439,6 +1450,7 @@ text-align: right;
       line-height: 38px;
       text-align: center;
       color: var(--bs-btn-color);
+      border: transparent;
     }
     .container-fluid {
       --bs-gutter-x: 1rem;
