@@ -1238,13 +1238,13 @@ text-align: right;
       height: 100%;
     }
   }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 361px) {
 
     .navbar-brand-main {
       padding-top: var(--bs-navbar-brand-padding-y);
       padding-bottom: var(--bs-navbar-brand-padding-y);
       margin-right: var(--bs-navbar-brand-margin-end);
-      padding-left: 2rem !important;
+      padding-left: 3.8rem !important;
       font-family: 'Uniwars';
       font-style: normal;
       font-weight: 600;
@@ -1286,7 +1286,7 @@ text-align: right;
       font-family: 'Uniwars';
       font-style: normal;
       font-weight: 400;
-      font-size: 22px;
+      font-size: 19px;
       line-height: 26px;
       text-align: center;
       letter-spacing: 0.06em;
@@ -1307,8 +1307,8 @@ text-align: right;
       margin-right: 50%;
     }
     .py-5 {
-      padding-top: 4rem !important;
-      padding-bottom: 3rem !important;
+      padding-top: 3rem !important;
+      padding-bottom: 2rem !important;
     }
     .gap-2 {
       gap: 1.5rem !important;
