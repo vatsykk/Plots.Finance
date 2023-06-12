@@ -46,11 +46,11 @@
   --bs-gutter-x: 1rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) *0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) *1.0);
+  padding-left: calc(var(--bs-gutter-x) * 1.0);
   margin-right: auto;
   margin-left: auto;
-height: 100%;
+  height: 100%;
 }
 .container-fluid-iframe {
   --bs-gutter-x: 1rem;
@@ -96,20 +96,20 @@ height: 100%;
   padding-bottom: 2%;
 }
 .nav-link {
-    display: block;
-    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    font-family: 'Video';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 55px;
-    text-align: unset;
-    color: var(--bs-nav-link-menu);
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-    transition: color .15s ease-in-out,background-color .15s;
-  }
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: unset;
+  color: var(--bs-nav-link-menu);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s;
+}
   .navbar-brand {
     padding-top: var(--bs-navbar-brand-padding-y);
     padding-bottom: var(--bs-navbar-brand-padding-y);
