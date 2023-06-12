@@ -29,6 +29,19 @@
    color: #000;
  }
 
+ .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.col-lg-3 {
+  flex: 0 0 auto;
+  width: 22%;
+}
+
 .container-fluid {
   --bs-gutter-x: 1rem;
   --bs-gutter-y: 0;
@@ -235,22 +248,21 @@ text-align: right;
 /*
 * Buttons
 */
-  .btn-dashboard {
-    background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
-    border-radius: 35.5px;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    padding-left: 3%;
-    padding-right: 3%;
-    font-family: 'Uniwars';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    color: var(--bs-btn-color);
-    border: transparent;
-  }
+.btn-dashboard {
+  background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+  border-radius: 35.5px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--bs-btn-color);
+}
   .btn-dashboard:hover {
     background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
     color: var(--bs-btn-hover-color);
@@ -603,10 +615,10 @@ text-align: right;
     .btn-dashboard {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
       border-radius: 35.5px;
-      padding-top: 2.5%;
-      padding-bottom: 2.5%;
-      padding-left: 3%;
-      padding-right: 3%;
+      padding-top: 12%;
+      padding-bottom: 13%;
+      padding-left: 12%;
+      padding-right: 12%;
       font-family: 'Uniwars';
       font-style: normal;
       font-weight: 600;
@@ -642,6 +654,18 @@ text-align: right;
       margin-left: 2.5%;
       margin-right: 2.5%;
     }
+    .title-information {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin-top: 20%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+    }
     .px-4 {
       padding-right: 4rem !important;
       padding-left: 4rem !important;
@@ -653,8 +677,8 @@ text-align: right;
       margin-bottom: 0rem !important;
     }
     .py-5 {
-      padding-top: 9rem !important;
-      padding-bottom: 7rem !important;
+      padding-top: 16rem !important;
+      padding-bottom: 5rem !important;
     }
     .pb-3 {
       padding-bottom: 0rem !important;
@@ -668,8 +692,8 @@ text-align: right;
       margin-left: auto;
       margin-right: auto;
       display: inline;
-      width: 70px !important;
-      height: 70px !important;
+      width: 48px !important;
+      height: 32px !important;
       padding-left: 20%;
       padding-right: 20%;
     }
@@ -678,10 +702,10 @@ text-align: right;
     .btn-dashboard {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
       border-radius: 35.5px;
-      padding-top: 3%;
-      padding-bottom: 3%;
-      padding-left: 3%;
-      padding-right: 3%;
+      padding-top: 8%;
+      padding-bottom: 8%;
+      padding-left: 8%;
+      padding-right: 8%;
       font-family: 'Uniwars';
       font-style: normal;
       font-weight: 600;
