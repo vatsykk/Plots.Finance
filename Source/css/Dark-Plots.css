@@ -17,7 +17,7 @@
     --bs-secondary-bg-rgb: 0,0,0;
     --bs-tertiary-color: rgba(173, 181, 189, 0.5);
     --bs-tertiary-color-rgb: 173,181,189;
-    --bs-tertiary-bg: #fff;
+    --bs-tertiary-bg: #000;
     --bs-tertiary-bg-rgb: 0,0,0;
     --bs-primary-text-emphasis: #6ea8fe;
     --bs-secondary-text-emphasis: #a7acb1;
@@ -68,7 +68,7 @@
  */
 
  [data-bs-theme="light"] {
-  color-scheme: dark;
+  color-scheme: light;
   --bs-body-color: #ffffff;
   --bs-body-color-rgb: 255,255,255;
   --bs-body-bg: #000;
@@ -82,7 +82,7 @@
   --bs-secondary-bg-rgb: 0,0,0;
   --bs-tertiary-color: rgba(173, 181, 189, 0.5);
   --bs-tertiary-color-rgb: 173,181,189;
-  --bs-tertiary-bg: #000000;
+  --bs-tertiary-bg: #000;
   --bs-tertiary-bg-rgb: 0,0,0;
   --bs-primary-text-emphasis: #6ea8fe;
   --bs-secondary-text-emphasis: #a7acb1;
@@ -119,7 +119,7 @@
   --bs-form-valid-border-color: #75b798;
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f;
-
+  
   --bs-btn-color: black;
   --bs-btn-hover-color: white;
   --bs-button-menu: #000;
