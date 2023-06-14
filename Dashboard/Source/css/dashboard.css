@@ -110,6 +110,41 @@ border-radius: 0px 30px 30px 0px;
   padding-right: 20%;
   margin-top: 12%;
 }
+.border-center-line {
+  border-right: 1px solid #40FFFF;
+}
+.content-mg-left {
+  margin-left: 50px !important;
+  background: #1C2023;
+border-radius: 20px;
+}
+
+.content-mg-right-box {
+  background: #1C2023;
+border-radius: 20px;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+.text-mg-right {
+  font-family: 'Uniwars';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+}
+.title-mg-left-0 {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  background: linear-gradient(90.45deg, #FF56F9 -16.33%, #40FFFF 103.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
 /**
 * MENU
 */
