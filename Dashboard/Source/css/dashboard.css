@@ -126,7 +126,7 @@ padding-top: 2%;
 padding-bottom: 2%;
 padding-left: 2%;
 padding-right: 2%;
-width: 380px;
+max-width: 380px;
 margin-top: 6%;
 }
 .content-mg-right-box {
@@ -201,7 +201,7 @@ line-height: 19px;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
   border-bottom: 1px solid #40FFFF;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
 }
 .nav-link {
   display: block;
@@ -232,6 +232,7 @@ line-height: 19px;
   background: 0 0;
   border: 0;
   transition: color .15s ease-in-out,background-color .15s;
+  padding-top: 0.7%;
 }
 .nav-item-2 {
   display: block;
@@ -247,7 +248,7 @@ line-height: 19px;
   border: 0;
   padding-right: 5rem;
   padding-left: 1rem;
-  padding-top: 1.2rem;
+  padding-top: 0.1%;
 }
 .nav-text{
   font-family: 'Uniwars';
@@ -304,7 +305,7 @@ filter: brightness(1.5);
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 4rem;
     padding-left: 0rem;
-    padding-top: 1.2rem;
+    padding-top: 0.0rem;
   }
   .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
     display: flex;
@@ -316,7 +317,7 @@ filter: brightness(1.5);
     --bs-dropdown-zindex: 1000;
     --bs-dropdown-min-width: 10rem;
     --bs-dropdown-padding-x: 0rem;
-    --bs-dropdown-padding-y: 3.5rem;
+    --bs-dropdown-padding-y: 1.5rem;
     --bs-dropdown-spacer: 0.125rem;
     --bs-dropdown-font-size: 1rem;
     --bs-dropdown-color: var(--bs-body-color);
@@ -335,7 +336,7 @@ filter: brightness(1.5);
     --bs-dropdown-link-active-bg: #0d6efd;
     --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
     --bs-dropdown-item-padding-x: 3rem;
-    --bs-dropdown-item-padding-y: 1em;
+    --bs-dropdown-item-padding-y: 0.8em;
     --bs-dropdown-header-color: #6c757d;
     --bs-dropdown-header-padding-x: 1rem;
     --bs-dropdown-header-padding-y: 0.5rem;
@@ -587,6 +588,7 @@ text-align: right;
     text-align: center;
     color: var(--bs-nav-link-menu);
     border: transparent;
+    margin-bottom: 0.5%;
   }
     .btn-dash-menu:hover {
       background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
