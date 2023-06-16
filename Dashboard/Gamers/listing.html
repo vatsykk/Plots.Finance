@@ -5,7 +5,7 @@
   <!-- Character Set and View -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Management - Plots.Finance</title>
+<title>Listings - Plots.Finance</title>
 <meta name="description" content="This site is under Construction.">
 <meta name="keywords" content="Complete with keywords separe using (,)">
   <!-- OpenGrah -->
@@ -120,13 +120,13 @@
         </li>
         <div class="spacer-sidebar"></div>
         <li>
-          <a href="#" class="nav-link active py-3 rounded-0" title="Collections" data-bs-toggle="tooltip" data-bs-placement="right">
+          <a href="#" class="nav-link py-3 rounded-0" title="Collections" data-bs-toggle="tooltip" data-bs-placement="right">
             <img src="../Source/img/collections.png" width="27" height="25">
           </a>
         </li>
         <div class="spacer-sidebar"></div>
         <li>
-          <a href="#" class="nav-link py-3 rounded-0" title="Watchlist" data-bs-toggle="tooltip" data-bs-placement="right">
+          <a href="#" class="nav-link py-3 active rounded-0" title="Watchlist" data-bs-toggle="tooltip" data-bs-placement="right">
             <img src="../Source/img/watchlist-sidebar.png" width="27" height="25">
           </a>
         </li>
@@ -148,129 +148,38 @@
 </nav>
 <!-- Sidebar -->
 <section id="top">
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-5 col-md-6 border-center-line">
-        <div class="col p-4 d-flex flex-column position-static">
-          <div class="content-mg-left">
-            <p class="title-mg-charts">VLND Metaverse composition </p>
-            <canvas class="chart-graphic" id="graphic-chart"></canvas>
-            <!-- Starting Script for demo page -->
-            <script>
-const ctx = document.getElementById('graphic-chart');
-
-const datachart = {
-  labels: ['The Sandbox', 'Pixels', 'Otherside', 'Ethereum'],
-  datasets: [{
-    data: [35, 25, 10, 15],
-    borderWidth: 1
+<div class="container-fluid spacer-sides">
+<div class="row">
+  <p class="title-list-0">Listings</p>
+  <p class="subtitle-list-0">All Collections</p>
+  <div class="row mb-3 text-center">
+    <div class="col-md-2 themed-grid-col"><img src="../Source/img/preview.png" width="147px" height="147px"></div>
+    <div class="col-md-5 themed-grid-col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="title-list-box">Offer</th>
+            <th class="title-list-box">Plots Ownership</th>
+            <th class="title-list-box">Offer Expiry</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="subtitle-list-box">3 <img src="../Source/img/eth-list.png" width="11" title="Ethereum" height="17"></td>
+            <td class="subtitle-list-box">55%</td>
+            <td class="subtitle-list-box"><img src="../Source/img/time-listing.png" width="20" height="20"> 23 HR 10 MIN</td>
+          </tr>
+        </tbody>
+      </table>
     
-  }]
-};
-
-const image = new Image();
-image.src = '../Source/img/chart-logo.png';
-
-const plugin = {
-  id: 'graphic-chart',
-  beforeDraw: (chart) => {
-    if (image.complete) {
-      const ctx = chart.ctx;
-      const {top, left, width, height} = chart.chartArea;
-      const x = left + width / 2 - image.width / 2;
-      const y = top + height / 2 - image.height / 2;
-      ctx.drawImage(image, x, y);
-    } else {
-      image.onload = () => chart.draw();
-    }
-  }
-};
-
-new Chart(ctx, {
-  type: 'doughnut',
-  data: datachart,
-  plugins: [plugin],
-  options: {
-        legend: {
-      display: false,
-    },
-    scales: {
-      yAxis: {
-        beginAtZero: true
-      }
-    },
-    layout: {
-      padding: 20
-    },
-    responsive: true
-  }
-});
-
-            </script>
-   <!-- END of Script for demo page -->
-          </div>
-          <div class="content-mg-mini-left">
-            <p class="text-mg-left-mini">tvl = 2,5o0</p>
-            <p class="text-mg-left-mini">VLND token supply = 30,000</p>
-            <p class="text-mg-left-mini">VLND book value = $150</p>
-            <p class="text-mg-left-mini">apr = 50%</p>
-      </div>
+      <button class="btn-listing">Accept</button> <button class="btn-listing-w">Decline</button>
     </div>
-    </div>
-    <div class="col-sm-5 col-md-6">
-        <div class="col p-4 d-flex flex-column position-static">
-          <div class="title-mg-left-0 text-center">assets under management</div>
-          <div class="row content-mg-right-box">
-          <div class="col-md-6 themed-grid-col text-center">                
-            <img src="../Source/img/preview.png" width="147">
-            </div>
-          <div class="col-md-6 themed-grid-col">
-            <p class="text-mg-right">Vlnd = 28.77%</p>
-                <p class="text-mg-right">buy price = 0.3</p>
-                <p class="text-mg-right">current price = 0.6</p>
-                <p class="text-mg-right">p/l = +100%</p>
-            </div>
-        </div>
-        <div class="row content-mg-right-box">
-          <div class="col-md-6 themed-grid-col text-center">                
-            <img src="../Source/img/preview.png" width="147">
-            </div>
-          <div class="col-md-6 themed-grid-col">
-            <p class="text-mg-right">Vlnd = 28.77%</p>
-                <p class="text-mg-right">buy price = 0.3</p>
-                <p class="text-mg-right">current price = 0.6</p>
-                <p class="text-mg-right">p/l = +100%</p>
-            </div>
-        </div>
-        <div class="row content-mg-right-box">
-          <div class="col-md-6 themed-grid-col text-center">                
-            <img src="../Source/img/preview.png" width="147">
-            </div>
-          <div class="col-md-6 themed-grid-col">
-            <p class="text-mg-right">Vlnd = 28.77%</p>
-                <p class="text-mg-right">buy price = 0.3</p>
-                <p class="text-mg-right">current price = 0.6</p>
-                <p class="text-mg-right">p/l = +100%</p>
-            </div>
-        </div>
-        <div class="row content-mg-right-box">
-          <div class="col-md-6 themed-grid-col text-center">                
-            <img src="../Source/img/preview.png" width="147">
-            </div>
-          <div class="col-md-6 themed-grid-col">
-            <p class="text-mg-right">Vlnd = 28.77%</p>
-                <p class="text-mg-right">buy price = 0.3</p>
-                <p class="text-mg-right">current price = 0.6</p>
-                <p class="text-mg-right">p/l = +100%</p>
-            </div>
-        </div>
-
-          </div>
-        </div>
-      </div>
- 
   </div>
+      
 </div>
+</div>
+ 
+
 </section>
 </main>
 
