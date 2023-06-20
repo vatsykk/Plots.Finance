@@ -464,7 +464,6 @@ padding-top: 2%;
   margin-top: 3%;
   margin-bottom: 4%;
   margin-left: 1%;
-  padding-right: 10% !important;
 }
 .title-dashboard {
     font-family: 'Uniwars';
@@ -532,7 +531,7 @@ tr:hover{
   background-color: #1C2023 !important;
 }
 table{
-  width: 90% !important;
+  width: 100% !important;
 }
 .green-coll{
   font-family: 'Uniwars';
