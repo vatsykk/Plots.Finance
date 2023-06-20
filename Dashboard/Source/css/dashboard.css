@@ -503,7 +503,7 @@ text-align: right;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.06em;
-    
+    padding-bottom: 2% !important;
     color: rgba(255, 255, 255, 0.75);
   }
   .subtable-title-coll{
@@ -513,6 +513,8 @@ font-weight: 400;
 font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.06em;
+padding-top: 2% !important;
+padding-bottom: 2% !important;
   }
 /*
 * Table for Collection
@@ -526,6 +528,9 @@ letter-spacing: 0.06em;
 tr{
   border-bottom: 1px solid #40FFFF;
 }
+tr:hover{
+  background-color: #1C2023 !important;
+}
 table{
   width: 90% !important;
 }
@@ -536,7 +541,7 @@ table{
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.06em;
-  
+  vertical-align: middle;
   color: #05FF00;
 }
 .red-coll{
@@ -546,8 +551,11 @@ font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 letter-spacing: 0.06em;
-
+vertical-align: middle;
 color: #F00000;
+}
+.icon-coll{
+  text-align: right !important;
 }
 /*
 * Swap Format
