@@ -177,7 +177,8 @@ line-height: 19px;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
-  
+  margin-top: 2.5%;
+margin-bottom: 1.25%;
   background: linear-gradient(98.78deg, #FF56F9 -92.25%, #40FFFF 182.63%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,6 +191,8 @@ line-height: 19px;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
+  margin-top: 1.25%;
+  margin-bottom: 3%;
 }
 .title-list-box{
   font-family: 'Uniwars';
@@ -198,7 +201,7 @@ line-height: 19px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  background: rgba(255, 86, 249, 0.5) !important;
+  background: rgba(255, 86, 249, 0.7) !important;
 }
 .subtitle-list-box{
   font-family: 'Uniwars';
@@ -207,6 +210,8 @@ line-height: 19px;
   font-size: 24px;
   line-height: 29px;
   color: rgba(255, 255, 255, 0.5);
+  padding-top: 6% !important;
+  padding-bottom: 6% !important;
 }
 /**
 * MENU
