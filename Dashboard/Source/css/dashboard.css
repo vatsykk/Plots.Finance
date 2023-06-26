@@ -1025,6 +1025,94 @@ color: #F00000;
     .mb-3 {
       margin-bottom: 0rem !important;
     }
+/** Listing Page **/
+
+.title-list-0 {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 43px;
+  margin-top: 2.5%;
+  margin-bottom: 1.25%;
+  background: linear-gradient(119deg, rgb(255, 86, 249) 0%, rgb(64, 255, 255) 14%);
+    background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: brightness(1.5);
+}
+.subtitle-list-0 {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 29px;
+  margin-top: 2.25%;
+  margin-bottom: 4%;
+}
+.list-images {
+  width: 260px !important;
+  height: 260px;
+  vertical-align: middle;
+}
+.title-list-box {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 22px;
+  text-align: center;
+  background: rgba(255, 86, 249, 0.5) !important;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  border-right: 28px solid black;
+}
+.subtitle-list-box {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+}
+.btn-listing {
+  background: #406AFF;
+  border-radius: 21px;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--bs-btn-color);
+  border: 0px;
+  margin-right: 2% !important;
+}
+.btn-listing-w {
+  background: #ffffff;
+  border-radius: 21px;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 18px;
+  text-align: center;
+  color: #000;
+  border: 0px;
+}
+
   }
   @media screen and (max-width: 1921px) {
     .btn-dashboard {
@@ -1166,9 +1254,80 @@ color: #F00000;
     .mb-3 {
       margin-bottom: 0rem !important;
     }
-    
+/** Listing Page **/
+
+.list-images {
+  width: 182px !important;
+  height: 182px;
+  vertical-align: middle;
+}
+.title-list-0 {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 2.5%;
+  margin-bottom: 1.25%;
+  background: linear-gradient(119deg, rgb(255, 86, 249) 0%, rgb(64, 255, 255) 14%);
+    background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: brightness(1.5);
+}
+.subtitle-list-0 {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 29px;
+  margin-top: 1.25%;
+  margin-bottom: 4%;
+}
+.title-list-box {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  background: rgba(255, 86, 249, 0.5) !important;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+  border-right: 28px solid black;
+}
+.subtitle-list-box {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 4% !important;
+  padding-bottom: 4% !important;
+}
+
+/** Buy And Sell page **/
+.btn-dashboard {
+  background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+  border-radius: 35.5px;
+  padding-top: 14%;
+  padding-bottom: 14%;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--bs-btn-color);
+}
+
   }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1281px) {
     .btn-dashboard {
       background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
       border-radius: 35.5px;
@@ -1239,6 +1398,185 @@ color: #F00000;
       text-align: center;
       color: var(--bs-btn-color);
     }
+    /** Lisitng Page **/
+
+    .list-images {
+      width: 140px !important;
+      height: 140px;
+      vertical-align: middle;
+    }
+    .title-list-box {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      background: rgba(255, 86, 249, 0.5) !important;
+      padding-top: 2% !important;
+      padding-bottom: 2% !important;
+      border-right: 28px solid black;
+    }
+    .subtitle-list-box {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.5);
+      padding-top: 4% !important;
+      padding-bottom: 4% !important;
+    }
+    .title-list-0 {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 38px;
+      margin-top: 2.5%;
+      margin-bottom: 1.25%;
+      background: linear-gradient(119deg, rgb(255, 86, 249) 0%, rgb(64, 255, 255) 14%);
+        background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: brightness(1.5);
+    }
+    .subtitle-list-0 {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      margin-top: 1.25%;
+      margin-bottom: 3%;
+    }
+/** Collection Page **/
+
+.title-coll-main {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 1%;
+}
+.table-title-coll {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  padding-bottom: 2% !important;
+  color: rgba(255, 255, 255, 0.75);
+}
+.subtable-title-coll {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
+}
+/** Management Page **/
+
+.chart-graphic {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 450px !important;
+  height: 100% !important;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.text-mg-right {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 1rem;
+}
+.content-mg-mini-left {
+  margin-left: 72px !important;
+  background: #1C2023;
+  border-radius: 20px;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 380px;
+  margin-top: 6%;
+}
+.text-mg-left-mini {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  padding-top: 2%;
+}
+
+.title-mg-left-0 {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  background: linear-gradient(90.45deg, #FF56F9 -16.33%, #40FFFF 103.89%);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  filter: brightness(1.5);
+}
+/** Buy & Sell Page **/
+
+.col-lg-3 {
+  flex: 0 0 auto;
+  width: 30%;
+}
+.btn-dashboard {
+  background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+  border-radius: 35.5px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--bs-btn-color);
+}
+.title-information {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  color: #bdbdbd;
+}
   }
   @media screen and (max-width: 1025px) {
     .title-dashboard {
@@ -1446,6 +1784,155 @@ color: #F00000;
       padding-top: 2% !important;
       padding-bottom: 2% !important;
     }
+    /** Management Page **/
+
+    .chart-graphic {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 380px !important;
+      height: 100% !important;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+    .title-mg-left-0 {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 26px;
+      background: linear-gradient(90.45deg, #FF56F9 -16.33%, #40FFFF 103.89%);
+        background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-top: 2%;
+      margin-bottom: 4%;
+      filter: brightness(1.5);
+    }
+    .text-mg-right {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 1rem;
+    }
+    .text-mg-left-mini {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+    .title-mg-charts {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      padding-top: 6%;
+    }
+    /** Buy and Sell **/
+
+    .col-lg-3 {
+      flex: 0 0 auto;
+      width: 34%;
+    }
+    .title-information {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin-top: 20%;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      color: #bdbdbd;
+    }
+    .btn-dashboard {
+      background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+      border-radius: 35.5px;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 14%;
+      padding-right: 14%;
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+      color: var(--bs-btn-color);
+    }
+    .landing-image-icon-dash {
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline;
+      width: 39px !important;
+      height: 31px !important;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .py-5 {
+      padding-top: 13rem !important;
+      padding-bottom: 2rem !important;
+    }
+/** DashBoard Page **/
+
+.title-dashboard {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-bottom: 0%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.btn-dashboard {
+  background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+  border-radius: 35.5px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: var(--bs-btn-color);
+}
+.btn-dashboard-disabled {
+  background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+  border-radius: 35.5px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--bs-btn-color);
+}
   }
     /** Mobiles Adjustment for Resolutions **/
 
