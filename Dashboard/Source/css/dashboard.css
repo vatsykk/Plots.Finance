@@ -1162,6 +1162,44 @@ color: #F00000;
   margin-left: auto;
   display: block;
 }
+/** Buy and Sell Page **/
+
+.col-lg-3 {
+  flex: 0 0 auto;
+  width: 26%;
+}
+.btn-dashboard {
+  background: linear-gradient(99.84deg, #FF56F9 -39.25%, #40FFFF 138.76%);
+  border-radius: 100.5px;
+  padding-top: 12%;
+  padding-bottom: 12%;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--bs-btn-color);
+}
+.title-information {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: 22%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  color: #bdbdbd;
+}
+.py-5 {
+  padding-top: 37rem !important;
+  padding-bottom: 4rem !important;
+}
   }
   @media screen and (max-width: 2561px) {
     .btn-dashboard {
