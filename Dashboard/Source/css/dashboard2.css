@@ -626,21 +626,47 @@ text-align: right;
     .form-signin {
       max-width: 1100px;
     }
+    .icon-header-swap {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      width: 58px;
+      height: 50px;
+      margin-left: 35%;
+    }
+    .eth-wallet {
+      border-radius: 50.5px;
+      border: 1px solid #A8A3FC;
+      background: #131517;
+      padding-right: 3.5rem;
+      padding-left: 6rem;
+      margin-right: 4rem;
+      padding-top: 0.8%;
+      padding-bottom: 0.6%;
+      display: flex;
+    }
     .nav-item-swap {
-      display: ruby;
-      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
       font-size: 38px;
-      line-height: 28px;
+      line-height: 59px;
       text-align: center;
       color: var(--bs-nav-link-menu);
       text-decoration: none;
-      padding-right: 1.5rem;
-      padding-left: 5rem;
-      margin-right: 2%;
-      padding-top: 0.5%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-right: unset;
+      padding-top: unset;
+      padding-bottom: unset;
+    }
+    .navbar {
+      --bs-navbar-padding-y: 2rem;
+    }
+    .landing-image-icon {
+      width: 140px;
+      height: 75px;
+      display: block;
     }
     .btn-dash-menu {
       border: solid 3px transparent !important;
@@ -730,21 +756,44 @@ text-align: right;
       float: right;
       border: transparent;
     }
+    .landing-image-icon {
+      width: 120px;
+      height: 50px;
+      display: block;
+    }
+    .icon-header-swap {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      width: 30px;
+      height: 31px;
+      margin-left: 36%;
+    }
+    .eth-wallet {
+      border-radius: 50.5px;
+      border: 1px solid #A8A3FC;
+      background: #131517;
+      padding-right: 2.5rem;
+      padding-left: 4rem;
+      margin-right: 4rem;
+      padding-top: 0.8%;
+      padding-bottom: 0.6%;
+      display: flex;
+    }
     .nav-item-swap {
-      display: ruby;
-      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 28px;
-      line-height: 28px;
+      font-size: 26px;
+      line-height: 32px;
       text-align: center;
       color: var(--bs-nav-link-menu);
       text-decoration: none;
-      padding-right: 1.5rem;
-      padding-left: 5rem;
-      margin-right: 2%;
-      padding-top: 0.8%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-right: unset;
+      padding-top: unset;
+      padding-bottom: unset;
     }
     .navbar-nav {
       --bs-nav-link-padding-y: 1.5rem;
@@ -865,8 +914,8 @@ text-align: right;
   text-align: center;
   color: var(--bs-nav-link-menu);
   text-decoration: none;
-  padding-right: unset;
-  padding-left: unset;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: unset;
   padding-top: unset;
   padding-bottom: unset;
@@ -922,6 +971,9 @@ text-align: right;
   --bs-modal-width: 400px;
   --bs-modal-padding: 1.4rem;
   --bs-modal-margin: 12rem;
+}
+.navbar {
+  --bs-navbar-padding-y: 1rem;
 }
 /** END **/
 /** Swap Connected **/
@@ -1100,6 +1152,11 @@ text-align: right;
     margin-left: 14%;
     margin-right: 14%;
   }
+  .landing-image-icon {
+    width: 80px;
+    height: 40px;
+    display: block;
+  }
   .btn-swap {
     background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
     border-radius: 50.5px;
@@ -1160,14 +1217,23 @@ text-align: right;
     font-family: 'Video';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 31px;
     text-align: center;
     color: var(--bs-nav-link-menu);
     text-decoration: none;
-    padding-right: 0.5rem;
-    padding-left: 3rem;
-    margin-right: 2%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 0%;
+    margin-bottom: 0%;
+  }
+  .icon-header-swap {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 30%;
   }
    }
 
@@ -1225,6 +1291,11 @@ text-align: right;
       --bs-modal-width: 400px;
       --bs-modal-padding: 1.4rem;
       --bs-modal-margin: 9rem;
+    }
+    .landing-image-icon {
+      width: 80px;
+      height: 40px;
+      display: block;
     }
     .btn-swap {
       background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
@@ -1309,14 +1380,23 @@ text-align: right;
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
+      font-size: 16px;
+      line-height: 27px;
       text-align: center;
       color: var(--bs-nav-link-menu);
       text-decoration: none;
-      padding-right: 0.5rem;
-      padding-left: 3rem;
-      margin-right: 2%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-right: 0%;
+      margin-bottom: 0%;
+    }
+    .icon-header-swap {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-left: 30%;
     }
    }
 
@@ -1342,6 +1422,11 @@ text-align: right;
   font-weight: 400;
   line-height: 0.5;
 }
+.landing-image-icon {
+  width: 50px;
+  height: 30px;
+  display: block;
+}
 .btn-swap {
   background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
   border-radius: 50.5px;
@@ -1366,14 +1451,22 @@ text-align: right;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 27px;
   text-align: center;
   color: var(--bs-nav-link-menu);
   text-decoration: none;
-  padding-right: 0.5rem;
-  padding-left: 3rem;
+  padding-right: 7rem;
+  padding-left: 7rem;
   margin-right: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
+}
+.icon-header-swap {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 30%;
 }
 .btn-dash-menu {
   border: solid 3px transparent !important;
