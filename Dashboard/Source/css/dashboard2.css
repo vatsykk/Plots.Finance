@@ -265,9 +265,14 @@ filter: brightness(1.5);
     border-radius: 50.5px;
     border: 1px solid #A8A3FC;
     background: #131517;
+    padding-right: 1.5rem;
+padding-left: 4rem;
+margin-right: 4%;
+padding-top: 0.8%;
+padding-bottom: 0.6%;
   }
   .nav-item-swap {
-    display: block ruby;
+    display: flex;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-family: 'Video';
     font-style: normal;
@@ -277,9 +282,9 @@ filter: brightness(1.5);
     text-align: center;
     color: var(--bs-nav-link-menu);
     text-decoration: none;
-    padding-right: 0.5rem;
-    padding-left: 3rem;
-    margin-right: 2%;
+    padding-right: unset;
+    padding-left: unset;
+    margin-right: unset;
   }
   .navbar-brand {
     padding-top: var(--bs-navbar-brand-padding-y);
@@ -832,21 +837,39 @@ text-align: right;
   float: right;
   border: transparent;
 }
+.icon-header-swap {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  width: 30px;
+  height: 31px;
+  margin-left: 36%;
+}
+.eth-wallet {
+  border-radius: 50.5px;
+  border: 1px solid #A8A3FC;
+  background: #131517;
+  padding-right: 1.5rem;
+  padding-left: 3rem;
+  margin-right: 4%;
+  padding-top: 0.8%;
+  padding-bottom: 0.6%;
+  display: flex;
+}
 .nav-item-swap {
-  display: ruby;
   font-family: 'Video';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 20px;
+  font-size: 26px;
+  line-height: 32px;
   text-align: center;
   color: var(--bs-nav-link-menu);
   text-decoration: none;
-  padding-right: 1.5rem;
-  padding-left: 4rem;
-  margin-right: 2%;
-  padding-top: 0.8%;
-  padding-bottom: 0.6%;
+  padding-right: unset;
+  padding-left: unset;
+  margin-right: unset;
+  padding-top: unset;
+  padding-bottom: unset;
 }
 .form-control {
   display: block;
