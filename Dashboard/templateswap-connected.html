@@ -78,21 +78,22 @@
         <form>
           <div class="input-group mb-3 swap-input">
             <input type="text" class="form-control" aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2"><img src="/Dashboard/Source/img/eth.png" height="37" width="34" class="icon-auto">
+            <span class="input-group-text" id="basic-addon2"><img src="/Dashboard/Source/img/eth.png" height="37" width="34" class="icon-swap">
               </span>
-              <div class="value-coin">$ 1,924</div> <div class="swap-balance justify-content-end">Balance: 0 <button class="btn-swap-max" type="button">Max</button></div>
+              <div class="value-coin">$ 1,924</div> <div class="swap-balance-max justify-content-end">Balance: 0 <button class="btn-swap-max" type="button">Max</button></div>
 
           </div>  
           <div class="swap-spacer-0"></div>
 <div class="input-group mb-3 swap-input">
   <input type="text" class="form-control" aria-describedby="basic-addon2">
-  <span class="input-group-text" id="basic-addon2"><img src="/Dashboard/Source/img/plots.png" height="34" width="34" class="icon-auto">
+  <span class="input-group-text" id="basic-addon2"><img src="/Dashboard/Source/img/plots.png" height="34" width="34" class="icon-swap">
     </span>
     <div class="value-coin">$ 1,924</div> <div class="swap-balance justify-content-end">Balance: 0</div>
 </div>
 <div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img src="/Dashboard/Source/img/gas.png" height="20" width="20" class="icon-auto"> $4</span></div>
           <button class="btn-swap swap-spacer-2" type="button" data-bs-toggle="modal" data-bs-target="#review-buy">Buy</button>
         </form>
+        
       </main></div>
 </div>
 </section>
@@ -102,18 +103,18 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title title-swap-connect" id="review-buy">Review Swap</h1>
+          <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Swap</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-<p>You pay</p>
-<p>1 <img src="/Dashboard/Source/img/eth.png" height="37" width="34" class="icon-auto float-end"></p>
+<p class="swap-review-text">You pay</p>
+<p class="swap-review-text">1 <img src="/Dashboard/Source/img/eth.png" height="37" width="34" class="icon-auto float-end"></p>
 
-<p>You Receive</p>
-<p>100 <img src="/Dashboard/Source/img/plots.png" height="34" width="34" class="icon-auto float-end"></p>
+<p class="swap-review-text">You Receive</p>
+<p class="swap-review-text">100 <img src="/Dashboard/Source/img/plots.png" height="34" width="34" class="icon-auto float-end"></p>
 <div class="line-swap-review"></div>
-<p>Gas Fee <span class="float-end">$4</span></p>
-<p>Plots Fee <span class="float-end">$0</span></p>
+<p class="swap-review-text">Gas Fee <span class="float-end">$4</span></p>
+<p class="swap-review-text">Plots Fee <span class="float-end">$0</span></p>
 <button class="btn-confirm-swap">Confirm Swap</button>
         </div>
       </div>
