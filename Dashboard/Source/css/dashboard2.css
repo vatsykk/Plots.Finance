@@ -898,7 +898,7 @@ text-align: right;
 .modal {
   --bs-modal-width: 400px;
   --bs-modal-padding: 1.4rem;
-  --bs-modal-margin: 14rem;
+  --bs-modal-margin: 12rem;
 }
 /** END **/
 /** Swap Connected **/
@@ -945,7 +945,7 @@ text-align: right;
   position: absolute !important;
   top: 70% !important;
   left: 5% !important;
-  z-index: 1090;
+  z-index: 1030;
 }
 .value-swap{
   justify-content: flex-end;
@@ -961,7 +961,7 @@ text-align: right;
   color: #000;
   position: relative;
   top: 70%;
-  z-index: 1090;
+  z-index: 1030;
   float: right;
   right: 5%;
 }
@@ -976,7 +976,7 @@ text-align: right;
   top: 70%;
   float: right;
   right: 5%;
-z-index: 1090;
+  z-index: 1030;
 }
 .data-swap {
   font-family: 'Video';
