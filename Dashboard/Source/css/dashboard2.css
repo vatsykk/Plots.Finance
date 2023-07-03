@@ -998,22 +998,30 @@ text-align: right;
   margin-top: 8%;
   margin-bottom: 6%;
 }
-.btn-confirm-swap{
+.btn-confirm-swap {
   background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
   border-radius: 50.5px;
   padding-top: 4.5%;
   padding-bottom: 4.5%;
-  padding-left: 7%;
-  padding-right: 8%;
+  padding-left: 6%;
+  padding-right: 7%;
   font-family: 'Uniwars';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 22px;
+  line-height: 19px;
   display: flex;
   text-align: center;
   color: var(--bs-btn-color);
   float: right;
+  border: transparent;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+.btn-confirm-swap:hover {
+  background: linear-gradient(138deg, rgb(170, 0, 164) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(1, 84, 139) 100%);
+  color: var(--bs-btn-hover-color);
+  text-shadow: #fff 3px 0 10px;
   border: transparent;
 }
    }
