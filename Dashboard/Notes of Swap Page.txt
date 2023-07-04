@@ -1,0 +1,12 @@
+
+Swap Page (Not Connected)
+
+Swap Page (Connected)
+
+states for activate Modal Message when they buy
+
+This is for successful like said on data bs target (data-bs-target="#successful")
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm Swap</button>
+
+and this is decline (data-bs-target="#failed")
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Confirm Swap</button>

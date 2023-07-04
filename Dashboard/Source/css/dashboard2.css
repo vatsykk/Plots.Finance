@@ -932,7 +932,7 @@ text-align: right;
   background-clip: padding-box;
   border: 0px;
   appearance: none;
-  border-radius: 3rem;
+  border-radius: 5rem;
   transition: unset;
 }
 .form-signin {
@@ -1068,7 +1068,7 @@ text-align: right;
 }
 .swap-input {
   background-color: white;
-  border-radius: 100px;
+  border-radius: 5rem;
   height: 110px;
 }
 .swap-disconnect {
@@ -1078,7 +1078,7 @@ text-align: right;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 24px;
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 0.5%;
@@ -1086,10 +1086,11 @@ text-align: right;
   margin-top: -3.5%;
   float: right;
   margin-right: 2.5%;
+  border: unset;
 }
 .swap-disconnect:hover{
   background-color: #363e44;
-  text-shadow: #ff0000 3px 0 10px;
+  text-shadow: #fff 3px 0 10px;
 }
 .line-swap-review {
   border-bottom: 1px solid #FFFFFF;
@@ -1122,7 +1123,6 @@ text-align: right;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
-  display: flex;
   text-align: center;
   color: var(--bs-btn-color);
   float: right;
@@ -1135,6 +1135,44 @@ text-align: right;
   color: var(--bs-btn-hover-color);
   text-shadow: #fff 3px 0 10px;
   border: transparent;
+}
+/** Modal Succefful and Declined **/
+.modal-content-succefful {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  background-image: url(http://localhost/Dashboard/Source/img/works.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.spacer-swap {
+  height: 300px !important;
+}
+.modal-content-decline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  background-image: url(http://localhost/Dashboard/Source/img/decline.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
    }
 /** END 1920 Resolution **/

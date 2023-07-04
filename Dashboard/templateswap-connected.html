@@ -115,7 +115,37 @@
 <div class="line-swap-review"></div>
 <p class="swap-review-text">Gas Fee <span class="float-end">$4</span></p>
 <p class="swap-review-text">Plots Fee <span class="float-end">$0</span></p>
-<button class="btn-confirm-swap">Confirm Swap</button>
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm Swap</button><button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Confirm Swap</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal Successful Swap -->
+  <div class="modal fade" id="successful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content-succefful">
+        <div class="modal-header">
+          
+        </div>
+        <div class="modal-body">
+          <div class="spacer-swap"></div>
+<h1 class="title-swap-connect text-center py-4">Swap Successful!</h1>
+<button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Modal Failed Swap -->
+  <div class="modal fade" id="failed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content-decline">
+        <div class="modal-header">
+          
+        </div>
+        <div class="modal-body">
+          <div class="spacer-swap"></div>
+<h1 class="title-swap-connect text-center py-4">Swap Failed!</h1>
+<button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
         </div>
       </div>
     </div>
