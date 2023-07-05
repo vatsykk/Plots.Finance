@@ -1199,7 +1199,29 @@ text-align: right;
   max-width: 100%;
   max-height: 100%;
 }
-
+/** Disclamer Button **/
+.btn-confirm-disclamer {
+  background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+  border-radius: 50.5px;
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+  padding-left: 6%;
+  padding-right: 7%;
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--bs-btn-color);
+  float: right;
+  border: transparent;
+}
+.btn-confirm-disclamer:hover {
+  background: linear-gradient(138deg, rgb(150, 0, 145) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 72, 121) 100%);
+  color: var(--bs-btn-hover-color);
+  border: transparent;
+}
    }
 /** END 1920 Resolution **/
    @media screen and (max-width: 1601px) {

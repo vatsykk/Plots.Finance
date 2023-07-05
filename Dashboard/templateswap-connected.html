@@ -96,7 +96,7 @@
         
       </main></div>
 </div>
-</section>
+</section> 
 </main>
   <!-- Modal Review The Mint -->
   <div class="modal fade" id="review-buy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -124,7 +124,7 @@
       </div>
     </div>
   </div>
-    <!-- Modal Successful Swap -->
+    <!-- Modal Successful -->
   <div class="modal fade" id="successful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content-succefful">
@@ -140,7 +140,7 @@
       </div>
     </div>
   </div>
-      <!-- Modal Waiting transaction Swap -->
+      <!-- Modal Waiting transaction -->
       <div class="modal fade" id="waiting" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -165,7 +165,7 @@
           </div>
         </div>
       </div>
-      <!-- Modal Failed Swap -->
+      <!-- Modal Failed -->
   <div class="modal fade" id="failed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content-decline">
@@ -180,10 +180,101 @@
       </div>
     </div>
   </div>
+        <!-- Modal Disclamer Policy -->
+        <div class="modal cookie-disclaimer" id="disclamer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1>Disclamer</h1>
+              </div>
+              <div class="modal-body">
+                <form class="needs-validation" id="disclamer" novalidate>
+                <span class="disclamer"> 
+                  <p><b>US Citizen or resident</b></p>      
+                  <p>I am not a U.S Citizen or resident.</p>
+                  <p><b>Calculator Statement</b></p>
+                  <p>I understand that the calculator statement is for estimation purposes only and does not guarantee the advertised ROI.</p> 
+                  <p><b>VLND token liquidity & chain</b></p>
+                  <p>I understand that the VLND token will be minted to my polygon address amd will initially be illiquid</p> 
+                </span>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" name='visto' id="validation" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="validation">
+                    I have read the above.
+                  </label>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Check this checkbox to continue.</div>
+                </div>
+               <input type='submit' class='btn-confirm-disclamer mb-3' id="save" value='I understand, i’m a degen.'>
+            </form>
+          </div>
+              </div>
+            </div>
+          </div>
       <!-- JS Loads -->
     <script src="../Source/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="../Source/@popperjs/core/dist/umd/popper.js" integrity="sha384-grSmhim7l2CkmGXtqSePI7cwM/7NymZ7eQkKk3WwaZyjfkef6IziTCUrHtz0NfwD"></script>
-    <script src="../Source/Js/Theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#save').prop('disabled', true);
+
+    $('#validation').click(function(){
+        if($(this).is(':checked'))
+        {
+            $('#save').prop('disabled', false);
+        }
+        else
+        {
+            $('#save').prop('disabled', true);
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function() { 
+    var cookie = false;
+    var cookieContent = $('.cookie-disclaimer');
+
+    checkCookie();
+
+    if (cookie === true) {
+      cookieContent.hide();
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      var check = getCookie("acookie");
+      if (check !== "") {
+        return cookie = true;
+      } else {
+        var myModal = new bootstrap.Modal(document.getElementById('disclamer'), {})
+        myModal.toggle()
+      }
+      
+    }
+    $('form').submit(function () {
+      setCookie("acookie", "accepted", 365);
+      cookieContent.hide(500);
+    });
+});
+    </script>
 
 </body>  
 </html>

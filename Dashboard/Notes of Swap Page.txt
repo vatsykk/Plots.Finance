@@ -8,5 +8,8 @@ states for activate Modal Message when they buy
 This is for successful like said on data bs target (data-bs-target="#successful")
 <button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm Swap</button>
 
+with this you can test the message of confirm mint with the animation
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#waiting">waiting state</button>
+
 and this is decline (data-bs-target="#failed")
 <button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Confirm Swap</button>
