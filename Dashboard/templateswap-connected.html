@@ -98,12 +98,12 @@
 </div>
 </section>
 </main>
-  <!-- Modal -->
+  <!-- Modal Review The Mint -->
   <div class="modal fade" id="review-buy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Swap</h1>
+          <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Mint</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -115,7 +115,11 @@
 <div class="line-swap-review"></div>
 <p class="swap-review-text">Gas Fee <span class="float-end">$4</span></p>
 <p class="swap-review-text">Plots Fee <span class="float-end">$0</span></p>
-<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm Swap</button><button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Confirm Swap</button>
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm Mint</button>
+<div class="py-2"></div>
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#waiting">waiting</button>
+<div class="py-2"></div>
+<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Decline Mint</button>
         </div>
       </div>
     </div>
@@ -128,13 +132,39 @@
           
         </div>
         <div class="modal-body">
+
           <div class="spacer-swap"></div>
-<h1 class="title-swap-connect text-center py-4">Swap Successful!</h1>
+<h1 class="title-swap-connect text-center py-4">Mint Successful!</h1>
 <button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
         </div>
       </div>
     </div>
   </div>
+      <!-- Modal Waiting transaction Swap -->
+      <div class="modal fade" id="waiting" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Confirming...</span>
+              </div>
+              </div><h2 class="title-swap-connect text-center py-2">Confirm Mint</h2>
+              <span class="swap-transaction-text py-2">
+                <span class="float-start">
+                <img src="/Dashboard/Source/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span> 
+                <span class="swap-middle-arrow">
+                <img src="/Dashboard/Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
+                <span class="float-end">100 VLND 
+                  <img src="/Dashboard/Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
+    <h1 class="title-swap-connect text-center py-2">Proceed in your Wallet</h1>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Modal Failed Swap -->
   <div class="modal fade" id="failed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -144,7 +174,7 @@
         </div>
         <div class="modal-body">
           <div class="spacer-swap"></div>
-<h1 class="title-swap-connect text-center py-4">Swap Failed!</h1>
+<h1 class="title-swap-connect text-center py-4">Mint Failed!</h1>
 <button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
         </div>
       </div>

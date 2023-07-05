@@ -970,7 +970,7 @@ text-align: right;
 .modal {
   --bs-modal-width: 400px;
   --bs-modal-padding: 1.4rem;
-  --bs-modal-margin: 12rem;
+  --bs-modal-margin: 10rem;
 }
 .navbar {
   --bs-navbar-padding-y: 1rem;
@@ -1111,6 +1111,18 @@ text-align: right;
   font-size: 24px;
   line-height: 30px;
 }
+.swap-transaction-text {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 10px;
+}
+.swap-middle-arrow{
+  position: absolute;
+  margin-left: 22%;
+  margin-right: auto;
+}
 .btn-confirm-swap {
   background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
   border-radius: 50.5px;
@@ -1174,6 +1186,23 @@ text-align: right;
   background-position: center;
   background-size: cover;
 }
+
+.spinner-border {
+  --bs-spinner-width: 10rem;
+  --bs-spinner-height: 10rem;
+  --bs-spinner-vertical-align: -0.125em;
+  --bs-spinner-border-width: 1.25em;
+  --bs-spinner-animation-speed: 0.75s;
+  --bs-spinner-animation-name: spinner-border;
+  border: var(--bs-spinner-border-width) solid #8247E5;
+  border-right-color: transparent;
+  margin-bottom: 12%;
+}
+.icon-transaction{
+  max-width: 100%;
+  max-height: 100%;
+}
+
    }
 /** END 1920 Resolution **/
    @media screen and (max-width: 1601px) {
