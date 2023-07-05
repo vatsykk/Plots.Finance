@@ -260,7 +260,7 @@ $(document).ready(function() {
     }
 
     function checkCookie() {
-      var check = getCookie("acookie");
+      var check = getCookie("app.plots.finance");
       if (check !== "") {
         return cookie = true;
       } else {
@@ -270,7 +270,7 @@ $(document).ready(function() {
       
     }
     $('form').submit(function () {
-      setCookie("acookie", "accepted", 365);
+      setCookie("app.plots.finance", "accepted", 365);
       cookieContent.hide(500);
     });
 });
