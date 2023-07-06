@@ -1223,6 +1223,13 @@ text-align: right;
   color: var(--bs-btn-hover-color);
   border: transparent;
 }
+.disclamer{
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+line-height: 18px;
+}
    }
 /** END 1920 Resolution **/
    @media screen and (max-width: 1601px) {
