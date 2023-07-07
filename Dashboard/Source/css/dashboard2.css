@@ -12,7 +12,7 @@
 
    box-shadow: inset 0 0 0rem rgba(0, 0, 0, 0);
    background-image: unset !important;
-   margin-top: 0.5%;
+   margin-top: 0.0%;
    height: 100%;
  }
  
@@ -606,8 +606,8 @@ text-align: right;
     .form-control {
       display: block;
       width: 100%;
-      padding: 1.0rem 0.75rem;
-      font-size: 2rem;
+      padding: 1rem 3.2rem;
+      font-size: 4rem;
       font-weight: 400;
       line-height: 1.5;
       color: #000;
@@ -627,9 +627,9 @@ text-align: right;
       max-width: 100%;
       max-height: 100%;
       display: block;
-      width: 58px;
-      height: 50px;
-      margin-left: 35%;
+      width: 73px;
+      height: 58px;
+      margin-left: 4%;
     }
     .eth-wallet {
       border-radius: 50.5px;
@@ -646,13 +646,13 @@ text-align: right;
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 38px;
-      line-height: 59px;
+      font-size: 52px;
+      line-height: 71px;
       text-align: center;
       color: var(--bs-nav-link-menu);
       text-decoration: none;
-      padding-right: 1rem;
-      padding-left: 1rem;
+      padding-right: 2rem;
+      padding-left: 4rem;
       margin-right: unset;
       padding-top: unset;
       padding-bottom: unset;
@@ -688,14 +688,14 @@ text-align: right;
     .modal {
       --bs-modal-width: 1000px;
       --bs-modal-padding: 1.4rem;
-      --bs-modal-margin: 32rem;
+      --bs-modal-margin: 24rem;
     }
     .title-swap-connect {
       font-family: 'Uniwars';
       font-style: normal;
       font-weight: 400;
-      font-size: 34px;
-      line-height: 28px;
+      font-size: 54px;
+      line-height: 54px;
       margin-top: 4%;
     }
   .btn-dash-wallet {
@@ -717,9 +717,292 @@ text-align: right;
     color: var(--bs-nav-link-menu);
     border: 1px solid gray;
   }
+      /** Mint Connected **/
+      .eth-wallet {
+        border-radius: 50.5px;
+        border: 1px solid #A8A3FC;
+        background: #131517;
+        padding-right: 1.5rem;
+        padding-left: 3rem;
+        margin-right: 4%;
+        padding-top: 0.8%;
+        padding-bottom: 0.6%;
+        display: flex;
+      }
+      .nav-item-swap-left {
+        display: block;
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 16px;
+        text-align: center;
+        color: var(--bs-nav-link-menu);
+        text-decoration: none;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-left: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+      .swap-disconnect {
+        background-color: #1C2023;
+        border-radius: 45px;
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 24px;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        margin-top: -2.5%;
+        float: right;
+        margin-right: 1.5%;
+        border: unset;
+        color: white;
+      }
+      .swap-disconnect:hover{
+        background-color: #363e44;
+      }
+      .btn-swap-max {
+        background: transparent !important;
+        font-family: 'Uniwars';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 24px;
+        text-align: center;
+        border: 0px;
+        border: transparent;
+        color: red;
+      }
+      .btn-swap-max:hover {
+        background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+        color: black;
+      }
+      .value-coin{
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 24px;
+        color: #000 !important;
+        position: absolute !important;
+        top: 76% !important;
+        left: 5% !important;
+        z-index: 1030;
+      }
+      .value-swap{
+        justify-content: flex-end;
+        display: inline-flex;
+        float: right;
+      }
+      .swap-balance{
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 24px;
+        color: #000;
+        position: relative;
+        top: 76%;
+        z-index: 1030;
+        float: right;
+        right: 5%;
+      }
+      .swap-balance-max{
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 24px;
+        color: #000;
+        position: relative;
+        top: 76%;
+        float: right;
+        right: 5%;
+        z-index: 1030;
+      }
+      .data-swap {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        background: #1C2023;
+        border-radius: 50px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+      }
+      .swap-input {
+        background-color: white;
+        border-radius: 5rem;
+        height: 200px;
+      }
+      .line-swap-review {
+        border-bottom: 1px solid #FFFFFF;
+        margin-top: 8%;
+        margin-bottom: 6%;
+      }
+      .icon-swap {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        position: absolute;
+        right: 50px;
+        z-index: 1020;
+        width: 50px;
+        height: 50px;
+      }
+      .icon-input {
+        display: block;
+        width: 45px;
+        height: 40px;
+      }
+      .title-swap-transaction {
+        font-family: 'Uniwars';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 41px;
+        margin-top: 4%;
+      }
+      .swap-review-text {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 50px;
+      }
+      .swap-transaction-text {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 16px;
+      }
+      .swap-middle-arrow {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 46%;
+      }
+      .btn-confirm-swap {
+        background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+        border-radius: 50.5px;
+        padding-top: 4.5%;
+        padding-bottom: 4.5%;
+        padding-left: 6%;
+        padding-right: 7%;
+        font-family: 'Uniwars';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 18px;
+        text-align: center;
+        color: var(--bs-btn-color);
+        border: transparent;
+        margin-left: 16%;
+        margin-right: 16%;
+      }
+      .btn-confirm-swap:hover {
+        background: linear-gradient(138deg, rgb(170, 0, 164) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(1, 84, 139) 100%);
+        color: var(--bs-btn-hover-color);
+        border: transparent;
+      }
+      /** Modal Succefful and Declined **/
+      .modal-content-succefful {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--bs-modal-color);
+        pointer-events: auto;
+        background-color: var(--bs-modal-bg);
+        background-clip: padding-box;
+        border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+        border-radius: var(--bs-modal-border-radius);
+        outline: 0;
+        background-image: url(/Dashboard/Source/img/works.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .spacer-swap {
+        height: 700px !important;
+      }
+      .modal-content-decline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--bs-modal-color);
+        pointer-events: auto;
+        background-color: var(--bs-modal-bg);
+        background-clip: padding-box;
+        border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+        border-radius: var(--bs-modal-border-radius);
+        outline: 0;
+        background-image: url(/Dashboard/Source/img/decline.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .spinner-border {
+        --bs-spinner-width: 22rem;
+        --bs-spinner-height: 22rem;
+        --bs-spinner-vertical-align: -0.125em;
+        --bs-spinner-border-width: 2.25em;
+        --bs-spinner-animation-speed: 0.75s;
+        --bs-spinner-animation-name: spinner-border;
+        border: var(--bs-spinner-border-width) solid #8247E5;
+        border-right-color: transparent;
+        margin-bottom: 12%;
+      }
+      .icon-transaction {
+        max-width: 100%;
+        max-height: 100%;
+        width: 55px;
+        height: 50px;
+      }
+      /** Disclamer Button **/
+      .btn-confirm-disclamer {
+        background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+        border-radius: 50.5px;
+        padding-top: 4.5%;
+        padding-bottom: 4.5%;
+        padding-left: 6%;
+        padding-right: 7%;
+        font-family: 'Uniwars';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: var(--bs-btn-color);
+        border: transparent;
+        margin-left: 16%;
+        margin-right: 16%;
+      }
+      .btn-confirm-disclamer:hover {
+        background: linear-gradient(138deg, rgb(150, 0, 145) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 72, 121) 100%);
+        color: var(--bs-btn-hover-color);
+        border: transparent;
+      }
+      .disclamer{
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+      line-height: 18px;
+      }
 }
    @media screen and (max-width: 2561px) {
-    /** Swap Page Connect **/
+    /** Mint Page Connect **/
     .title-swap {
       font-family: 'Video';
       font-style: normal;
@@ -762,32 +1045,21 @@ text-align: right;
       max-width: 100%;
       max-height: 100%;
       display: block;
-      width: 30px;
-      height: 31px;
-      margin-left: 36%;
-    }
-    .eth-wallet {
-      border-radius: 50.5px;
-      border: 1px solid #A8A3FC;
-      background: #131517;
-      padding-right: 2.5rem;
-      padding-left: 4rem;
-      margin-right: 4rem;
-      padding-top: 0.8%;
-      padding-bottom: 0.6%;
-      display: flex;
+      width: 50px;
+      height: 47px;
+      margin-left: 10%;
     }
     .nav-item-swap {
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 26px;
-      line-height: 32px;
+      font-size: 36px;
+      line-height: 53px;
       text-align: center;
       color: var(--bs-nav-link-menu);
       text-decoration: none;
       padding-right: 1rem;
-      padding-left: 1rem;
+      padding-left: 2rem;
       margin-right: unset;
       padding-top: unset;
       padding-bottom: unset;
@@ -795,14 +1067,6 @@ text-align: right;
     .navbar-nav {
       --bs-nav-link-padding-y: 1.5rem;
     } 
-    .title-swap-connect {
-      font-family: 'Uniwars';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 20px;
-      margin-top: 4%;
-    }
     .btn-dash-wallet {
       font: 'Video';
       font-style: normal;
@@ -823,12 +1087,318 @@ text-align: right;
       border: 1px solid gray;
     }
     .modal {
-      --bs-modal-width: 550px;
+      --bs-modal-width: 600px;
       --bs-modal-padding: 1.4rem;
-      --bs-modal-margin: 26rem;
+      --bs-modal-margin: 16rem;
     }
-    .form-control{
+    .form-control {
+      display: block;
+      width: 100%;
+      padding: 0rem 2.2rem;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 0px;
+      appearance: none;
       border-radius: 5rem;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      transition: unset;
+    }
+    /** Mint Connected **/
+    .eth-wallet {
+      border-radius: 50.5px;
+      border: 1px solid #A8A3FC;
+      background: #131517;
+      padding-right: 1.5rem;
+      padding-left: 3rem;
+      margin-right: 4%;
+      padding-top: 0.8%;
+      padding-bottom: 0.6%;
+      display: flex;
+    }
+    .nav-item-swap-left {
+      display: block;
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 11px;
+      text-align: center;
+      color: var(--bs-nav-link-menu);
+      text-decoration: none;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      margin-left: 10%;
+      padding-top: 2.4%;
+      padding-bottom: 2%;
+    }
+    .swap-disconnect {
+      background-color: #1C2023;
+      border-radius: 45px;
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 24px;
+      padding-left: 1%;
+      padding-right: 1%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      margin-top: -3.5%;
+      float: right;
+      margin-right: 2.5%;
+      border: unset;
+      color: white;
+    }
+    .swap-disconnect:hover{
+      background-color: #363e44;
+    }
+    .btn-swap-max {
+      background: transparent !important;
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 24px;
+      text-align: center;
+      border: 0px;
+      border: transparent;
+      color: red;
+    }
+    .btn-swap-max:hover {
+      background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+      color: black;
+    }
+    .value-coin{
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 24px;
+      color: #000 !important;
+      position: absolute !important;
+      top: 75% !important;
+      left: 5% !important;
+      z-index: 1030;
+    }
+    .value-swap{
+      justify-content: flex-end;
+      display: inline-flex;
+      float: right;
+    }
+    .icon-input {
+      display: block;
+      width: 40px;
+      height: 35px;
+    }
+    .swap-balance{
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 24px;
+      color: #000;
+      position: relative;
+      top: 76%;
+      z-index: 1030;
+      float: right;
+      right: 5%;
+    }
+    .swap-balance-max{
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 24px;
+      color: #000;
+      position: relative;
+      top: 76%;
+      z-index: 1030;
+      float: right;
+      right: 5%;
+    }
+    .data-swap {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 39px;
+      background: #1C2023;
+      border-radius: 50px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+    .swap-input {
+      background-color: white;
+      border-radius: 5rem;
+      height: 150px;
+    }
+    .line-swap-review {
+      border-bottom: 1px solid #FFFFFF;
+      margin-top: 8%;
+      margin-bottom: 6%;
+    }
+    .icon-swap {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      position: absolute;
+      right: 50px;
+      z-index: 1020;
+      width: 40px;
+      height: 40px;
+    }
+    .title-swap-connect {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 30px;
+      margin-top: 4%;
+    }
+    .title-swap-transaction {
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 24px;
+      margin-top: 4%;
+    }
+    .swap-review-text {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .swap-transaction-text {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 10px;
+    }
+    .swap-middle-arrow {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 46%;
+    }
+    .btn-confirm-swap {
+      background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+      border-radius: 50.5px;
+      padding-top: 4.5%;
+      padding-bottom: 4.5%;
+      padding-left: 6%;
+      padding-right: 7%;
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 16px;
+      text-align: center;
+      color: var(--bs-btn-color);
+      float: right;
+      border: transparent;
+      margin-left: 16%;
+      margin-right: 16%;
+    }
+    .btn-confirm-swap:hover {
+      background: linear-gradient(138deg, rgb(170, 0, 164) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(1, 84, 139) 100%);
+      color: var(--bs-btn-hover-color);
+      border: transparent;
+    }
+    /** Modal Succefful and Declined **/
+    .modal-content-succefful {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: var(--bs-modal-color);
+      pointer-events: auto;
+      background-color: var(--bs-modal-bg);
+      background-clip: padding-box;
+      border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+      border-radius: var(--bs-modal-border-radius);
+      outline: 0;
+      background-image: url(/Dashboard/Source/img/works.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .spacer-swap {
+      height: 300px !important;
+    }
+    .modal-content-decline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: var(--bs-modal-color);
+      pointer-events: auto;
+      background-color: var(--bs-modal-bg);
+      background-clip: padding-box;
+      border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+      border-radius: var(--bs-modal-border-radius);
+      outline: 0;
+      background-image: url(/Dashboard/Source/img/decline.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .spinner-border {
+      --bs-spinner-width: 16rem;
+      --bs-spinner-height: 16rem;
+      --bs-spinner-vertical-align: -0.125em;
+      --bs-spinner-border-width: 1.5em;
+      --bs-spinner-animation-speed: 0.75s;
+      --bs-spinner-animation-name: spinner-border;
+      border: var(--bs-spinner-border-width) solid #8247E5;
+      border-right-color: transparent;
+      margin-bottom: 12%;
+    }
+    .icon-transaction {
+      max-width: 100%;
+      max-height: 100%;
+      width: 45px;
+      height: 40px;
+    }
+    /** Disclamer Button **/
+    .btn-confirm-disclamer {
+      background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+      border-radius: 50.5px;
+      padding-top: 4.5%;
+      padding-bottom: 4.5%;
+      padding-left: 6%;
+      padding-right: 7%;
+      font-family: 'Uniwars';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 16px;
+      text-align: center;
+      color: var(--bs-btn-color);
+      border: transparent;
+      margin-left: 2%;
+      margin-right: 0%;
+    }
+    .btn-confirm-disclamer:hover {
+      background: linear-gradient(138deg, rgb(150, 0, 145) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 72, 121) 100%);
+      color: var(--bs-btn-hover-color);
+      border: transparent;
+    }
+    .disclamer {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 350;
+      font-size: 24px;
+      line-height: 36px;
     }
    }
 
@@ -910,7 +1480,7 @@ text-align: right;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 34px;
+  line-height: 37px;
   text-align: center;
   color: var(--bs-nav-link-menu);
   text-decoration: none;
@@ -923,8 +1493,8 @@ text-align: right;
 .form-control {
   display: block;
   width: 100%;
-  padding: 0rem 1.75rem;
-  font-size: 2rem;
+  padding: 0rem 1.55rem;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: #000;
@@ -934,9 +1504,11 @@ text-align: right;
   appearance: none;
   border-radius: 5rem;
   transition: unset;
+  z-index: 1020;
+  margin-right: -14%;
 }
 .form-signin {
-  max-width: 650px;
+  max-width: 500px;
 }
 .title-swap-connect {
   font-family: 'Uniwars';
@@ -978,7 +1550,7 @@ text-align: right;
 /** END **/
 /** Swap Connected **/
 .nav-item-swap-left {
-  display: ruby;
+  display: block;
   font-family: 'Video';
   font-style: normal;
   font-weight: 400;
@@ -1021,6 +1593,14 @@ text-align: right;
   left: 5% !important;
   z-index: 1030;
 }
+.title-swap-transaction {
+  font-family: 'Uniwars';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 4%;
+}
 .value-swap{
   justify-content: flex-end;
   display: inline-flex;
@@ -1057,7 +1637,7 @@ text-align: right;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 21px;
+  line-height: 28px;
   background: #1C2023;
   border-radius: 50px;
   padding-top: 2%;
@@ -1102,6 +1682,14 @@ text-align: right;
   display: block;
   position: absolute;
   right: 50px;
+  z-index: 1020;
+  width: 34px;
+  height: 34px;
+}
+.icon-input {
+  display: block;
+  width: 30px;
+  height: 25px;
 }
 .swap-review-text {
   font-family: 'Video';
@@ -1117,10 +1705,11 @@ text-align: right;
   font-size: 18px;
   line-height: 10px;
 }
-.swap-middle-arrow{
+.swap-middle-arrow {
   position: absolute;
-  margin-left: 22%;
+  margin-left: auto;
   margin-right: auto;
+  left: 46%;
 }
 .btn-confirm-swap {
   background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
@@ -1199,6 +1788,8 @@ text-align: right;
 .icon-transaction{
   max-width: 100%;
   max-height: 100%;
+  width: 35px;
+  height: 30px;
 }
 /** Disclamer Button **/
 .btn-confirm-disclamer {
@@ -1272,8 +1863,8 @@ line-height: 18px;
   .form-control {
     display: block;
     width: 100%;
-    padding: 1.0rem 0.75rem;
-    font-size: 2rem;
+    padding: 1.0rem 1.45rem;
+    font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.5;
     color: #000;
@@ -1311,8 +1902,8 @@ line-height: 18px;
     font-family: 'Video';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 31px;
+    font-size: 26px;
+    line-height: 35px;
     text-align: center;
     color: var(--bs-nav-link-menu);
     text-decoration: none;
@@ -1325,9 +1916,20 @@ line-height: 18px;
     max-width: 100%;
     max-height: 100%;
     display: block;
-    width: 24px;
-    height: 24px;
-    margin-left: 30%;
+    width: 34px;
+    height: 34px;
+    margin-left: 36%;
+  }
+  .icon-swap {
+    right: 25px;
+    width: 28px;
+    height: 28px;
+  }
+  .icon-transaction {
+    max-width: 100%;
+    max-height: 100%;
+    width: 30px;
+    height: 28px;
   }
    }
 
@@ -1384,7 +1986,7 @@ line-height: 18px;
     .modal {
       --bs-modal-width: 400px;
       --bs-modal-padding: 1.4rem;
-      --bs-modal-margin: 9rem;
+      --bs-modal-margin: 4rem;
     }
     .landing-image-icon {
       width: 80px;
@@ -1415,6 +2017,40 @@ line-height: 18px;
     .form-control{
       border-radius: 5rem;
     }
+    .nav-item-swap {
+      display: block;
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 39px;
+      text-align: center;
+      color: var(--bs-nav-link-menu);
+      text-decoration: none;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-right: 0%;
+      margin-bottom: 0%;
+    }
+    .nav-item-swap-left {
+      padding-top: 2.5%;
+    }
+    .icon-transaction {
+      max-width: 100%;
+      max-height: 100%;
+      width: 26px;
+      height: 25px;
+    }
+    .icon-swap {
+      right: 25px;
+      width: 28px;
+      height: 28px;
+    }
+    .icon-input {
+      display: block;
+      width: 28px;
+      height: 24px;
+    }
    }
 
    @media screen and (max-width: 1025px) {
@@ -1434,8 +2070,15 @@ line-height: 18px;
     .form-signin {
       max-width: 500px;
     }
-    .form-control{
+    .nav-item-swap-left {
+      padding-top: 2%;
+    }
+    .form-control {
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 0.5;
       border-radius: 5rem;
+      padding: 1.0rem 1.45rem;
     }
     .btn-swap {
       background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
@@ -1476,12 +2119,12 @@ line-height: 18px;
       margin-bottom: 0.5%;
     }
     .nav-item-swap {
-      display: block ruby;
+      display: block;
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 27px;
+      font-size: 22px;
+      line-height: 29px;
       text-align: center;
       color: var(--bs-nav-link-menu);
       text-decoration: none;
@@ -1497,6 +2140,11 @@ line-height: 18px;
       width: 24px;
       height: 24px;
       margin-left: 30%;
+    }
+    .modal {
+      --bs-modal-width: 400px;
+      --bs-modal-padding: 1.4rem;
+      --bs-modal-margin: 3rem;
     }
    }
 
@@ -1518,10 +2166,11 @@ line-height: 18px;
   max-width: 400px;
 }
 .form-control {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 0.5;
   border-radius: 5rem;
+  padding: 1.0rem 1.2rem;
 }
 .landing-image-icon {
   width: 50px;
@@ -1546,6 +2195,17 @@ line-height: 18px;
   float: right;
   border: transparent;
 }
+.eth-wallet {
+  border-radius: 50.5px;
+  border: 1px solid #A8A3FC;
+  background: #131517;
+  padding-right: 1.5rem;
+  padding-left: 3rem;
+  margin-right: 0%;
+  padding-top: 0.8%;
+  padding-bottom: 0.6%;
+  display: flex;
+}
 .nav-item-swap {
   display: block ruby;
   font-family: 'Video';
@@ -1561,12 +2221,20 @@ line-height: 18px;
   margin-right: 0%;
   margin-bottom: 0%;
 }
+.nav-item-swap-left {
+  padding-right: 2rem;
+  padding-left: 2.5rem;
+  margin-left: 0%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}
 .icon-header-swap {
   max-width: 100%;
   max-height: 100%;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 30px;
   margin-left: 30%;
 }
 .btn-dash-menu {
@@ -1603,9 +2271,9 @@ line-height: 18px;
   margin-top: 2%;
 }
 .modal {
-  --bs-modal-width: 300px;
+  --bs-modal-width: 400px;
   --bs-modal-padding: 1.4rem;
-  --bs-modal-margin: 4rem;
+  --bs-modal-margin: 3rem;
 }
    }
 
