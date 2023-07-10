@@ -1,104 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<meta http-equiv="Cache-Control" content="no-cache" /> 
-    <head>
+<meta http-equiv="Cache-Control" content="no-cache" />
+
+<head>
   <!-- Character Set and View -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swap - Plots.Finance</title>
-<meta name="description" content="This site is under Construction.">
-<meta name="keywords" content="Complete with keywords separe using (,)">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swap - Plots.Finance</title>
+  <meta name="description" content="This site is under Construction.">
+  <meta name="keywords" content="Complete with keywords separe using (,)">
   <!-- OpenGrah -->
-<meta property="og:title" content="Plots Fi">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://plots.kanzen.co/">
-<meta property="og:description" content="No Description Yet.">
-<meta property="og:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://Plots.finance/">
-<meta property="twitter:title" content="Plots.Finance">
-<meta property="twitter:description" content="Under Construction">
-<meta property="twitter:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
+  <meta property="og:title" content="Plots Fi">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plots.kanzen.co/">
+  <meta property="og:description" content="No Description Yet.">
+  <meta property="og:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://Plots.finance/">
+  <meta property="twitter:title" content="Plots.Finance">
+  <meta property="twitter:description" content="Under Construction">
+  <meta property="twitter:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
   <!-- Favicons -->
-<link rel="icon" href="https://plots.kosmitodev.com.ar/Source/img/favicon.ico">
-<link rel="apple-touch-icon" href="https://plots.kosmitodev.com.ar/Source/img/apple-touch-icon.png">
+  <link rel="icon" href="https://plots.kosmitodev.com.ar/Source/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://plots.kosmitodev.com.ar/Source/img/apple-touch-icon.png">
   <!-- CSS Loads -->
   <link href="./Source/css/dashboard2.css" rel="stylesheet" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/web3@4.0.1/dist/web3.min.js" integrity="sha256-WidiNe/ze6mj1urUBEFTIW+P+1IEnfp9AIQ9AjELWmg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@4.0.1/dist/web3.min.js"
+    integrity="sha256-WidiNe/ze6mj1urUBEFTIW+P+1IEnfp9AIQ9AjELWmg=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.typekit.net/qxq2irv.css">
 
 </head>
+
 <body>
   <main>
     <header>
       <nav class="navbar navbar-expand-lg" aria-label="Plots.Finance">
         <div class="container-fluid">
           <div class="d-inline-flex align-items-center">
-          <svg class="landing-image-icon" width="44" height="72" viewBox="0 0 44 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.2751 1.31652C0.226309 5.8092 18.3468 77.199 7.06436 71.6347C4.78108 69.2026 2.98221 66.3279 1.77048 63.1748C0.558756 60.0216 -0.0420815 56.6518 0.00228999 53.2579C0.0466615 49.8639 0.735372 46.5122 2.02908 43.3943C3.32279 40.2764 5.19616 37.4533 7.54218 35.0863C13.9436 28.6259 25.9919 44.24 38.0905 38.5216C55.8017 31.293 23.9892 -2.97227 14.2751 1.31652Z" fill="url(#paint0_linear_4_665)"/>
-            <defs>
-            <linearGradient id="paint0_linear_4_665" x1="-46.9587" y1="-2.45306" x2="83.0927" y2="75.4025" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FF56F9"/>
-            <stop offset="0.9999" stop-color="#40FFFF"/>
-            <stop offset="1" stop-color="#009BFF"/>
-            </linearGradient>
-            </defs></svg>
-        </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlotsMenu" aria-controls="offcanvasPlotsMenu" aria-label="Toggle navigation">
+            <svg class="landing-image-icon" width="44" height="72" viewBox="0 0 44 72" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2751 1.31652C0.226309 5.8092 18.3468 77.199 7.06436 71.6347C4.78108 69.2026 2.98221 66.3279 1.77048 63.1748C0.558756 60.0216 -0.0420815 56.6518 0.00228999 53.2579C0.0466615 49.8639 0.735372 46.5122 2.02908 43.3943C3.32279 40.2764 5.19616 37.4533 7.54218 35.0863C13.9436 28.6259 25.9919 44.24 38.0905 38.5216C55.8017 31.293 23.9892 -2.97227 14.2751 1.31652Z"
+                fill="url(#paint0_linear_4_665)" />
+              <defs>
+                <linearGradient id="paint0_linear_4_665" x1="-46.9587" y1="-2.45306" x2="83.0927" y2="75.4025"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF56F9" />
+                  <stop offset="0.9999" stop-color="#40FFFF" />
+                  <stop offset="1" stop-color="#009BFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlotsMenu"
+            aria-controls="offcanvasPlotsMenu" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasPlotsMenu" aria-labelledby="offcanvasPlotsMenu">
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasPlotsMenu"
+            aria-labelledby="offcanvasPlotsMenu">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasPlotsMenu">Plots.Finance</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>     
-           <div class="offcanvas-body">
-            <ul class="navbar-nav flex-grow-1 pe-3">
-              <li class="eth-wallet nav-item-swap-left">VLND Pool = 2,000 ETH</li>
-            </ul>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="eth-wallet nav-item-swap-left">VLND Pool = 2,000 ETH</li>
+              </ul>
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <span class="eth-wallet"><span class="nav-item-swap">0</span><span ><img src="/Dashboard/Source/img/eth.png" class="icon-header-swap"></span></span>
-                <button type="button" class="btn-dash-menu"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="11" height="11" rx="5.5" fill="#05FF00"/>
+                <span class="eth-wallet"><span class="nav-item-swap">0</span><span><img
+                      src="/Dashboard/Source/img/eth.png" class="icon-header-swap"></span></span>
+                <button type="button" class="btn-dash-menu"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="11" height="11" rx="5.5" fill="#05FF00" />
                   </svg> 0x31C</button>
-                </ul>
-            </div> 
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-  
-<section id="top">
-  <div class="container-fluid">
-    <button class="swap-disconnect d-flex ">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img src="/Dashboard/Source/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
-  <h1 class="title-swap">If the fully diluted valuation of $PLOTS token is $    M and the total amount of ETH in the VLND pool pre snapshot is     ETH then my expected percentage return is x% </h1>
-     <div class="d-flex align-items-center py-4 bg-body-tertiary">
-  <main class="form-signin w-100 m-auto">
-        <form>
-          <div class="input-group mb-3 swap-input">
-            <input type="text" class="form-control" aria-describedby="basic-addon2">
-            <span class="input-group-text" id="inputGroup-sizing-lg"><img src="/Dashboard/Source/img/eth.png" class="icon-swap"></span>
-              <div class="value-coin">$ 1,924</div> <div class="swap-balance-max justify-content-end">Balance: 0 <button class="btn-swap-max" type="button">Max</button></div>
 
-          </div>  
-          <div class="swap-spacer-0"></div>
-<div class="input-group mb-3 swap-input">
-  <input type="text" class="form-control" aria-describedby="basic-addon2">
-  <span  class="input-group-text" id="inputGroup-sizing-lg"><img src="/Dashboard/Source/img/plots.png" class="icon-swap">
-    </span>
-    <div class="value-coin">$ 1,924</div> <div class="swap-balance justify-content-end">Balance: 0</div>
-</div>
-<div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img src="/Dashboard/Source/img/gas.png" class="icon-input"> $4</span></div>
-          <button class="btn-swap swap-spacer-2" type="button" data-bs-toggle="modal" data-bs-target="#review-buy">Buy</button>
+    <section id="top">
+      <div class="container-fluid">
+        <button class="swap-disconnect d-flex ">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
+            src="/Dashboard/Source/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
+        <h1 class="title-swap">If the fully diluted valuation of $PLOTS token is <span class="title-swap-input">100M</span> and the total amount of <span class="title-swap-input">100ETH</span> in the
+          VLND pool pre snapshot is ETH then my expected percentage return is <span class="title-swap-input">1.536%</span> </h1>
         </form>
-      </main>
-    </div>
-</div>
-</section> 
-</main>
+        <div class="d-flex align-items-center py-4">
+          <main class="form-signin w-100 m-auto">
+                <div class="row">
+                    <div class="swap-input">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="inputGroup-sizing-lg"><img
+                                    src="/Dashboard/Source/img/eth.png" class="icon-swap"></span>
+                        </div>
+                        <div class="value-coin">$ 1,924</div>
+                            <div class="swap-balance-max">Balance: 0 <button class="btn-swap-max"
+                                    type="button">Max</button></div>
+                    </div>
+                </div>
+                <div class="swap-spacer-0"></div>
+                <div class="row">
+                    <div class="swap-input">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="inputGroup-sizing-lg"><img
+                                    src="/Dashboard/Source/img/plots.png" class="icon-swap">
+                            </span>
+                        </div>
+                            <div class="value-coin">$ 1,924</div>
+                            <div class="swap-balance justify-content-end">Balance: 0</div>
+                    </div>
+                </div>
+                <div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img
+                            src="/Dashboard/Source/img/gas.png" class="icon-input"> $4</span></div>
+                <button class="btn-swap swap-spacer-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#review-buy">Buy</button>
+            </form>
+        </main>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- Modal Review The Mint -->
-  <div class="modal fade" id="review-buy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="review-buy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -106,176 +136,188 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-<p class="swap-review-text">You pay</p>
-<p class="swap-review-text">1 <img src="/Dashboard/Source/img/eth.png" class="icon-input float-end"></p>
+          <p class="swap-review-text">You pay</p>
+          <p class="swap-review-text">1 <img src="/Dashboard/Source/img/eth.png" class="icon-input float-end"></p>
 
-<p class="swap-review-text">You Receive</p>
-<p class="swap-review-text">100 <img src="/Dashboard/Source/img/plots.png" class="icon-input float-end"></p>
-<div class="line-swap-review"></div>
-<p class="swap-review-text">Gas Fee <span class="float-end">$4</span></p>
-<p class="swap-review-text">Plots Fee <span class="float-end">$0</span></p>
-<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm Mint</button>
-<div class="py-2"></div>
-<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#waiting">waiting</button>
-<div class="py-2"></div>
-<button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Decline Mint</button>
+          <p class="swap-review-text">You Receive</p>
+          <p class="swap-review-text">100 <img src="/Dashboard/Source/img/plots.png" class="icon-input float-end"></p>
+          <div class="line-swap-review"></div>
+          <p class="swap-review-text">Gas Fee <span class="float-end">$4</span></p>
+          <p class="swap-review-text">Plots Fee <span class="float-end">$0</span></p>
+          <button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#successful">Confirm
+            Mint</button>
+          <div class="py-2"></div>
+          <button class="btn-confirm-swap" type="button" data-bs-toggle="modal"
+            data-bs-target="#waiting">waiting</button>
+          <div class="py-2"></div>
+          <button class="btn-confirm-swap" type="button" data-bs-toggle="modal" data-bs-target="#failed">Decline
+            Mint</button>
         </div>
       </div>
     </div>
   </div>
-    <!-- Modal Successful -->
-  <div class="modal fade" id="successful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- Modal Successful -->
+  <div class="modal fade" id="successful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content-succefful">
         <div class="modal-header">
-          
+
         </div>
         <div class="modal-body">
 
           <div class="spacer-swap"></div>
-<h1 class="title-swap-connect text-center py-4">Mint Successful!</h1>
-<button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
+          <h1 class="title-swap-connect text-center py-4">Mint Successful!</h1>
+          <button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
         </div>
       </div>
     </div>
   </div>
-      <!-- Modal Waiting transaction -->
-      <div class="modal fade" id="waiting" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-             <div class="d-flex justify-content-center">
-              <div class="spinner-border" role="status">
-                <span class="visually-hidden">Confirming...</span>
-              </div>
-              </div><h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
-              <span class="swap-transaction-text py-2">
-                <span class="float-start">
-                <img src="/Dashboard/Source/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span> 
-                <span class="swap-middle-arrow">
-                <img src="/Dashboard/Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
-                <span class="float-end">100 VLND 
-                  <img src="/Dashboard/Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
-    <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
+  <!-- Modal Waiting transaction -->
+  <div class="modal fade" id="waiting" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Confirming...</span>
             </div>
           </div>
+          <h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
+          <span class="swap-transaction-text py-2">
+            <span class="float-start">
+              <img src="/Dashboard/Source/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
+            <span class="swap-middle-arrow">
+              <img src="/Dashboard/Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
+            <span class="float-end">100 VLND
+              <img src="/Dashboard/Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
+          <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
         </div>
       </div>
-      <!-- Modal Failed -->
-  <div class="modal fade" id="failed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    </div>
+  </div>
+  <!-- Modal Failed -->
+  <div class="modal fade" id="failed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content-decline">
         <div class="modal-header">
-          
+
         </div>
         <div class="modal-body">
           <div class="spacer-swap"></div>
-<h1 class="title-swap-connect text-center py-4">Mint Failed!</h1>
-<button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
+          <h1 class="title-swap-connect text-center py-4">Mint Failed!</h1>
+          <button class="btn-confirm-swap mb-3" data-bs-dismiss="modal" aria-label="Close">Return</button>
         </div>
       </div>
     </div>
   </div>
-        <!-- Modal Disclamer Policy -->
-        <div class="modal cookie-disclaimer" id="disclamer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1>Disclamer</h1>
-              </div>
-              <div class="modal-body">
-                <form class="needs-validation" id="disclamer" novalidate>
-                <span class="disclamer"> 
-                  <p><b>US Citizen or resident</b></p>      
-                  <p>I am not a US citizen or resident.</p>
-                  <p><b>Calculator Statement</b></p>
-                  <p>I understand that the calculator statement is for estimation purposes only and does not guarantee the advertised ROI.</p> 
-                  <p><b>VLND token liquidity & chain</b></p>
-                  <p>I understand that the VLND token will be minted at my polygon address and will initially have no liquidity.</p> 
-                  <p><b>Smart Contract</b></p>
-                  <p>The VLND smart contract has not been audited. Invest at your own risk.</p> 
-                </span>
-                <div class="form-check mb-3">
-                  <input class="form-check-input"  id="validation" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="validation">
-                    I have read the above.
-                  </label>
-                  <div class="valid-feedback">Valid.</div>
-                  <div class="invalid-feedback">Check this checkbox to continue.</div>
-                </div>
-               <input type='submit' class='btn-confirm-disclamer mb-3' id="save" value='I understand, i’m a degen.'>
-            </form>
-          </div>
-              </div>
+  <!-- Modal Disclamer Policy -->
+  <div class="modal cookie-disclaimer" id="disclamer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Disclamer</h1>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" id="disclamer" novalidate>
+            <span class="disclamer">
+              <p><b>US Citizen or resident</b></p>
+              <p>I am not a US citizen or resident.</p>
+              <p><b>Calculator Statement</b></p>
+              <p>I understand that the calculator statement is for estimation purposes only and does not guarantee the
+                advertised ROI.</p>
+              <p><b>VLND token liquidity & chain</b></p>
+              <p>I understand that the VLND token will be minted at my polygon address and will initially have no
+                liquidity.</p>
+              <p><b>Smart Contract</b></p>
+              <p>The VLND smart contract has not been audited. Invest at your own risk.</p>
+            </span>
+            <div class="form-check mb-3">
+              <input class="form-check-input" id="validation" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="validation">
+                I have read the above.
+              </label>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Check this checkbox to continue.</div>
             </div>
-          </div>
-      <!-- JS Loads -->
-    <script src="../Source/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="../Source/@popperjs/core/dist/umd/popper.js" integrity="sha384-grSmhim7l2CkmGXtqSePI7cwM/7NymZ7eQkKk3WwaZyjfkef6IziTCUrHtz0NfwD"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('#save').prop('disabled', true);
+            <input type='submit' class='btn-confirm-disclamer mb-3' id="save" value='I understand, i’m a degen.'>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS Loads -->
+  <script src="../Source/bootstrap/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="../Source/@popperjs/core/dist/umd/popper.js"
+    integrity="sha384-grSmhim7l2CkmGXtqSePI7cwM/7NymZ7eQkKk3WwaZyjfkef6IziTCUrHtz0NfwD"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#save').prop('disabled', true);
 
-    $('#validation').click(function(){
-        if($(this).is(':checked'))
-        {
-            $('#save').prop('disabled', false);
+      $('#validation').click(function () {
+        if ($(this).is(':checked')) {
+          $('#save').prop('disabled', false);
         }
-        else
-        {
-            $('#save').prop('disabled', true);
+        else {
+          $('#save').prop('disabled', true);
         }
+      });
     });
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function() { 
-    var cookie = false;
-    var cookieContent = $('.cookie-disclaimer');
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var cookie = false;
+      var cookieContent = $('.cookie-disclaimer');
 
-    checkCookie();
+      checkCookie();
 
-    if (cookie === true) {
-      cookieContent.hide();
-    }
-
-    function setCookie(cname, cvalue, exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      var expires = "expires=" + d.toGMTString();
-      document.cookie = cname + "=" + cvalue + "; " + expires;
-    }
-
-    function getCookie(cname) {
-      var name = cname + "=";
-      var ca = document.cookie.split(';');
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i].trim();
-        if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+      if (cookie === true) {
+        cookieContent.hide();
       }
-      return "";
-    }
 
-    function checkCookie() {
-      var check = getCookie("app.plots.finance");
-      if (check !== "") {
-        return cookie = true;
-      } else {
-        var myModal = new bootstrap.Modal(document.getElementById('disclamer'), {})
-        myModal.toggle()
+      function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
       }
-      
-    }
-    $('form').submit(function () {
-      setCookie("app.plots.finance", "accepted", 365);
-      cookieContent.hide(500);
+
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i].trim();
+          if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+        }
+        return "";
+      }
+
+      function checkCookie() {
+        var check = getCookie("app.plots.finance");
+        if (check !== "") {
+          return cookie = true;
+        } else {
+          var myModal = new bootstrap.Modal(document.getElementById('disclamer'), {})
+          myModal.toggle()
+        }
+
+      }
+      $('form').submit(function () {
+        setCookie("app.plots.finance", "accepted", 365);
+        cookieContent.hide(500);
+      });
     });
-});
-    </script>
+  </script>
 
-</body>  
+</body>
+
 </html>
