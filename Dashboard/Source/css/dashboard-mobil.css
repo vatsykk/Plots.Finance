@@ -905,17 +905,7 @@ a:hover {
     --bs-modal-footer-border-width: var(--bs-border-width);
   }
   
-  .modal-body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: var(--bs-modal-padding);
-    display: grid;
-  }
-  
-  .modal-content {
-    color: var(--bs-modal-color);
-    pointer-events: auto;
-  }
+
 
 /** Cellphones Adjustment for Resolutions **/
 
@@ -1082,7 +1072,7 @@ a:hover {
     --bs-modal-width: 400px;
     --bs-modal-padding: 1rem;
     --bs-modal-margin: 2rem;
-    margin-top: 8rem;
+    margin-top: auto;
   }
 /** End Swap Connected (Pre-Release) **/      
 }
