@@ -614,19 +614,20 @@ text-align: right;
     .form-control {
       display: block;
       width: 100%;
-      padding: 1rem 3.2rem;
-      font-size: 4rem;
+      padding: 0rem 1.55rem;
+      font-size: 2.6rem;
       font-weight: 400;
       line-height: 1.5;
       color: #000;
-      background-color: #fff;
+      background-color: #ffffff;
       background-clip: padding-box;
       border: 0px;
       appearance: none;
       border-radius: 5rem;
-        border-top-right-radius: 2rem;
-        border-bottom-right-radius: 2rem;
       transition: unset;
+      z-index: 1020;
+      margin-right: 0%;
+      margin-top: 6%;
     }
     .form-signin {
       max-width: 1100px;
@@ -726,6 +727,121 @@ text-align: right;
     border: 1px solid gray;
   }
       /** Mint Connected **/
+      .swap-input {
+        background-color: white;
+        border-radius: 1.5rem;
+        height: 150px;
+      }
+      .icon-swap {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        position: absolute;
+        right: 0px !important;
+        z-index: 1020;
+        width: 60px;
+        height: 60px;
+        margin-top: 4%;
+      }
+      .value-swap{
+        justify-content: flex-end;
+        display: inline-flex;
+        float: right;
+      }
+      .value-coin {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 24px;
+        color: #000 !important;
+        position: absolute !important;
+        margin-left: 0% !important;
+        z-index: 1030;
+        text-align: left;
+        margin-top: -0.3%;
+        padding-left: 1.5%;
+      }
+      .swap-balance {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 24px;
+        color: #000;
+        z-index: 1030;
+        text-align: right;
+        margin-top: -1.0%;
+        margin-right: 6%;
+      }
+      .swap-balance-max {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 24px;
+        color: #000;
+        z-index: 1030;
+        position: relative;
+        width: 100% !important;
+        text-align: right;
+        margin-top: -1.3%;
+        padding-right: 5%;
+      }
+      .data-swap {
+        font-family: 'Video';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        background: #1C2023;
+        border-radius: 50px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: auto;
+        margin-top: 2%;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        padding: 0rem 3.55rem;
+        font-size: 2.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000;
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border: 0px;
+        appearance: none;
+        border-radius: 5rem;
+        transition: unset;
+        z-index: 1020;
+        margin-right: 0%;
+        margin-top: 5.2%;
+      }
+      .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 94%;
+      }
+      .input-group-text {
+        display: flex;
+        align-items: center;
+        padding: 0.375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000;
+        text-align: center;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0px;
+        border-radius: 2rem;
+      }
       .eth-wallet {
         border-radius: 50.5px;
         border: 1px solid #A8A3FC;
@@ -790,49 +906,6 @@ text-align: right;
         background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
         color: black;
       }
-      .value-coin{
-        font-family: 'Video';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 24px;
-        color: #000 !important;
-        position: absolute !important;
-        top: 76% !important;
-        left: 5% !important;
-        z-index: 1030;
-      }
-      .value-swap{
-        justify-content: flex-end;
-        display: inline-flex;
-        float: right;
-      }
-      .swap-balance{
-        font-family: 'Video';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 24px;
-        color: #000;
-        position: relative;
-        top: 76%;
-        z-index: 1030;
-        float: right;
-        right: 5%;
-      }
-      .swap-balance-max{
-        font-family: 'Video';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 24px;
-        color: #000;
-        position: relative;
-        top: 76%;
-        float: right;
-        right: 5%;
-        z-index: 1030;
-      }
       .data-swap {
         font-family: 'Video';
         font-style: normal;
@@ -846,25 +919,10 @@ text-align: right;
         padding-left: 4%;
         padding-right: 4%;
       }
-      .swap-input {
-        background-color: white;
-        border-radius: 5rem;
-        height: 200px;
-      }
       .line-swap-review {
         border-bottom: 1px solid #FFFFFF;
         margin-top: 8%;
         margin-bottom: 6%;
-      }
-      .icon-swap {
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-        position: absolute;
-        right: 50px;
-        z-index: 1020;
-        width: 50px;
-        height: 50px;
       }
       .icon-input {
         display: block;
@@ -1099,24 +1157,8 @@ text-align: right;
       --bs-modal-padding: 1.4rem;
       --bs-modal-margin: 16rem;
     }
-    .form-control {
-      display: block;
-      width: 100%;
-      padding: 0rem 2.2rem;
-      font-size: 3rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #000;
-      background-color: #fff;
-      background-clip: padding-box;
-      border: 0px;
-      appearance: none;
-      border-radius: 5rem;
-      border-top-right-radius: 2rem;
-      border-bottom-right-radius: 2rem;
-      transition: unset;
-    }
     /** Mint Connected **/
+    
     .eth-wallet {
       border-radius: 50.5px;
       border: 1px solid #A8A3FC;
@@ -1181,53 +1223,66 @@ text-align: right;
       background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
       color: black;
     }
-    .value-coin{
-      font-family: 'Video';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 24px;
-      color: #000 !important;
-      position: absolute !important;
-      top: 75% !important;
-      left: 5% !important;
-      z-index: 1030;
+    .swap-input {
+      background-color: white;
+      border-radius: 2rem;
+      height: 150px;
+    }
+    .icon-swap {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      position: absolute;
+      right: -24px !important;
+      z-index: 1020;
+      width: 50px;
+      height: 50px;
+      margin-top: 4%;
     }
     .value-swap{
       justify-content: flex-end;
       display: inline-flex;
       float: right;
     }
-    .icon-input {
-      display: block;
-      width: 40px;
-      height: 35px;
-    }
-    .swap-balance{
+    .value-coin {
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 28px;
       line-height: 24px;
-      color: #000;
-      position: relative;
-      top: 76%;
+      color: #000 !important;
+      position: absolute !important;
+      margin-left: 0% !important;
       z-index: 1030;
-      float: right;
-      right: 5%;
+      text-align: left;
+      margin-top: -0.2%;
+      padding-left: 1.5%;
     }
-    .swap-balance-max{
+    .swap-balance {
       font-family: 'Video';
       font-style: normal;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 28px;
       line-height: 24px;
       color: #000;
-      position: relative;
-      top: 76%;
       z-index: 1030;
-      float: right;
-      right: 5%;
+      text-align: right;
+      margin-top: -0.3%;
+      margin-right: 6%;
+    }
+    .swap-balance-max {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 24px;
+      color: #000;
+      z-index: 1030;
+      position: relative;
+      width: 100% !important;
+      text-align: right;
+      margin-top: -1.2%;
+      padding-right: 5%;
     }
     .data-swap {
       font-family: 'Video';
@@ -1241,26 +1296,72 @@ text-align: right;
       padding-bottom: 3%;
       padding-left: 4%;
       padding-right: 4%;
+      margin-top: 2%;
+      width: auto;
+      width: 770px;
     }
-    .swap-input {
-      background-color: white;
+    .form-control {
+      display: block;
+      width: 100%;
+      padding: 0rem 1.55rem;
+      font-size: 2.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000;
+      background-color: #ffffff;
+      background-clip: padding-box;
+      border: 0px;
+      appearance: none;
       border-radius: 5rem;
-      height: 150px;
+      transition: unset;
+      z-index: 1020;
+      margin-right: 0%;
+      margin-top: 6%;
+    }
+    .input-group {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      width: 91%;
+    }
+    .input-group-text {
+      display: flex;
+      align-items: center;
+      padding: 0.375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000;
+      text-align: center;
+      white-space: nowrap;
+      background-color: transparent;
+      border: 0px;
+      border-radius: 2rem;
+    }
+    .data-swap {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 39px;
+      background: #1C2023;
+      border-radius: 50px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 4%;
+      padding-right: 4%;
+      margin-top: 2%;
+    }
+    .icon-input {
+      display: block;
+      width: 40px;
+      height: 35px;
     }
     .line-swap-review {
       border-bottom: 1px solid #FFFFFF;
       margin-top: 8%;
       margin-bottom: 6%;
-    }
-    .icon-swap {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-      position: absolute;
-      right: 50px;
-      z-index: 1020;
-      width: 40px;
-      height: 40px;
     }
     .title-swap-connect {
       font-family: 'Uniwars';
@@ -1637,8 +1738,6 @@ text-align: right;
   z-index: 1030;
   text-align: left;
   margin-top: -1.5%;
-  top: unset !important;
-  left: unset !important;
   padding-left: 1.5%;
 }
 .swap-balance {
@@ -1650,8 +1749,6 @@ text-align: right;
   color: #000;
   z-index: 1030;
   text-align: right;
-  top: unset !important;
-  right: unset !important;
   margin-top: -6%;
   margin-right: 6%;
 }
@@ -1666,7 +1763,6 @@ text-align: right;
   position: relative;
   width: 100% !important;
   text-align: right;
-  top: unset !important;
   margin-top: -6.2%;
 }
 .data-swap {
@@ -1722,13 +1818,12 @@ text-align: right;
   max-height: 100%;
   display: block;
   position: absolute;
-  right: -28px;
+  right: -28px !important;
   z-index: 1020;
   width: 34px;
   height: 34px;
   top: 40px;
 }
-
 .icon-input {
   display: block;
   width: 30px;
@@ -1903,23 +1998,6 @@ line-height: 18px;
     float: right;
     border: transparent;
   }
-  .form-control {
-    display: block;
-    width: 100%;
-    padding: 1.0rem 1.45rem;
-    font-size: 2.8rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0px;
-    appearance: none;
-    border-radius: 5rem;
-      border-top-right-radius: 2rem;
-      border-bottom-right-radius: 2rem;
-    transition: unset;
-  }
   .btn-dash-menu {
     border: solid 3px transparent !important;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
@@ -1963,16 +2041,14 @@ line-height: 18px;
     height: 34px;
     margin-left: 36%;
   }
-  .icon-swap {
-    right: 25px;
-    width: 28px;
-    height: 28px;
-  }
   .icon-transaction {
     max-width: 100%;
     max-height: 100%;
     width: 30px;
     height: 28px;
+  }
+  .value-coin {
+    margin-top: -1.8%;
   }
    }
 
@@ -2084,18 +2160,43 @@ line-height: 18px;
       width: 26px;
       height: 25px;
     }
-    .icon-swap {
-      right: 25px;
-      width: 28px;
-      height: 28px;
-    }
     .icon-input {
       display: block;
       width: 28px;
       height: 24px;
     }
+    /** Swap Connected **/
+    .form-control {
+      display: block;
+      width: 100%;
+      padding: 0rem 1.55rem;
+      font-size: 2.6rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000;
+      background-color: #ffffff;
+      background-clip: padding-box;
+      border: 0px;
+      appearance: none;
+      border-radius: 5rem;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+      transition: unset;
+      z-index: 1020;
+      margin-right: 0%;
+      margin-top: 6%;
+    }
+    .value-coin {
+      margin-top: -2.2%;
+      padding-left: 1.5%;
+    }
+    .data-swap {
+      width: 505px;
+    }
+    .icon-swap {
+      right: -20px !important;
    }
-
+  }
    @media screen and (max-width: 1025px) {
     /** Swap Connect page **/
     .title-swap {
@@ -2188,6 +2289,64 @@ line-height: 18px;
       --bs-modal-width: 400px;
       --bs-modal-padding: 1.4rem;
       --bs-modal-margin: 3rem;
+    }
+    /** Swap Connected **/
+    .swap-balance {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      color: #000;
+      z-index: 1030;
+      text-align: right;
+      top: unset !important;
+      right: unset !important;
+      margin-top: -10%;
+      margin-right: 6%;
+    }
+    .swap-balance-max {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      color: #000;
+      z-index: 1030;
+      position: relative;
+      width: 100% !important;
+      text-align: right;
+      margin-top: -10.2%;
+    }
+    .value-coin {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      color: #000 !important;
+      position: absolute !important;
+      margin-left: 0% !important;
+      z-index: 1030;
+      text-align: left;
+      margin-top: -4.5%;
+      padding-left: 1.5%;
+    }
+    .data-swap {
+      font-family: 'Video';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      background: #1C2023;
+      border-radius: 50px;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+      width: 495px;
+      margin-left: -3%;
+      margin-top: 3%;
     }
    }
 
@@ -2317,6 +2476,71 @@ line-height: 18px;
   --bs-modal-width: 400px;
   --bs-modal-padding: 1.4rem;
   --bs-modal-margin: 3rem;
+}
+.swap-balance-max {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  z-index: 1030;
+  position: relative;
+  text-align: right;
+  margin-top: -9.2%;
+}
+.swap-balance {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  z-index: 1030;
+  text-align: right;
+  margin-top: -9%;
+  margin-right: 6%;
+}
+.value-coin {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000 !important;
+  position: absolute !important;
+  margin-left: 0% !important;
+  z-index: 1030;
+  text-align: left;
+  margin-top: -4.5%;
+  padding-left: 1.5%;
+}
+.data-swap {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  background: #1C2023;
+  border-radius: 50px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 391px;
+  margin-left: -3%;
+  margin-top: 3%;
+}
+.icon-swap {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  position: absolute;
+  right: -19px !important;
+  z-index: 1020;
+  width: 34px;
+  height: 34px;
+  top: 40px;
 }
    }
 
