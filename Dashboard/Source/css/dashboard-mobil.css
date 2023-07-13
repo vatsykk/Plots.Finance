@@ -1462,7 +1462,56 @@ a:hover {
 }
 /** End Swap Connected (Pre-Release) **/      
 }
-
+@media screen and (max-width: 331px) {
+  /** Swap Connect Page (Pre-Release) **/
+  
+  /** End of Swap Connect Page (Pre-Release) **/
+  /** -------------------------- **/
+  /** Swap Connected Page (Pre-Release) **/
+  .data-swap {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .icon-input {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  .title-swap-transaction {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 23px;
+    margin-top: 12%;
+    top: 2.5%;
+    position: relative;
+  }
+  .swap-review-text {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .swap-transaction-text {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .icon-transaction {
+    max-width: 100%;
+    max-height: 100%;
+    width: 24px;
+    height: 22px;
+  }
+  /** End Swap Connected (Pre-Release) **/      
+  }
 @media screen and (max-width: 320px) {
 /** Swap Connect Page (Pre-Release) **/
 
