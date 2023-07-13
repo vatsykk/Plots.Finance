@@ -1460,6 +1460,19 @@ a:hover {
   float: unset;
   border: transparent;
 }
+.swap-review-text {
+  font-size: 18px;
+  line-height: 20px;
+}
+.icon-input {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.data-swap {
+  font-size: 14px;
+  line-height: 24px;
+}
 /** End Swap Connected (Pre-Release) **/      
 }
 @media screen and (max-width: 331px) {
