@@ -483,7 +483,6 @@ a:hover {
     padding-left: 1rem;
     padding-top: 1.8%;
     padding-bottom: 0.6%;
-    margin-bottom: 5%;
   }
 
   .form-control {
@@ -569,23 +568,6 @@ a:hover {
     z-index: 1020;
     margin-right: 0%;
     margin-top: 6%;
-  }
-
-  .nav-item-swap-left {
-    display: block;
-    font-family: 'Video';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 20px;
-    text-align: center;
-    color: var(--bs-nav-link-menu);
-    text-decoration: none;
-    padding-right: 0rem;
-    padding-left: 0rem;
-    padding-top: 2.8%;
-    padding-bottom: 1.6%;
-    margin-bottom: 5%;
   }
 
   .btn-swap-max {
@@ -709,14 +691,7 @@ a:hover {
     margin-right: 2.5%;
     border: unset;
     color: white;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
+
   }
 
   .swap-disconnect:hover {
@@ -942,6 +917,7 @@ a:hover {
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
   }
+
   /** Modal **/
 .modal {
     --bs-modal-margin: 1.75rem;
@@ -969,7 +945,30 @@ a:hover {
     --bs-modal-footer-border-width: var(--bs-border-width);
   }
   
-
+  .desktop-menu{
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  .mobile-menu {
+    width: unset !important;
+    height: unset !important;
+    padding: 0% 0 1% !important;
+    margin: unset !important;
+    overflow: unset !important;
+    clip: unset !important;
+    white-space: unset !important;
+    border: unset !important;
+  }
+  .icon-disconnect{
+    height: 20px;
+    width: 20px;
+  }
 
 /** Cellphones Adjustment for Resolutions **/
 
@@ -1221,11 +1220,11 @@ a:hover {
     max-height: 100%;
     display: block;
     position: absolute;
-    right: -23px !important;
+    right: -26px !important;
     z-index: 1020;
     width: 26px;
     height: 26px;
-    margin-top: 5%;
+    margin-top: 9%;
   }
   .landing-image-icon {
     width: 50px;
@@ -1236,8 +1235,8 @@ a:hover {
     font-family: 'Video';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 29px;
+    font-size: 14px;
+    line-height: 17px;
     background: #1C2023;
     border-radius: 50px;
     padding-top: 1%;
@@ -1262,6 +1261,52 @@ a:hover {
     border: transparent;
     color: red;
   }
+  .nav-item-swap-left {
+    font-size: 14px;
+    line-height: 15px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 3.8%;
+    padding-bottom: 2.6%;
+  }
+  .title-swap {
+    text-align: center;
+    padding-top: 10%;
+  }
+  .swap-disconnect {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-top: -2%;
+    align-items: center;
+  }
+  .icon-disconnect {
+    height: 16px;
+    width: 16px;
+  }
+  .btn-dash-menu {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .icon-input {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+  .data-swap {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
   .btn-swap {
     background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
     border-radius: 50.5px;
@@ -1279,6 +1324,7 @@ a:hover {
     color: var(--bs-btn-color);
     float: right;
     border: transparent;
+    margin-right: 5%;
   }
   .modal {
     --bs-modal-width: 400px;
@@ -1375,6 +1421,56 @@ a:hover {
   float: unset;
   border: transparent;
 }
+.nav-item-swap-left {
+  font-size: 14px;
+  line-height: 14px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 4.8%;
+  padding-bottom: 3.6%;
+}
+.btn-dash-menu {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 12px;
+}
+.title-swap {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 0%;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 10%;
+}
+.icon-input {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.data-swap {
+  font-size: 14px;
+  line-height: 21px;
+}
+.icon-disconnect {
+  height: 16px;
+  width: 16px;
+}
+.swap-disconnect {
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: -2%;
+  align-items: center;
+}
 /** End Swap Connected (Pre-Release) **/      
 }
 
@@ -1384,7 +1480,27 @@ a:hover {
 /** End of Swap Connect Page (Pre-Release) **/
 /** -------------------------- **/
 /** Swap Connected Page (Pre-Release) **/
-
+.btn-dash-menu {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+}
+.nav-item-swap-left {
+  font-size: 12px;
+  line-height: 14px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 4.8%;
+  padding-bottom: 3.6%;
+}
+.data-swap {
+  font-size: 14px;
+  line-height: 19px;
+}
 /** End Swap Connected (Pre-Release) **/      
 }
 
@@ -1404,12 +1520,47 @@ a:hover {
   top: -1%;
   position: relative;
 }
+.btn-dash-menu {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 11px;
+  line-height: 12px;
+  border: transparent;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.nav-item-swap-left {
+  font-size: 11px;
+  line-height: 15px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 4.8%;
+  padding-bottom: 3.6%;
+}
+.swap-disconnect {
+  font-size: 12px;
+  line-height: 17px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: -2%;
+  margin-right: 2.5%;
+  align-items: center;
+}
 .swap-transaction-text {
   font-family: 'Video';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 10px;
+}
+.icon-input {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 .icon-transaction {
   max-width: 100%;
@@ -1433,6 +1584,27 @@ a:hover {
   color: var(--bs-btn-color);
   float: unset;
   border: transparent;
+}
+.icon-disconnect {
+  height: 16px;
+  width: 16px;
+}
+.title-swap {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 0%;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 10%;
+}
+.data-swap {
+  font-size: 14px;
+  line-height: 17px;
 }
 /** End Swap Connected (Pre-Release) **/      
 }
@@ -1466,12 +1638,12 @@ a:hover {
 }
 .icon-input {
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 .data-swap {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
 }
 /** End Swap Connected (Pre-Release) **/      
 }
@@ -1525,7 +1697,7 @@ a:hover {
   }
   /** End Swap Connected (Pre-Release) **/      
   }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
 /** Swap Connect Page (Pre-Release) **/
 
 /** End of Swap Connect Page (Pre-Release) **/
@@ -1565,6 +1737,24 @@ a:hover {
   font-size: 12px;
   line-height: 10px;
 }
+.icon-disconnect {
+  height: 14px;
+  width: 14px;
+}
+.swap-disconnect {
+  font-size: 10px;
+  line-height: 14px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  margin-top: -2%;
+  float: right;
+  margin-right: 4.5%;
+  border: unset;
+  color: white;
+  align-items: center;
+}
 .icon-transaction {
   max-width: 100%;
   max-height: 100%;
@@ -1572,16 +1762,14 @@ a:hover {
   height: 22px;
 }
 .title-swap {
-  font-family: 'Video';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
   margin-top: 7%;
   margin-bottom: 2%;
   margin-left: 6%;
   margin-right: 6%;
+  padding-top: 10%;
 }
 .container-fluid {
   --bs-gutter-x: 0rem;
@@ -1589,7 +1777,7 @@ a:hover {
 }
 .data-swap {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .form-control {
@@ -1605,20 +1793,31 @@ a:hover {
 }
 .icon-input {
   display: block;
-  width: 22px;
-  height: 20px;
+  width: 17px;
+  height: 16px;
 }
 .btn-dash-menu-disconnected {
   font-size: 14px;
   line-height: 21px;
 }
 .btn-dash-menu {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 10px;
+  line-height: 10px;
+  margin-bottom: 5%;
+margin-top: 5%;
+margin-right: 4%;
+padding-top: 3%;
+padding-bottom: 3%;
+padding-left: 3%;
+padding-right: 3%;
 }
 .nav-item-swap-left {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 6px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 5%;
+  padding-bottom: 4.6%;
 }
 
 /** End Swap Connected (Pre-Release) **/      
