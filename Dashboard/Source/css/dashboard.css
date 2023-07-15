@@ -25,6 +25,11 @@ a:hover {
   color: #000;
 }
 
+.icon-disconnect {
+  height: 20px;
+  width: 20px;
+}
+
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -666,6 +671,11 @@ a:hover {
     margin-right: 14%;
   }
 
+  .icon-disconnect {
+    height: 40px;
+    width: 40px;
+  }
+
   .btn-swap {
     background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
     border-radius: 50.5px;
@@ -982,7 +992,7 @@ a:hover {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    line-height: 32px;
+line-height: 42px;
     float: right;
     color: white;
     width: unset !important;
@@ -993,6 +1003,7 @@ a:hover {
     clip: unset !important;
     white-space: unset !important;
     border: unset !important;
+    align-items: center;
   }
 
   .swap-disconnect:hover {
@@ -1211,6 +1222,11 @@ a:hover {
     margin-right: 14%;
   }
 
+  .icon-disconnect {
+    height: 34px;
+    width: 34px;
+  }
+
   .form-signin {
     max-width: 800px;
   }
@@ -1344,6 +1360,7 @@ a:hover {
     clip: unset !important;
     white-space: unset !important;
     border: unset !important;
+    align-items: center;
   }
 
   .swap-disconnect:hover {
@@ -1725,6 +1742,11 @@ a:hover {
     margin-right: 14%;
   }
 
+  .icon-disconnect {
+    height: 24px;
+    width: 24px;
+  }
+
   .btn-dash-menu {
     border: solid 3px transparent !important;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
@@ -2026,6 +2048,7 @@ a:hover {
     clip: unset !important;
     white-space: unset !important;
     border: unset !important;
+    align-items: center;
   }
 
   .swap-disconnect:hover {
@@ -2330,6 +2353,16 @@ a:hover {
   .swap-balance {
     margin-top: -4.5%;
   }
+
+  .icon-disconnect {
+    height: 20px;
+    width: 20px;
+  }
+  .swap-disconnect {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 @media screen and (max-width: 1441px) {
@@ -2554,6 +2587,15 @@ a:hover {
   .swap-balance {
     margin-top: -5.3%;
   }
+  .swap-disconnect {
+    font-size: 15px;
+    line-height: 19px;
+    margin: -3% 2.5% 0% 0% !important;
+  }
+  .icon-disconnect {
+    height: 18px;
+    width: 18px;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -2756,6 +2798,15 @@ a:hover {
     margin-left: -3%;
     margin-top: 3%;
   }
+  .icon-disconnect {
+    height: 16px;
+    width: 16px;
+  }
+  .swap-disconnect {
+    font-size: 15px;
+    line-height: 18px;
+    margin: -3% 2.5% 0% 0% !important;
+  }
 }
 @media screen and (max-width: 991px) {
   .btn-dash-menu-disconnected {
@@ -2846,6 +2897,7 @@ a:hover {
     margin-right: 2.5%;
     border: unset;
     color: white;
+    align-items: center;
   }
   .title-swap {
     font-family: 'Video';
