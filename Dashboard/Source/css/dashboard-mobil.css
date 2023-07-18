@@ -972,7 +972,7 @@ a:hover {
 
 /** Cellphones Adjustment for Resolutions **/
 
-@media screen and (max-width: 721px) {
+@media screen and (max-width: 720px) {
 /** Swap Connect Page (Pre-Release) **/
 
 /** End of Swap Connect Page (Pre-Release) **/
@@ -1128,6 +1128,76 @@ a:hover {
   margin-top: auto;
 }
 /** End Swap Connected (Pre-Release) **/  
+}
+
+@media screen and (max-width: 600px) {
+  /** Swap Connect Page (Pre-Release) **/
+  
+  /** End of Swap Connect Page (Pre-Release) **/
+  /** -------------------------- **/
+  /** Swap Connected Page (Pre-Release) **/
+  .btn-dash-menu {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .nav-item-swap-left {
+    font-size: 20px;
+    line-height: 18px;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .title-swap {
+    font-size: 19px;
+    line-height: 30px;
+    padding-top: 5%;
+  }
+  .icon-input {
+    display: block;
+    width: 26px;
+    height: 26px;
+  }
+  .data-swap {
+    font-size: 15px;
+    line-height: 27px;
+  }
+  /** End Swap Connected (Pre-Release) **/  
+}
+
+@media screen and (max-width: 521px) {
+  /** Swap Connect Page (Pre-Release) **/
+  
+  /** End of Swap Connect Page (Pre-Release) **/
+  /** -------------------------- **/
+  /** Swap Connected Page (Pre-Release) **/
+  .btn-dash-menu {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .nav-item-swap-left {
+    font-size: 16px;
+    line-height: 15px;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .title-swap {
+    font-size: 19px;
+    line-height: 30px;
+    padding-top: 5%;
+  }
+  .icon-input {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  .data-swap {
+    font-size: 15px;
+    line-height: 27px;
+  }
+  /** End Swap Connected (Pre-Release) **/  
 }
 
 @media screen and (max-width: 429px) {
@@ -1632,6 +1702,10 @@ a:hover {
   float: unset;
   border: transparent;
 }
+.btn-dash-menu {
+  font-size: 9px;
+  line-height: 12px;
+}
 .swap-review-text {
   font-size: 18px;
   line-height: 20px;
@@ -1641,9 +1715,17 @@ a:hover {
   width: 20px;
   height: 20px;
 }
+.nav-item-swap-left {
+  font-size: 10px;
+  line-height: 14px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 4.8%;
+  padding-bottom: 3.6%;
+}
 .data-swap {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 23px;
 }
 /** End Swap Connected (Pre-Release) **/      
 }
