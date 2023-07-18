@@ -79,13 +79,13 @@ a:hover {
   border-radius: 0px 30px 30px 0px;
 }
 
-.mobile-menu{
+.mobile-menu {
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
-  clip: rect(0,0,0,0) !important;
+  clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
 }
@@ -657,6 +657,28 @@ a:hover {
 /** PC Adjustment for Resolutions **/
 @media screen and (max-width: 3841px) {
 
+  /** Swap Not Connected **/
+  .btn-swap-0 {
+    background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+    border-radius: 50.5px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 35px;
+    display: flex;
+    text-align: center;
+    color: var(--bs-btn-color);
+    float: right;
+    border: transparent;
+    margin-right: -2%;
+    margin-top: 5%;
+  }
+
   /** Swap Connect Page **/
   .title-swap {
     font-family: 'Video';
@@ -717,7 +739,7 @@ a:hover {
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
@@ -992,7 +1014,7 @@ a:hover {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-line-height: 42px;
+    line-height: 42px;
     float: right;
     color: white;
     width: unset !important;
@@ -1664,6 +1686,7 @@ line-height: 42px;
     width: 45px;
     height: 40px;
   }
+
   .btn-dash-menu-disconnected {
     background-color: #1C2023;
     border-radius: 45px;
@@ -1686,10 +1709,11 @@ line-height: 42px;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
+
   /** Disclamer Button **/
   .btn-confirm-disclamer {
     background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
@@ -1726,6 +1750,28 @@ line-height: 42px;
 }
 
 @media screen and (max-width: 1921px) {
+
+  /** Swap Not Connected **/
+  .btn-swap-0 {
+    background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+    border-radius: 50.5px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 10px;
+    display: flex;
+    text-align: center;
+    color: var(--bs-btn-color);
+    float: right;
+    border: transparent;
+    margin-right: -3%;
+    margin-top: 5%;
+  }
 
   /** Swap Connect Page **/
 
@@ -1889,6 +1935,18 @@ line-height: 42px;
   }
 
   /** END **/
+  /** Swap Not Connected **/
+  [placeholder]:-webkit-input-placeholder {
+    color: #000;
+    background-color: #fff;
+  }
+
+  [placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease;
+    text-indent: -100%;
+    opacity: 1;
+  }
+
   /** Swap Connected **/
   .form-control-title {
     display: block;
@@ -2263,6 +2321,7 @@ line-height: 42px;
     float: right;
     border: transparent;
   }
+
   .btn-dash-menu-disconnected {
     background-color: #1C2023;
     border-radius: 45px;
@@ -2285,10 +2344,11 @@ line-height: 42px;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
+
   .btn-dash-menu {
     border: solid 3px transparent !important;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
@@ -2358,14 +2418,22 @@ line-height: 42px;
     height: 20px;
     width: 20px;
   }
+
   .swap-disconnect {
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
   }
+
+  /** Swap Not Connected **/
+  .btn-swap-0 {
+    margin-right: -3%;
+  }
+
 }
 
 @media screen and (max-width: 1441px) {
+
   /** Swap Connec Page look good with out changes **/
   .btn-dash-menu-disconnected {
     background-color: #1C2023;
@@ -2389,13 +2457,18 @@ line-height: 42px;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
 }
 
 @media screen and (max-width: 1281px) {
+
+  /** Swap Not Connected **/
+  .btn-swap-0 {
+    margin-right: 5%;
+  }
 
   /** Swap Connect page **/
   .title-swap {
@@ -2480,7 +2553,7 @@ line-height: 42px;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
@@ -2587,11 +2660,13 @@ line-height: 42px;
   .swap-balance {
     margin-top: -5.3%;
   }
+
   .swap-disconnect {
     font-size: 15px;
     line-height: 19px;
     margin: -3% 2.5% 0% 0% !important;
   }
+
   .icon-disconnect {
     height: 18px;
     width: 18px;
@@ -2652,7 +2727,7 @@ line-height: 42px;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
@@ -2798,16 +2873,23 @@ line-height: 42px;
     margin-left: -3%;
     margin-top: 3%;
   }
+
   .icon-disconnect {
     height: 16px;
     width: 16px;
   }
+
   .swap-disconnect {
     font-size: 15px;
     line-height: 18px;
     margin: -3% 2.5% 0% 0% !important;
   }
+
+  .btn-swap-0 {
+    margin-right: -2%;
+  }
 }
+
 @media screen and (max-width: 991px) {
   .btn-dash-menu-disconnected {
     background-color: #1C2023;
@@ -2829,6 +2911,7 @@ line-height: 42px;
     white-space: unset !important;
     border: unset !important;
   }
+
   .nav-item-swap-left {
     display: block;
     font-family: 'Video';
@@ -2846,6 +2929,7 @@ line-height: 42px;
     margin-bottom: 0%;
     margin-left: 0%;
   }
+
   .eth-wallet {
     border-radius: 50.5px;
     border: 1px solid #A8A3FC;
@@ -2859,6 +2943,7 @@ line-height: 42px;
     align-items: center;
     justify-content: center;
   }
+
   .btn-dash-menu {
     border: solid 3px transparent !important;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
@@ -2880,6 +2965,7 @@ line-height: 42px;
     margin-bottom: 2%;
     margin-top: 2%;
   }
+
   .swap-disconnect {
     background-color: #1C2023;
     border-radius: 45px;
@@ -2899,6 +2985,7 @@ line-height: 42px;
     color: white;
     align-items: center;
   }
+
   .title-swap {
     font-family: 'Video';
     font-style: normal;
@@ -2912,6 +2999,7 @@ line-height: 42px;
     margin-right: 14%;
     padding-top: 2%;
   }
+
   .value-coin {
     font-family: 'Video';
     font-style: normal;
@@ -2926,18 +3014,20 @@ line-height: 42px;
     margin-top: -3.6%;
     padding-left: 1.5%;
   }
+
   /** Menu **/
-  .desktop-menu{
+  .desktop-menu {
     width: 1px !important;
     height: 1px !important;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
-  .mobile-menu{
+
+  .mobile-menu {
     width: unset !important;
     height: unset !important;
     padding: 1% 0 1% 0% !important;
@@ -2947,22 +3037,45 @@ line-height: 42px;
     white-space: unset !important;
     border: unset !important;
   }
+
+  /** Swap Not Connected **/
+  .btn-swap-0 {
+    background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+    border-radius: 50.5px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 10px;
+    display: flex;
+    text-align: center;
+    color: var(--bs-btn-color);
+    float: right;
+    border: transparent;
+    margin-right: -3%;
+    margin-top: 5%;
+  }
 }
-  
+
 @media screen and (max-width: 721px) {
 
   /** Menu **/
-  .desktop-menu{
+  .desktop-menu {
     width: 1px !important;
     height: 1px !important;
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0,0,0,0) !important;
+    clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
-  .mobile-menu{
+
+  .mobile-menu {
     width: unset !important;
     height: unset !important;
     padding: unset !important;
@@ -2971,6 +3084,28 @@ line-height: 42px;
     clip: unset !important;
     white-space: unset !important;
     border: unset !important;
+  }
+
+  /** Swap Not Connected **/
+  .btn-swap-0 {
+    background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+    border-radius: 50.5px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 10px;
+    display: flex;
+    text-align: center;
+    color: var(--bs-btn-color);
+    float: right;
+    border: transparent;
+    margin-right: 7%;
+    margin-top: 5%;
   }
 
   /** Swap Connect page **/
@@ -2990,6 +3125,7 @@ line-height: 42px;
   .form-signin {
     max-width: 400px;
   }
+
   .value-coin {
     font-family: 'Video';
     font-style: normal;
@@ -3004,6 +3140,7 @@ line-height: 42px;
     margin-top: -3.6%;
     padding-left: 1.5%;
   }
+
   .form-control {
     font-size: 2rem;
     font-weight: 400;
@@ -3110,6 +3247,7 @@ line-height: 42px;
     font-size: 14px;
     line-height: 24px;
   }
+
   .btn-dash-menu-disconnected {
     background-color: #1C2023;
     border-radius: 45px;
