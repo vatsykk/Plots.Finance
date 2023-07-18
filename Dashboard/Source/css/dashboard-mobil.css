@@ -981,7 +981,7 @@ a:hover {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-dash-menu:hover {
+.btn-dash-menu-0:hover {
   background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
   color: var(--bs-btn-hover-color);
 
