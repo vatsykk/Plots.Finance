@@ -1230,6 +1230,13 @@ a:hover {
     --bs-modal-margin: 2rem;
     margin-top: auto;
   }
+  .swap-review-text {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+  }
 
   /** End Swap Connected (Pre-Release) **/
 }
@@ -1783,6 +1790,14 @@ a:hover {
     position: relative;
   }
 
+  .swap-review-text {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+  }
+
   .btn-dash-menu {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -1987,13 +2002,13 @@ a:hover {
     position: relative;
   }
 
-  .swap-review-text {
-    font-family: 'Video';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-  }
+.swap-review-text {
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+}
 
   .swap-transaction-text {
     font-family: 'Video';
