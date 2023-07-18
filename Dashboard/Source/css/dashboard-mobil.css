@@ -976,6 +976,11 @@ a:hover {
   width: 20px;
 }
 
+.btn-dash-wallet:hover {
+  background: #252a2e;
+  color: var(--bs-btn-hover-color);
+}
+
 /** Cellphones Adjustment for Resolutions **/
 
 @media screen and (max-width: 720px) {
@@ -1001,7 +1006,56 @@ a:hover {
     margin-right: 7%;
     margin-top: 5%;
   }
-
+  .btn-dash-wallet {
+    font: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: block;
+    word-wrap: break-word;
+    width: 100%;
+    background: transparent;
+    border-radius: 0.4rem;
+    color: var(--bs-nav-link-menu);
+    border: 1px solid gray;
+    margin-bottom: 2%;
+  }
+  .img-dash {
+    float: right;
+    width: 24px;
+    height: 24px;
+  }
+  .btn-dash-menu-0 {
+    border: solid 3px transparent !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000 inset;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--bs-nav-link-menu);
+    border: transparent;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  .title-swap-connect {
+    font-size: 20px;
+    line-height: 16px;
+  }
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
   /** Swap Connected Page (Pre-Release) **/
@@ -1171,7 +1225,10 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   /** Swap Connect Page (Pre-Release) **/
-
+  .btn-dash-menu-0 {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
   /** Swap Connected Page (Pre-Release) **/
@@ -1211,7 +1268,10 @@ a:hover {
 
 @media screen and (max-width: 521px) {
   /** Swap Connect Page (Pre-Release) **/
-
+  .btn-dash-menu-0 {
+    font-size: 12px;
+    line-height: 16px;
+  }
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
   /** Swap Connected Page (Pre-Release) **/
@@ -1540,7 +1600,14 @@ a:hover {
 
 @media screen and (max-width: 415px) {
   /** Swap Connect Page (Pre-Release) **/
-
+  .title-swap-connect {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .btn-dash-wallet {
+    font-size: 16px;
+    line-height: 24px;
+  }
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
   /** Swap Connected Page (Pre-Release) **/
@@ -1799,7 +1866,20 @@ a:hover {
 
 @media screen and (max-width: 361px) {
   /** Swap Connect Page (Pre-Release) **/
-
+  .btn-dash-menu-0 {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 10px;
+line-height: 16px;
+  }
+  .title-swap-connect {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .btn-dash-wallet {
+    font-size: 14px;
+    line-height: 24px;
+  }
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
   /** Swap Connected Page (Pre-Release) **/
@@ -1913,6 +1993,47 @@ a:hover {
 
 @media screen and (max-width: 321px) {
   /** Swap Connect Page (Pre-Release) **/
+  .btn-dash-wallet {
+    font: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: block;
+    word-wrap: break-word;
+    width: 100%;
+    background: transparent;
+    border-radius: 0.4rem;
+    color: var(--bs-nav-link-menu);
+    border: 1px solid gray;
+  }
+  .img-dash {
+    float: right;
+    width: 24px;
+    height: 24px;
+  }
+  .btn-dash-menu-0 {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 10px;
+line-height: 16px;
+  }
+  .btn-dash-menu-0 {
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: 9px;
+    line-height: 16px;
+    margin-right: 6%;
+  }
+  .title-swap-connect {
+    font-size: 10px;
+    line-height: 16px;
+  }
 
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
