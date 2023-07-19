@@ -30,10 +30,11 @@
     font-size: 24px;
     line-height: 26px;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 3%;
     padding-right: 22%;
     padding-left: 22%;
     color: #BFBFBF;
+    margin-bottom: 4%;
   }
   .title-main {
     font-family: 'Uniwars';
@@ -74,26 +75,91 @@
 }
 @media screen and (max-width: 720px){
   /** Main Page Home **/
+  .title-main {
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 58px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 6%;
+  }
+  .main-description {
+
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 3%;
+    padding-right: 30%;
+    padding-left: 30%;
+    margin-bottom: 4%;
+  }
   /** End Main Page Home **/
 }
 
 @media screen and (max-width: 600px){
   /** Main Page Home **/
+  .title-main {
+
+    font-size: 24px;
+    line-height: 50px;
+
+  }
+  .main-description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .btn-main {
+    font-size: 22px;
+    line-height: 14px;
+  }
   /** End Main Page Home **/
 }
 
 @media screen and (max-width: 520px){
   /** Main Page Home **/
+  .title-main {
+    font-size: 22px;
+    line-height: 46px;
+  }
+  .main-description {
+    font-size: 21px;
+    line-height: 24px;
+    padding-right: 24%;
+padding-left: 24%;
+  }
+  .btn-main {
+    font-size: 28px;
+    line-height: 14px;
+  }
   /** End Main Page Home **/
 }
 
 @media screen and (max-width: 429px){
   /** Main Page Home **/
+  .title-main {
+    font-size: 20px;
+    line-height: 46px;
+  }
+  .main-description {
+    font-size: 16px;
+    line-height: 22px;
+  }
   /** End Main Page Home **/
 }
 
 @media screen and (max-width: 415px){
   /** Main Page Home **/
+  .title-main {
+    font-size: 18px;
+    line-height: 46px;
+  }
+  .main-description {
+    margin-top: 4%;
+    padding-right: 26%;
+    padding-left: 26%;
+    margin-bottom: 6%;
+  }
   /** End Main Page Home **/
 }
 
@@ -104,6 +170,22 @@
 
 @media screen and (max-width: 361px){
   /** Main Page Home **/
+  .title-main {
+    font-size: 14px;
+    line-height: 46px;
+  }
+  .main-description {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 6%;
+    padding-right: 22%;
+    padding-left: 22%;
+    margin-bottom: 8%;
+  }
+  .btn-main {
+    font-size: 19px;
+    line-height: 14px;
+  }
   /** End Main Page Home **/
 }
 
