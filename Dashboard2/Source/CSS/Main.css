@@ -24,22 +24,12 @@ a:hover {
   color: #000;
 }
 
-.icon-disconnect {
-  height: 20px;
-  width: 20px;
-}
-
 .vertical-center {
   margin: 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.col-lg-3 {
-  flex: 0 0 auto;
-  width: 22%;
 }
 
 .container-fluid {
@@ -84,8 +74,6 @@ a:hover {
   border-bottom: 0px solid #40FFFF;
   padding-bottom: 1%;
   background: #1C2023;
-  margin-left: -2%;
-  margin-right: -2%;
 }
 
 .nav-link {
