@@ -73,16 +73,39 @@
   }
   .landing-image-icon {
     width: 50px;
-    height: 30px;
+    height: 50px;
+    margin-left: 2%;
+    margin-right: 4%;
   }
   .navbar-brand-main {
     padding-top: var(--bs-navbar-brand-padding-y);
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
-    font-size: var(--bs-navbar-brand-font-size);
+    font-size: 40px;
     color: var(--bs-navbar-brand-color);
     text-decoration: none;
     white-space: nowrap;
+    font-weight: 600;
+    line-height: 72px;
+    font-family: Uniwars;
+  }
+  .landing-image-icon-dash {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    width: 39px !important;
+    height: 31px !important;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .fixed-bottom {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
   }
   /** End Main Page Home **/
 }
@@ -95,7 +118,7 @@
     font-size: 28px;
     line-height: 58px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 4%;
     margin-bottom: 6%;
   }
   .main-description {
@@ -113,10 +136,9 @@
 @media screen and (max-width: 600px){
   /** Main Page Home **/
   .title-main {
-
     font-size: 24px;
     line-height: 50px;
-
+    margin-top: 2%;
   }
   .main-description {
     font-size: 18px;
@@ -134,6 +156,7 @@
   .title-main {
     font-size: 22px;
     line-height: 46px;
+    margin-top: 2%;
   }
   .main-description {
     font-size: 21px;
@@ -158,6 +181,12 @@ padding-left: 24%;
     font-size: 16px;
     line-height: 22px;
   }
+  .landing-image-icon {
+    width: 40px;
+    height: 50px;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
   /** End Main Page Home **/
 }
 
@@ -166,6 +195,7 @@ padding-left: 24%;
   .title-main {
     font-size: 18px;
     line-height: 46px;
+    margin-top: 2%;
   }
   .main-description {
     margin-top: 4%;
@@ -173,11 +203,29 @@ padding-left: 24%;
     padding-left: 26%;
     margin-bottom: 6%;
   }
+  .landing-image-icon {
+    width: 40px;
+    height: 50px;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
   /** End Main Page Home **/
 }
 
 @media screen and (max-width: 391px){
   /** Main Page Home **/
+  .navbar-brand-main {
+    font-size: 36px;
+  }
+  .title-main {
+    margin-top: 2%;
+  }
+  .landing-image-icon {
+    width: 35px;
+    height: 45px;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
   /** End Main Page Home **/
 }
 
@@ -186,6 +234,7 @@ padding-left: 24%;
   .title-main {
     font-size: 14px;
     line-height: 46px;
+    margin-top: 2%;
   }
   .main-description {
     font-size: 13px;
@@ -199,11 +248,29 @@ padding-left: 24%;
     font-size: 19px;
     line-height: 14px;
   }
+  .landing-image-icon {
+    width: 30px;
+    height: 40px;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
+  .navbar-brand-main {
+    font-size: 32px;
+  }
   /** End Main Page Home **/
 }
 
 @media screen and (max-width: 330px){
   /** Main Page Home **/
+  .navbar-brand-main {
+    font-size: 30px;
+  }
+  .landing-image-icon {
+    width: 30px;
+    height: 40px;
+    margin-left: 1%;
+    margin-right: 2%;
+  }
   /** End Main Page Home **/
 }
 
