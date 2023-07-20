@@ -54,7 +54,10 @@ a:hover {
   white-space: nowrap;
   border: 0;
 }
-
+.row {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}
 .btn-main:hover {
   background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
   color: var(--bs-btn-hover-color);
