@@ -190,6 +190,209 @@
   }
 
   /** End Main Page Home **/
+  /** Star Home Not Conected **/
+  .navbar-dark {
+    --bs-navbar-color: rgba(255, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(251, 0, 0, 0.1);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .bg-dark-menu {
+    --bs-bg-opacity: 1;
+    background-color: #1C2023 !important;
+  }
+  .btn-dash-menu {
+    border: solid 3px transparent !important;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff48fa, #78e4ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000 inset;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--bs-nav-link-menu);
+    border: transparent;
+    margin-bottom: 0.5%;
+  }
+  
+  .btn-dash-menu:hover {
+    background: linear-gradient(101.39deg, rgba(255, 86, 249, 0.5) -27.48%, rgba(64, 255, 255, 0.5) 141.8%);
+    color: var(--bs-btn-hover-color);
+  }
+  .btn-dash-wallet {
+    font: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: block;
+    word-wrap: break-word;
+    width: 100%;
+    background: transparent;
+    border-radius: 0.4rem;
+    color: var(--bs-nav-link-menu);
+    border: 1px solid gray;
+  }
+  
+  .btn-dash-wallet:hover {
+    background: #252a2e;
+    color: var(--bs-btn-hover-color);
+  }
+  .btn-swap-0 {
+    background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
+    border-radius: 50.5px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Uniwars';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 10px;
+    display: flex;
+    text-align: center;
+    color: var(--bs-btn-color);
+    float: right;
+    border: transparent;
+    margin-right: -3%;
+    margin-top: 5%;
+  }
+  .spacer-dash-modal {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .icon-header-swap {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 73px;
+    height: 58px;
+    margin-left: 4%;
+  }
+  .title-swap {
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 14%;
+    margin-right: 14%;
+  }
+  .form-control:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: unset;
+  }
+  
+  .form-signin {
+    max-width: 620px;
+    padding: 1rem;
+    min-width: 320px;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0rem 1.55rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 0px;
+    appearance: none;
+    border-radius: 5rem;
+    transition: unset;
+    z-index: 1020;
+    margin-right: 0%;
+    margin-top: 6%;
+  }
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  .swap-input {
+    background-color: white;
+    border-radius: 1.5rem;
+    height: 110px;
+    width: 500px;
+  }
+  
+  .input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 2rem;
+    padding-right: 450px
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 90%;
+  }
+  
+  .input-group-text:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+  }
+  .icon-swap {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: absolute;
+    right: -8px !important;
+    z-index: 1020;
+    width: 34px;
+    height: 34px;
+    margin-top: 4%;
+  }
+  .icon-sidebar {
+    width: 24px;
+    height: 24px;
+  }
+  .spacer-sidebar {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sidebar-background{
+    background: #001E31;
+  }
+  /** End Home Not Connected **/
 }
 
 @media screen and (max-width: 1601px) {
