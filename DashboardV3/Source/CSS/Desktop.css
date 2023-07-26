@@ -201,6 +201,13 @@
     --bs-navbar-toggler-border-color: rgba(251, 0, 0, 0.1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
+  .brand-logo{
+    width: 30px;
+    height: 40px;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
   .bg-dark-menu {
     --bs-bg-opacity: 1;
     background-color: #1C2023 !important;
@@ -274,26 +281,14 @@
     margin-right: -3%;
     margin-top: 5%;
   }
-  .spacer-dash-modal {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  .icon-header-swap {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    width: 73px;
-    height: 58px;
-    margin-left: 4%;
-  }
   .title-swap {
     font-family: 'Video';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
-    text-align: left;
-    margin-top: 5%;
+    text-align: center;
+    margin-top: 8%;
     margin-bottom: 2%;
     margin-left: 14%;
     margin-right: 14%;
@@ -362,7 +357,6 @@
     align-items: stretch;
     width: 90%;
   }
-  
   .input-group-text:focus {
     color: #000000;
     background-color: #ffffff;
@@ -370,27 +364,86 @@
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
   }
+    .spacer-sidebar {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .spacer-dash-modal {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
   .icon-swap {
     max-width: 100%;
     max-height: 100%;
     display: block;
     position: absolute;
-    right: -8px !important;
+    right: -28px !important;
     z-index: 1020;
     width: 34px;
     height: 34px;
-    margin-top: 4%;
+    margin-top: -18%;
   }
   .icon-sidebar {
     width: 24px;
     height: 24px;
   }
-  .spacer-sidebar {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .icon-header-swap {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 26px;
+    height: 26px;
+    float: right;
   }
-  .sidebar-background{
-    background: #001E31;
+  .network-icon{
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-left: 2%;
+    margin-right: 6%;
+  }
+  .wallet {
+    border-radius: 50.5px;
+    border: 1px solid #A8A3FC;
+    background: #131517;
+    padding-right: 1.5rem;
+    padding-left: 4rem;
+    margin-right: 2rem;
+    padding-top: 0.8%;
+    padding-bottom: 0.6%;
+    display: flex;
+  }
+  
+.nav-item-swap {
+  display: flex;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-family: 'Video';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--bs-nav-link-menu);
+  text-decoration: none;
+  padding-right: unset;
+  padding-left: unset;
+  margin-right: unset;
+}
+  .nav-item-swap-left {
+    display: block;
+    font-family: 'Video';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    color: var(--bs-nav-link-menu);
+    text-decoration: none;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   /** End Home Not Connected **/
 }

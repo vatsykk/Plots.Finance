@@ -132,3 +132,9 @@ background-color: var(--bs-tertiary-bg);
 .scrollarea {
 overflow-y: auto;
 }
+
+.sidebar-background {
+  background: #001E31;
+  position: absolute;
+  height: 100%;
+}
