@@ -39,8 +39,8 @@ async function getID(){
 async function getEtherBalance() {
     let balance = await web3.eth.getBalance(account);
     let balanceInEther = web3.utils.fromWei(balance, 'ether');
-    let formattedBalance = parseFloat(balanceInEther).toFixed(3);
-    EthBalanceNum.innerText = formattedBalance;
-    return formattedBalance;
+    let roundedDownBalance = Math.floor(parseFloat(balanceInEther) * 1000) / 1000;
+    EthBalanceNum.innerText = roundedDownBalance;
+    return roundedDownBalance;
 }
 
