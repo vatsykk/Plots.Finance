@@ -49,6 +49,7 @@ async function Update(inputtype){
         document.getElementById("VLND").innerText = document.getElementById("ETH").value * 100;
     } else if(inputtype == 2){
         document.getElementById("ETH").innerText = document.getElementById("VLND").value / 100;
+    }
 
 
     let Ethprice;
