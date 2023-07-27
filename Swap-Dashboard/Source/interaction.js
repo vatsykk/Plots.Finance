@@ -13,8 +13,8 @@ async function loginWithEth(){
         window.web3 = await new Web3(ethereum);
         await getID();
         if (netID != 1){ //Change and fix
-            console.log("The current Metamask/Web3 network is not Ethereum, please connect to the Ethereum Mainnet."); 
-            alert("The current Metamask/Web3 network is not Ethereum, please connect to the Ethereum Mainnet network.");
+            console.log("The current Metamask/Web3 network is not Ethereum, switch connect to the Ethereum Mainnet."); 
+            alert("The current Metamask/Web3 network is not Ethereum, please switch to the Ethereum Mainnet.");
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
