@@ -37,7 +37,7 @@ async function getID(){
 }
 
 async function getEtherBalance(){
-    EthBalanceNum.innerText = await (web3.eth.getBalance(account)).tofixed(3);
+    EthBalanceNum.innerText = await (web3.eth.getBalance(account));
     return balance;
 }
 
