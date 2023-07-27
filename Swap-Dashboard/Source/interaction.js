@@ -33,5 +33,8 @@ async function getID(){
     return(netID);
 }
 
-async function getBalance(){
+async function getEtherBalance(){
+    let balance = await web3.eth.getBalance(account);
+    return balance;
+}
 
