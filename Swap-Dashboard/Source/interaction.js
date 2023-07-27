@@ -54,7 +54,6 @@ async function Update(inputtype){
         document.getElementById("ETH").value = document.getElementById("VLND").value / 100;
     }
 
-    let Ethprice;
     document.getElementById("DollarValueOne").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     document.getElementById("DollarValueTwo").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     document.getElementById("%").innerText = (((0.03)*((100)*(1000000))/(document.getElementById("ETH").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
