@@ -4,6 +4,8 @@ let account;
 let netID;
 let LoggedIn = false;
 
+let 
+
 
 async function loginWithEth(){
     if(LoggedIn == false){
