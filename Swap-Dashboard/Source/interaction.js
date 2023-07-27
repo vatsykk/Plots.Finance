@@ -4,7 +4,7 @@ let account;
 let netID;
 let LoggedIn = false;
 let Ethprice;
-await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
+fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
 
 
 let EthBalanceNum = document.getElementById("EtherBalance");
@@ -55,7 +55,6 @@ async function Update(inputtype){
     }
 
     let Ethprice;
-    await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
     document.getElementById("DollarValueOne").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     document.getElementById("DollarValueTwo").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     document.getElementById("%").innerText = (((0.03)*((100)*(1000000))/(document.getElementById("ETH").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
