@@ -1168,7 +1168,7 @@ a:hover {
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
-    background-image: url(/Dashboard/Source/img/works.png);
+    background-image: url(../img/works.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1190,7 +1190,7 @@ a:hover {
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
-    background-image: url(/Dashboard/Source/img/decline.png);
+    background-image: url(../img/decline.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1662,7 +1662,7 @@ a:hover {
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
-    background-image: url(/Dashboard/Source/img/works.png);
+    background-image: url(../img/works.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1684,7 +1684,7 @@ a:hover {
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
-    background-image: url(/Dashboard/Source/img/decline.png);
+    background-image: url(../img/decline.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2221,7 +2221,7 @@ a:hover {
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
-    background-image: url(/Dashboard/Source/img/works.png);
+    background-image: url(../img/works.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2243,7 +2243,7 @@ a:hover {
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
     border-radius: var(--bs-modal-border-radius);
     outline: 0;
-    background-image: url(/Dashboard/Source/img/decline.png);
+    background-image: url(../img/decline.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

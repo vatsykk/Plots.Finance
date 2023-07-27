@@ -110,13 +110,13 @@
               </ul>
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <span class="eth-wallet"><span id="EtherBalance" class="nav-item-swap">0</span><span><img
-                      src="/Dashboard/Source/img/eth.png" class="icon-header-swap"></span></span>
+                      src="./Source/img/eth.png" class="icon-header-swap"></span></span>
                 <button type="button" class="btn-dash-menu"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="11" rx="5.5" fill="#05FF00" />
                   </svg> 0x5c9...ac87</button>
                 <li><button class="btn-dash-menu-disconnected d-flex ">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
-                      src="/Dashboard/Source/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
+                      src="./Source/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
                 </li>
               </ul>
             </div>
@@ -129,7 +129,7 @@
 
       <div class="container-fluid">
         <button class="swap-disconnect d-flex">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
-            src="/Dashboard/Source/img/disconnected.png" class="icon-disconnect"></button>
+            src="./Source/img/disconnected.png" class="icon-disconnect"></button>
         <h1 class="title-swap">If the fully diluted valuation of $PLOTS token is <span
             class="title-swap-input">100M</span> and the total amount of <span class="title-swap-input">100ETH</span> in
           the
@@ -142,7 +142,7 @@
               <div class="swap-input">
                 <div class="input-group mb-3">
                   <input type="number" id="ETH" oninput="Update(1)" class="form-control">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="/Dashboard/Source/img/eth.png"
+                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="./Source/img/eth.png"
                       class="icon-swap"></span>
                 </div>
                 <div class="value-coin">$<a id="DollarValueOne">0</a></div>
@@ -154,7 +154,7 @@
               <div class="swap-input">
                 <div class="input-group mb-3">
                   <input type="number" id="VLND" oninput="Update(2)" class="form-control">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="/Dashboard/Source/img/plots.png"
+                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="./Source/img/plots.png"
                       class="icon-swap">
                   </span>
                 </div>
@@ -162,7 +162,7 @@
                 <div class="swap-balance">Balance: 0</div>
               </div>
             </div>
-            <div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img src="/Dashboard/Source/img/gas.png"
+            <div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img src="./Source/img/gas.png"
                   class="icon-input"> $4</span></div>
             <button class="btn-swap swap-spacer-2" type="button" data-bs-toggle="modal"
               data-bs-target="#review-buy">Buy</button>
@@ -183,10 +183,10 @@
         </div>
         <div class="modal-body">
           <p class="swap-review-text">You pay</p>
-          <p class="swap-review-text">1 <img src="/Dashboard/Source/img/eth.png" class="icon-input float-end"></p>
+          <p class="swap-review-text">1 <img src="./Source/img/eth.png" class="icon-input float-end"></p>
           <p class="swap-review-text">$ 1,924</p>
           <p class="swap-review-text">You Receive</p>
-          <p class="swap-review-text">100 <img src="/Dashboard/Source/img/plots.png" class="icon-input float-end"></p>
+          <p class="swap-review-text">100 <img src="./Source/img/plots.png" class="icon-input float-end"></p>
           <p class="swap-review-text">$ 1,924</p>
           <div class="line-swap-review"></div>
           <p class="swap-review-text">Gas Fee <span class="float-end">$4</span></p>
@@ -238,11 +238,11 @@
           <h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
           <span class="swap-transaction-text py-2">
             <span class="float-start">
-              <img src="/Dashboard/Source/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
+              <img src="./Source/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
             <span class="swap-middle-arrow">
-              <img src="/Dashboard/Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
+              <img src="./Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
             <span class="float-end">100 VLND
-              <img src="/Dashboard/Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
+              <img src="./Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
           <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
         </div>
       </div>
@@ -302,10 +302,9 @@
   </div>
   <!-- JS Loads -->
   <script src="../Source/bootstrap/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="../Source/@popperjs/core/dist/umd/popper.js"
-    integrity="sha384-grSmhim7l2CkmGXtqSePI7cwM/7NymZ7eQkKk3WwaZyjfkef6IziTCUrHtz0NfwD"></script>
+    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script>
     $(document).ready(function () {
