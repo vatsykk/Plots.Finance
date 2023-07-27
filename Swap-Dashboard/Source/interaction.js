@@ -54,6 +54,7 @@ async function Update(inputtype){
     let Ethprice;
     await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
     document.getElementById("DollarValueOne").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 5 });
+    document.getElementById("DollarValueTwo").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 5 });
     //document.getElementById("%").innerText = (((0.03)*((document.getElementById('Millions').value)*(1000000))/(document.getElementById("EthCount").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
