@@ -45,9 +45,9 @@ async function getEtherBalance() {
 }
 
 async function Update(inputtype){
-    if(inputtype == 1)
-    document.getElementById("ETH").innerText = document.getElementById("EthCount").value;
-    document.getElementById("VLND").innerText = document.getElementById("EthCount").value * 100;
+    if(inputtype == 1){
+        document.getElementById("ETH").innerText = document.getElementById("EthCount").value;
+        document.getElementById("VLND").innerText = document.getElementById("EthCount").value * 100;
 
 
     document.getElementById("ETH").innerText 
