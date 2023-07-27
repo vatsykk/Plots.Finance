@@ -5,7 +5,7 @@ let netID;
 let LoggedIn = false;
 
 let EthBalanceNum = document.getElementById("EtherBalance");
-loginWithEth()
+loginWithEth();
 
 async function loginWithEth(){
     if(LoggedIn == false){
