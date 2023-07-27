@@ -48,7 +48,7 @@ async function Update(inputtype){
     if(inputtype == 1){
         document.getElementById("ETH").innerText = document.getElementById("EthCount").value;
         document.getElementById("VLND").innerText = document.getElementById("EthCount").value * 100;
-
+    } else if(inputtype == 2){
 
     document.getElementById("ETH").innerText 
 
