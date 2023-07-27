@@ -36,9 +36,11 @@ async function getID(){
     return(netID);
 }
 
-async function getEtherBalance(){
+async function getEtherBalance() {
     let balance = await web3.eth.getBalance(account);
-    EthBalanceNum.innerText = balance;
-    return balance;
+    let balanceInEther = web3.utils.fromWei(balance, 'ether');
+    let formattedBalance = parseFloat(balanceInEther).toFixed(3);
+    EthBalanceNum.innerText = formattedBalance;
+    return formattedBalance;
 }
 
