@@ -4,7 +4,7 @@ let account;
 let netID;
 let LoggedIn = false;
 
-let EthBalanceNum = document.getElementById("EthBalanceNum");
+let EthBalanceNum = document.getElementById("EtherBalance");
 
 
 async function loginWithEth(){
@@ -37,7 +37,7 @@ async function getID(){
 }
 
 async function getEtherBalance(){
-    let balance = await web3.eth.getBalance(account);
+     balance = await web3.eth.getBalance(account);
     return balance;
 }
 
