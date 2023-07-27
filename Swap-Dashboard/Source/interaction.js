@@ -49,8 +49,8 @@ async function Update(inputtype){
         document.getElementById("ETH").innerText = document.getElementById("EthCount").value;
         document.getElementById("VLND").innerText = document.getElementById("EthCount").value * 100;
     } else if(inputtype == 2){
+        document.getElementById("ETH").innerText = document.getElementById("VLND").value / 100;
 
-    document.getElementById("ETH").innerText 
 
     let Ethprice;
     await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
