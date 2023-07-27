@@ -4,6 +4,9 @@ let account;
 let netID;
 let LoggedIn = false;
 
+await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
+
+
 let EthBalanceNum = document.getElementById("EtherBalance");
 loginWithEth();
 
