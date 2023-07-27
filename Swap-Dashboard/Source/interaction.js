@@ -33,3 +33,5 @@ async function getID(){
     return(netID);
 }
 
+async function getBalance(){
+
