@@ -70,6 +70,8 @@ async function Update(inputtype){
     document.getElementById("%").innerText = (((0.03)*((100)*(1000000))/(document.getElementById("ETH").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
+UpdateConfirmation()
+
 async function Maximise(){
     document.getElementById("ETH").value = await getEtherBalance();
     Update(1);
