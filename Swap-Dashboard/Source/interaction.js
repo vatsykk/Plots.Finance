@@ -12,6 +12,7 @@ let MiniEthBalance1 = document.getElementById("MiniEthBalance1");
 let ConectedGreen = document.getElementById("ConectedGreen");
 let WalletButton = document.getElementById("WalletButton");
 let BuyButton = document.getElementById("BuyButton");
+let youpay = document.getElementById("youpay");
 ConectedGreen.style.display = "none";
 
 async function loginWithEth(){
@@ -71,7 +72,7 @@ async function Update(inputtype){
 }
 
 async function UpdateConfirmation(){
-
+    youpay.innerText = document.getElementById("ETH").value;
 }
 
 async function Maximise(){
