@@ -29,7 +29,7 @@ async function loginWithEth(){
         console.log('Logged In')
         await getEtherBalance();
         LoggedIn = true;
-        ConectedGreen
+        ConectedGreen.style.display = "";
     } else { 
         alert("No ETHER Wallet available")
     }
