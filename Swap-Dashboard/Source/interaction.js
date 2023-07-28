@@ -6,6 +6,8 @@ let LoggedIn = false;
 let Ethprice;
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
 
+document.getElementById("VLND").value = document.getElementById("ETH").value * 100;
+document.getElementById("ETH").value = document.getElementById("VLND").value / 100;
 
 let EthBalanceNum = document.getElementById("EtherBalance");
 let ConfirmationUSD = document.getElementById("ConfirmationUSD");
@@ -77,7 +79,7 @@ async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
-    
+
 
 }
 
