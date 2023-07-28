@@ -46,6 +46,8 @@ async function getEtherBalance() {
     let balanceInEther = web3.utils.fromWei(balance, 'ether');
     let roundedDownBalance = Math.floor(parseFloat(balanceInEther) * 1000) / 1000;
     EthBalanceNum.innerText = roundedDownBalance;
+    MiniEthBalance1.innerText = roundedDownBalance;
+    MiniEthBalance2.innerText = roundedDownBalance;
     
     return roundedDownBalance;
 }
