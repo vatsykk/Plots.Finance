@@ -77,6 +77,7 @@ async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
+    
 
 }
 
