@@ -10,6 +10,7 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=
 let EthBalanceNum = document.getElementById("EtherBalance");
 let MiniEthBalance1 = document.getElementById("MiniEthBalance1");
 let ConectedGreen = document.getElementById("ConectedGreen");
+ConectedGreen.style.display = "none";
 
 async function loginWithEth(){
     if(LoggedIn == false){
@@ -28,6 +29,7 @@ async function loginWithEth(){
         console.log('Logged In')
         await getEtherBalance();
         LoggedIn = true;
+        ConectedGreen
     } else { 
         alert("No ETHER Wallet available")
     }
