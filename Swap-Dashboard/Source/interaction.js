@@ -32,7 +32,7 @@ async function loginWithEth(){
         LoggedIn = true;
         ConectedGreen.style.display = "";
         let firstFive = account.slice(0, 5);
-        let lastFive = account.slice(-5);
+        let lastFive = account.slice(-4);
         WalletButton.innerText = firstFive + "..." + lastFive;
     } else { 
         alert("No ETHER Wallet available")
