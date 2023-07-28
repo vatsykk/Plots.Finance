@@ -11,6 +11,7 @@ let EthBalanceNum = document.getElementById("EtherBalance");
 let MiniEthBalance1 = document.getElementById("MiniEthBalance1");
 let ConectedGreen = document.getElementById("ConectedGreen");
 let WalletButton = document.getElementById("WalletButton");
+let BuyButton = document.getElementById("BuyButton");
 ConectedGreen.style.display = "none";
 
 async function loginWithEth(){
@@ -34,6 +35,7 @@ async function loginWithEth(){
         let firstFive = account.slice(0, 5);
         let lastFive = account.slice(-4);
         WalletButton.innerText = " "+ firstFive + "..." + lastFive;
+        BuyButton.
     } else { 
         alert("No ETHER Wallet available")
     }
