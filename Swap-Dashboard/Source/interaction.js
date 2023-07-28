@@ -31,6 +31,7 @@ async function loginWithEth(){
         await getEtherBalance();
         LoggedIn = true;
         ConectedGreen.style.display = "";
+        WalletButton.innerText = "Disconnect Wallet";
     } else { 
         alert("No ETHER Wallet available")
     }
