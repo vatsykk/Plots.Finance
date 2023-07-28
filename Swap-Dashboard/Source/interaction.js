@@ -63,5 +63,5 @@ async function Update(inputtype){
 }
 
 async function Maximise(){
-    document.getElementById("ETH").value = document.getElementById("VLND").value / 100;
+    document.getElementById("ETH").value = getEtherBalance();
 }
