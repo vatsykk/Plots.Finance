@@ -31,8 +31,8 @@ async function loginWithEth(){
         await getEtherBalance();
         LoggedIn = true;
         ConectedGreen.style.display = "";
-        const firstFive = ethWallet.slice(0, 5);
-        const lastFive = ethWallet.slice(-5);
+        let firstFive = account.slice(0, 5);
+        let lastFive = account.slice(-5);
     } else { 
         alert("No ETHER Wallet available")
     }
