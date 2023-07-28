@@ -62,6 +62,6 @@ async function Update(inputtype){
     document.getElementById("%").innerText = (((0.03)*((100)*(1000000))/(document.getElementById("ETH").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
-async Maximise(){
+async function Maximise(){
     
 }
