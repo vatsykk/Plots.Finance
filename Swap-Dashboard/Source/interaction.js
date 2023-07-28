@@ -47,7 +47,6 @@ async function getEtherBalance() {
     let roundedDownBalance = Math.floor(parseFloat(balanceInEther) * 1000) / 1000;
     EthBalanceNum.innerText = roundedDownBalance;
     MiniEthBalance1.innerText = roundedDownBalance;
-    MiniEthBalance2.innerText = roundedDownBalance;
     
     return roundedDownBalance;
 }
