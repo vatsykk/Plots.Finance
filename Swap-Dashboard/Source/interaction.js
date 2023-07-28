@@ -64,6 +64,6 @@ async function Update(inputtype){
 
 async function Maximise(){
     document.getElementById("ETH").value = await getEtherBalance();
-    Update(2);
+    Update(1);
     console.log(await getEtherBalance())
 }
