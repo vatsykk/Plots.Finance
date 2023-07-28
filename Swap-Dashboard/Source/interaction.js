@@ -9,6 +9,7 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=
 
 let EthBalanceNum = document.getElementById("EtherBalance");
 let ConfirmationUSD = document.getElementById("ConfirmationUSD");
+let ConfirmationUSD2 = document.getElementById("ConfirmationUSD2");
 let MiniEthBalance1 = document.getElementById("MiniEthBalance1");
 let ConectedGreen = document.getElementById("ConectedGreen");
 let WalletButton = document.getElementById("WalletButton");
@@ -75,6 +76,7 @@ async function Update(inputtype){
 async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
+    ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
 
 }
 
