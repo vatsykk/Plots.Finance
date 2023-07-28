@@ -73,6 +73,7 @@ async function Update(inputtype){
 
 async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
+    
 }
 
 async function Maximise(){
