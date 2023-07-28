@@ -8,7 +8,7 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=
 
 
 let EthBalanceNum = document.getElementById("EtherBalance");
-let MiniEthBalance1 = document.getElementById("MiniEtherBalance1");
+let MiniEthBalance1 = document.getElementById("MiniEthBalance1");
 loginWithEth();
 
 async function loginWithEth(){
