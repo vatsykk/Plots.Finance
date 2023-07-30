@@ -97,7 +97,7 @@ async function Buy(){
 }
 
 async function Maximise(){
-    document.getElementById("ETH").value = (await getEtherBalance() - ;
+    document.getElementById("ETH").value = (await getEtherBalance() - (gas * 0.000000021 * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 }));
     Update(1);
     console.log(await getEtherBalance())
 }
