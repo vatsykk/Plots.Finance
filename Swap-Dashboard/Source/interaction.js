@@ -82,6 +82,7 @@ async function Update(inputtype){
 
 async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
+    youreceive.innerText = document.getElementById("VLND").value;
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
