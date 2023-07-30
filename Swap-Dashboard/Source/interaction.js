@@ -82,7 +82,7 @@ async function UpdateConfirmation(){
 }
 
 async function Buy(){
-    await contract.methods.
+    await contract.methods.Deposit().
 
 }
 
