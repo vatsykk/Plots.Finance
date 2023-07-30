@@ -88,7 +88,7 @@ async function Buy(){
     let tx = await contract.methods.Deposit().send({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether'), gas: gas});
 
     console.log(tx);
-    HyperLaneLink = "https://explorer.hyperlane.xyz/message/" + tx.transactionHash;
+    EtherScanLaneLink = "https://explorer.hyperlane.xyz/message/" + tx.transactionHash;
     return(tx);
 }
 
