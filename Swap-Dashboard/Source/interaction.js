@@ -81,6 +81,11 @@ async function UpdateConfirmation(){
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
+async function Buy(){
+    
+
+}
+
 async function Maximise(){
     document.getElementById("ETH").value = await getEtherBalance();
     Update(1);
