@@ -82,7 +82,8 @@ async function UpdateConfirmation(){
 }
 
 async function Buy(){
-    let gas await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
+    let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
+    
 
 }
 
