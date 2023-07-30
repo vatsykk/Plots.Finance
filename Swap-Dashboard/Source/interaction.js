@@ -18,6 +18,7 @@ let ConectedGreen = document.getElementById("ConectedGreen");
 let WalletButton = document.getElementById("WalletButton");
 let BuyButton = document.getElementById("BuyButton");
 let youpay = document.getElementById("youpay");
+let youreceive = document.getElementById("youreceive");
 ConectedGreen.style.display = "none";
 
 
