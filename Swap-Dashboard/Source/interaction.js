@@ -88,8 +88,6 @@ async function Buy(){
     let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
     let tx = await contract.methods.Deposit().send({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether'), gas: gas});
 
-    ConfirmMint.style.display = "none";
-    WaitingTX.style.display = "";
     console.log(tx);
     return(tx);
 }
