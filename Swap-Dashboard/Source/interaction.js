@@ -18,7 +18,7 @@ let WalletButton = document.getElementById("WalletButton");
 let BuyButton = document.getElementById("BuyButton");
 let youpay = document.getElementById("youpay");
 let ConfirmMint = document.getElementById("ConfirmMint");
-let WaitingXx = document.getElementById("WaitingTx");
+let WaitingTX = document.getElementById("WaitingTX");
 ConectedGreen.style.display = "none";
 
 async function loginWithEth(){
