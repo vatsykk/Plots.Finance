@@ -76,7 +76,7 @@ async function Update(inputtype){
     document.getElementById("DollarValueTwo").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     document.getElementById("%").innerText = (((0.03)*((100)*(1000000))/(document.getElementById("ETH").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
     let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
-
+    document.getElementById()
 }
 
 async function UpdateConfirmation(){
