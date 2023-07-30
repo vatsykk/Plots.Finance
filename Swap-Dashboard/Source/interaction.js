@@ -20,6 +20,7 @@ let youpay = document.getElementById("youpay");
 let ConfirmMint = document.getElementById("ConfirmMint");
 let WaitingTX = document.getElementById("WaitingTX");
 ConectedGreen.style.display = "none";
+WaitingTX.style.display = "none";
 
 async function loginWithEth(){
     if(LoggedIn == false){
