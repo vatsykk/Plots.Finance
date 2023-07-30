@@ -97,6 +97,7 @@ async function Buy(){
 }
 
 async function Maximise(){
+    let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
     document.getElementById("ETH").value = (await getEtherBalance() - (gas * 0.000000021));
     Update(1);
     console.log(await getEtherBalance())
