@@ -1,7 +1,6 @@
 /**  Globals **/
-@import url(/Source/bootstrap/css/bootstrap.min.css);
-@import url(/Source/css/Dark-Plots.css);
-@import url(/Source/bootstrap-icons/font/bootstrap-icons.min.css);
+@import url(bootstrap.min.css);
+@import url(Dark-Plots.css);
 
 /* Custom default button *
  
