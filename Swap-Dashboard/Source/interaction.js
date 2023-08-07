@@ -68,6 +68,23 @@ async function getEtherBalance() {
     return roundedDownBalance;
 }
 
+async function EstimateGas(){
+    fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                // Check if the API response contains the ProposeGasPrice data
+                if (data.status === "1" && data.result && data.result.ProposeGasPrice) {
+                    const proposeGasPrice = data.result.ProposeGasPrice;
+                    console.log("ProposeGasPrice:", proposeGasPrice);
+                } else {
+                    console.log("Unable to fetch ProposeGasPrice.");
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+}
+
 async function UpdatePercent(){
     document.getElementById("%").innerText = (((0.03)*((document.getElementById("millions").value)*(1000000))/(document.getElementById("ethers").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
