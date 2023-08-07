@@ -20,6 +20,7 @@ let BuyButton = document.getElementById("BuyButton");
 let youpay = document.getElementById("youpay");
 let youreceive = document.getElementById("youreceive");
 let disconnectbtn = document.getElementById("disconnectbtn");
+let GasFee = document.getElementById("GasFee");
 ConectedGreen.style.display = "none";
 disconnectbtn.style.display = "none";
 
