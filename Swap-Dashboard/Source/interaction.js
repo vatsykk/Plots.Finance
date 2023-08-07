@@ -108,4 +108,3 @@ async function Maximise(){
     console.log(await getEtherBalance())
 }
 
-UpdatePercent();
