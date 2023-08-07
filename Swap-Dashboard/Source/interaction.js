@@ -68,6 +68,8 @@ async function getEtherBalance() {
     return roundedDownBalance;
 }
 
+async function 
+
 async function Update(inputtype){
     if(inputtype == 1){
         document.getElementById("VLND").value = document.getElementById("ETH").value * 100;
