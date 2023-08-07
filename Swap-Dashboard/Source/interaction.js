@@ -70,7 +70,6 @@ async function getEtherBalance() {
 
 async function UpdatePercent(){
     document.getElementById("%").innerText = (((0.03)*((document.getElementById("millions").value)*(1000000))/(document.getElementById("ethers").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
-    console.log((((0.03)*((document.getElementById("millions").value)*(1000000))/(document.getElementById("ethers").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 }))
 }
 
 async function Update(inputtype){
