@@ -9,7 +9,7 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=
 
 document.getElementById("VLND").value = 0;
 document.getElementById("ETH").value = 0;
-Update(1)
+Update(1);
 
 let EthBalanceNum = document.getElementById("EtherBalance");
 let ConfirmationUSD = document.getElementById("ConfirmationUSD");
