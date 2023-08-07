@@ -75,7 +75,8 @@ async function EstimateGas(){
                 // Check if the API response contains the ProposeGasPrice data
                 if (data.status === "1" && data.result && data.result.ProposeGasPrice) {
                     const proposeGasPrice = data.result.ProposeGasPrice;
-                    console.log("ProposeGasPrice:", proposeGasPrice * 1000 * );
+                    console.log("ProposeGasPrice:", proposeGasPrice * 1000 * 110000);
+                    
                 } else {
                     console.log("Unable to fetch ProposeGasPrice.");
                 }
