@@ -21,6 +21,7 @@ let youpay = document.getElementById("youpay");
 let youreceive = document.getElementById("youreceive");
 let disconnectbtn = document.getElementById("disconnectbtn");
 ConectedGreen.style.display = "none";
+disconnectbtn.style.display = "none";
 
 
 async function loginWithEth(){
