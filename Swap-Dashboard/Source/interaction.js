@@ -69,7 +69,7 @@ async function getEtherBalance() {
 }
 
 async function EstimateGas(){
-    fetch(apiUrl)
+    fetch("https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=IUG1CY88MY4BZ9XDA2P1S9HJCU1T27WD8D")
             .then(response => response.json())
             .then(data => {
                 // Check if the API response contains the ProposeGasPrice data
