@@ -69,6 +69,7 @@ async function getEtherBalance() {
     return roundedDownBalance;
 }
 
+async fucntion UpdatePercent(){}
 
 async function Update(inputtype){
     if(inputtype == 1){
