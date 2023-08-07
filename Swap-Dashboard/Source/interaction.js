@@ -23,8 +23,6 @@ let disconnectbtn = document.getElementById("disconnectbtn");
 ConectedGreen.style.display = "none";
 disconnectbtn.style.display = "none";
 
-UpdatePercent();
-
 
 async function loginWithEth(){
     if(LoggedIn == false){
