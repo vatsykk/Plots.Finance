@@ -23,6 +23,8 @@ let disconnectbtn = document.getElementById("disconnectbtn");
 ConectedGreen.style.display = "none";
 disconnectbtn.style.display = "none";
 
+UpdatePercent();
+
 
 async function loginWithEth(){
     if(LoggedIn == false){
@@ -46,7 +48,6 @@ async function loginWithEth(){
         let lastFive = account.slice(-4);
         WalletButton.innerText = " "+ firstFive + "..." + lastFive;
         BuyButton.disabled = false;
-        Update(1);
     } else { 
         alert("No ETHER Wallet available")
     }
