@@ -77,7 +77,7 @@ async function EstimateGas(){
                 if (data.status === "1" && data.result && data.result.ProposeGasPrice) {
                     const proposeGasPrice = data.result.ProposeGasPrice;
                     console.log("ProposeGasPrice:", proposeGasPrice);
-                    GasFee.innerText = ((proposeGasPrice * 110000 * Ethprice) / 1000).toLocaleString(undefined, { maximumFractionDigits: 2 });
+                    GasFee.innerText = ((proposeGasPrice * 110000 * Ethprice)).toLocaleString(undefined, { maximumFractionDigits: 2 });
                 } else {
                     console.log("Unable to fetch ProposeGasPrice.");
                 }
