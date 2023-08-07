@@ -19,6 +19,7 @@ let WalletButton = document.getElementById("WalletButton");
 let BuyButton = document.getElementById("BuyButton");
 let youpay = document.getElementById("youpay");
 let youreceive = document.getElementById("youreceive");
+let disconnectbtn = 
 ConectedGreen.style.display = "none";
 
 
