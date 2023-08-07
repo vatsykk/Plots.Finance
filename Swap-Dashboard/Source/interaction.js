@@ -19,7 +19,7 @@ let WalletButton = document.getElementById("WalletButton");
 let BuyButton = document.getElementById("BuyButton");
 let youpay = document.getElementById("youpay");
 let youreceive = document.getElementById("youreceive");
-let disconnectbtn = 
+let disconnectbtn = document.getElementById("disconnectbtn");
 ConectedGreen.style.display = "none";
 
 
@@ -65,7 +65,7 @@ async function getEtherBalance() {
     MiniEthBalance1.innerText = roundedDownBalance;
     
     return roundedDownBalance;
-}
+}disconnectbtn
 
 async function Update(inputtype){
     if(inputtype == 1){
