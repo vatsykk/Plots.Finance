@@ -65,7 +65,7 @@ async function getEtherBalance() {
     MiniEthBalance1.innerText = roundedDownBalance;
     
     return roundedDownBalance;
-}disconnectbtn
+}
 
 async function Update(inputtype){
     if(inputtype == 1){
