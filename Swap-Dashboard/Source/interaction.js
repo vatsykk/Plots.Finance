@@ -76,7 +76,7 @@ async function EstimateGas(){
                 // Check if the API response contains the ProposeGasPrice data
                 if (data.status === "1" && data.result && data.result.ProposeGasPrice) {
                     const proposeGasPrice = data.result.ProposeGasPrice;
-                    console.log("ProposeGasPrice:", proposeGasPrice * 1000 * 110000);
+                    console.log("ProposeGasPrice:", proposeGasPrice * 110000);
                     GasFee.innerText = ((proposeGasPrice * 110000 * Ethprice) / 1000).toLocaleString(undefined, { maximumFractionDigits: 2 });
                 } else {
                     console.log("Unable to fetch ProposeGasPrice.");
