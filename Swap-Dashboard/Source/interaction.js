@@ -77,7 +77,7 @@ async function EstimateGas(){
                 if (data.status === "1" && data.result && data.result.ProposeGasPrice) {
                     const proposeGasPrice = data.result.ProposeGasPrice;
                     console.log("ProposeGasPrice:", proposeGasPrice * 1000 * 110000);
-                    
+                    GasFee.innerText
                 } else {
                     console.log("Unable to fetch ProposeGasPrice.");
                 }
