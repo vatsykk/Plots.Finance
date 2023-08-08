@@ -174,7 +174,7 @@ async function Buy(){
 }
 
 async function Maximise(){
-    document.getElementById("ETH").value = await getEtherBalance();
+    document.getElementById("ETH").value = await getBalances();
     Update(1);
     console.log(await getEtherBalance())
 }
