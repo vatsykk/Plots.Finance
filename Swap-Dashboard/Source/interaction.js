@@ -91,7 +91,7 @@ async function getBalances() {
     MiniEthBalance1.innerText = roundedDownBalance;
 
     let VLNDBalance = await getVLNDBalance();
-    vlndbal.innerText = VLNDBalance;
+    vlndbal.innerText = VLNDBalance.toFixed(2);
     
     return roundedDownBalance;
 }
