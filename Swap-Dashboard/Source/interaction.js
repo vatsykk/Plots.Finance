@@ -48,7 +48,7 @@ async function loginWithEth(){
         let lastFive = account.slice(-4);
         WalletButtonText.innerText = " "+ firstFive + "..." + lastFive;
         BuyButton.disabled = false;
-        WalletButton.onclick = "DisplayDisconnect()";
+        WalletButton.onclick = DisplayDisconnect;
     } else { 
         alert("No ETHER Wallet available")
     }
