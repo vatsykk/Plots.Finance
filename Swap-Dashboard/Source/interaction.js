@@ -89,6 +89,9 @@ async function getBalances() {
     let roundedDownBalance = Math.floor(parseFloat(balanceInEther) * 1000) / 1000;
     EthBalanceNum.innerText = roundedDownBalance;
     MiniEthBalance1.innerText = roundedDownBalance;
+
+    let VLNDBalance = await getVLNDBalance();
+    
     
     return roundedDownBalance;
 }
