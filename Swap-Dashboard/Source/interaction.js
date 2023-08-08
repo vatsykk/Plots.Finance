@@ -54,6 +54,9 @@ async function loginWithEth(){
         if(ContractBal < 0){
             document.getElementById("ethers").value = 1
         }
+        else{
+            document.getElementById("ethers").value = ContractBal;
+        }
     } else { 
         alert("No ETHER Wallet available")
     }
