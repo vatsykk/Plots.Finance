@@ -15,7 +15,7 @@ let ConfirmationUSD = document.getElementById("ConfirmationUSD");
 let ConfirmationUSD2 = document.getElementById("ConfirmationUSD2");
 let MiniEthBalance1 = document.getElementById("MiniEthBalance1");
 let ConectedGreen = document.getElementById("ConectedGreen");
-let WalletButton = document.getElementById("WalletButton");
+let WalletButtonText = document.getElementById("WalletButtonText");
 let BuyButton = document.getElementById("BuyButton");
 let youpay = document.getElementById("youpay");
 let youreceive = document.getElementById("youreceive");
@@ -45,9 +45,9 @@ async function loginWithEth(){
         ConectedGreen.style.display = "";
         let firstFive = account.slice(0, 5);
         let lastFive = account.slice(-4);
-        WalletButton.innerText = " "+ firstFive + "..." + lastFive;
+        WalletButtonText.innerText = " "+ firstFive + "..." + lastFive;
         BuyButton.disabled = false;
-        WalletButton.onclick = "DisplayDisconnect()";
+        WalletButtonText.onclick = "DisplayDisconnect()";
     } else { 
         alert("No ETHER Wallet available")
     }
@@ -58,7 +58,7 @@ async function Logout(){
     if(LoggedIn == true){
         LoggedIn = false;
         ConectedGreen.style.display = "none";
-        WalletButton.innerText = "Connect Wallet";
+        WalletButtonText.innerText = "Connect Wallet";
         BuyButton.disabled = true;
     }
 }
