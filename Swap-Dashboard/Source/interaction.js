@@ -47,7 +47,7 @@ async function loginWithEth(){
         let lastFive = account.slice(-4);
         WalletButton.innerText = " "+ firstFive + "..." + lastFive;
         BuyButton.disabled = false;
-        WalletButton.onclick = "DisplayDisconnect();
+        WalletButton.onclick = "DisplayDisconnect()";
     } else { 
         alert("No ETHER Wallet available")
     }
@@ -125,7 +125,7 @@ async function UpdateConfirmation(){
 async function DisplayDisconnect(){
     disconnectbtn.style.visibility = "";
     BuyButton.disabled = true;
-    WalletButton.onclick = Logout();
+    WalletButton.onclick = "Logout()";
 }
 
 async function Buy(){
