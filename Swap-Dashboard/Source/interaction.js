@@ -54,7 +54,12 @@ async function loginWithEth(){
 }
 
 async function Logout(){
-    
+    if(LoggedIn == true){
+        LoggedIn = false;
+        ConectedGreen.style.display = "none";
+        WalletButton.innerText = "Connect Wallet";
+        BuyButton.disabled = true;
+    }
 }
 
 async function getID(){
