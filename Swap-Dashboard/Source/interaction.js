@@ -23,6 +23,7 @@ let youreceive = document.getElementById("youreceive");
 let disconnectbtn = document.getElementById("disconnectbtn");
 let GasFee = document.getElementById("GasFee");
 let GasPriceConfirmation = document.getElementById("GasPriceConfirmation");
+let total = document.getElementById("total");
 ConectedGreen.style.display = "none";
 disconnectbtn.style.visibility = "hidden";
 
