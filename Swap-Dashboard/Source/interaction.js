@@ -126,7 +126,7 @@ async function UpdateConfirmation(){
 async function DisplayDisconnect(){
     disconnectbtn.style.visibility = "";
     BuyButton.disabled = true;
-    disconnectbtn.onclick = "Logout()";
+    disconnectbtn.onclick = Logout;
 }
 
 async function Buy(){
