@@ -44,7 +44,6 @@ async function loginWithEth(){
         LoggedIn = true;
         ConectedGreen.style.display = "";
         let firstFive = account.slice(0, 5);
-        console.log(firstFive);
         let lastFive = account.slice(-4);
         WalletButton.innerText = " "+ firstFive + "..." + lastFive;
         BuyButton.disabled = false;
