@@ -22,7 +22,7 @@ let youreceive = document.getElementById("youreceive");
 let disconnectbtn = document.getElementById("disconnectbtn");
 let GasFee = document.getElementById("GasFee");
 ConectedGreen.style.display = "none";
-disconnectbtn.style.display = "none !important";
+disconnectbtn.style.visibility = "hidden";
 
 
 async function loginWithEth(){
