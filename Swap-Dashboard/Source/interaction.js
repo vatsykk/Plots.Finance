@@ -60,7 +60,8 @@ async function Logout(){
         LoggedIn = false;
         ConectedGreen.style.display = "none";
         WalletButtonText.innerText = "Connect Wallet";
-        disconnectbtn.style.visibility = "";
+        WalletButton.onclick = loginWithEth;
+        disconnectbtn.style.visibility = "hidden";
         BuyButton.disabled = true;
     }
 }
