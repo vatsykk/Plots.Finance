@@ -114,6 +114,7 @@ async function UpdateConfirmation(){
 
 async function DisplayDisconnect(){
     disconnectbtn.style.visibility = "";
+    BuyButton.disabled = false;
 }
 
 async function Buy(){
