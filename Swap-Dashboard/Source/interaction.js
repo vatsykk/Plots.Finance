@@ -136,7 +136,7 @@ async function getTokenBalance() {
 
         if (data.status === "1" && data.result) {
             const tokenBalanceDecimal = parseFloat(data.result) / 10 ** 18;
-            console.log("Token Balance (Decimal):", tokenBalanceDecimal);
+            console.log("Token Balance (Decimal):", tokenBalanceDecimal.toFixed(2));
             return tokenBalanceDecimal;
         } else {
             console.log("Error: Unable to fetch token balance.");
