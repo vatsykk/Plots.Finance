@@ -51,7 +51,7 @@ async function loginWithEth(){
         WalletButton.onclick = DisplayDisconnect;
         EstimateGas();
         let ContractBal = await (await web3.eth.getBalance("0x493fD82D18a17cF90a357aaD6A4c5B3D352427b0") / 1000000000000000000)
-        if(ContractBal < 0){
+        if(ContractBal < 1){
             document.getElementById("ethers").value = 1;
         }
         else{
