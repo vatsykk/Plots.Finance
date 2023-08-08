@@ -113,7 +113,7 @@ async function UpdateConfirmation(){
 }
 
 async function DisplayDisconnect(){
-    disconnectbtn.style.display = "none !important";
+    disconnectbtn.style.display = "";
 }
 
 async function Buy(){
