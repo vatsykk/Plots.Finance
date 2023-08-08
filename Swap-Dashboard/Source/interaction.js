@@ -100,6 +100,7 @@ async function EstimateGas(){
                     const proposeGasPrice = data.result.ProposeGasPrice;
                     console.log("ProposeGasPrice:", proposeGasPrice)
                     GasFee.innerText = (((proposeGasPrice * 110000 / 1000000000) * Ethprice)).toLocaleString(undefined, { maximumFractionDigits: 2 });
+                    GasPriceConfirmation.innerText
                 } else {
                     console.log("Unable to fetch ProposeGasPrice.");
                 }
