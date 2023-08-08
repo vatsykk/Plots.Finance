@@ -133,6 +133,7 @@ async function UpdateConfirmation(){
     youreceive.innerText = document.getElementById("VLND").value;
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
+    total.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
 async function DisplayDisconnect(){
