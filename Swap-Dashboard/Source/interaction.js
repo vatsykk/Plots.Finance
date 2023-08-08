@@ -60,6 +60,7 @@ async function Logout(){
         LoggedIn = false;
         ConectedGreen.style.display = "none";
         WalletButtonText.innerText = "Connect Wallet";
+        disconnectbtn.style.visibility = "";
         BuyButton.disabled = true;
     }
 }
