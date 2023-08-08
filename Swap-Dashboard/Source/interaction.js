@@ -135,7 +135,7 @@ async function Update(inputtype){
 
 async function getVLNDBalance() {
     try {
-        const response = await fetch("https://api.polygonscan.com/api?module=account&action=tokenbalance&contractaddress=0x52ed20e695c34f6130975779505074dc7b9208be&address=0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce&tag=latest&apikey=4741MD1KWM19HIPMYIEH4G5W6NS1TUUMU3");
+        const response = await fetch("https://api.polygonscan.com/api?module=account&action=tokenbalance&contractaddress=0x52ed20e695c34f6130975779505074dc7b9208be&address=' '&tag=latest&apikey=4741MD1KWM19HIPMYIEH4G5W6NS1TUUMU3");
         const data = await response.json();
 
         if (data.status === "1" && data.result) {
