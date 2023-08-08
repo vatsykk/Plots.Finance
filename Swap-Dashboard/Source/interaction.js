@@ -44,7 +44,7 @@ async function loginWithEth(){
         contract = new window.web3.eth.Contract(window.SaleContractABI, contractAddress, window.web3);
         account = accountarray[0];
         console.log('Logged In')
-        await getEtherBalance();
+        await getBalances();
         LoggedIn = true;
         ConectedGreen.style.display = "";
         let firstFive = account.slice(0, 5);
@@ -176,6 +176,6 @@ async function Buy(){
 async function Maximise(){
     document.getElementById("ETH").value = await getBalances();
     Update(1);
-    console.log(await getEtherBalance())
+    console.log(await getBalances())
 }
 
