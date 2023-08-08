@@ -129,6 +129,26 @@ async function Update(inputtype){
     document.getElementById("%").innerText = (((0.03)*((document.getElementById("millions").value)*(1000000))/(document.getElementById("ethers").value * Ethprice) * 100)).toLocaleString(undefined, { maximumFractionDigits: 2 });
 }
 
+async function getTokenBalance() {
+    try {
+        const response = await fetch("https://api.polygonscan.com/api?module=account&action=tokenbalance&contractaddress=0x52ed20e695c34f6130975779505074dc7b9208be&address=0xc932b3a342658A2d3dF79E4661f29DfF6D7e93Ce&tag=latest&apikey=4741MD1KWM19HIPMYIEH4G5W6NS1TUUMU3");
+        const data = await response.json();
+
+        if (data.status === "1" && data.result) {
+            const tokenBalanceDecimal = parseFloat(data.result) / 10 ** 18;
+            console.log("Token Balance (Decimal):", tokenBalanceDecimal);
+            return tokenBalanceDecimal;
+        } else {
+            console.log("Error: Unable to fetch token balance.");
+            return null;
+        }
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return null;
+    }
+}
+
+
 async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
     youreceive.innerText = document.getElementById("VLND").value;
