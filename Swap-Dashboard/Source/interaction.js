@@ -25,6 +25,7 @@ let GasFee = document.getElementById("GasFee");
 let GasPriceConfirmation = document.getElementById("GasPriceConfirmation");
 let total = document.getElementById("total");
 let vlndbal = document.getElementById("vlndbal");
+let Etherin
 ConectedGreen.style.display = "none";
 disconnectbtn.style.visibility = "hidden";
 
