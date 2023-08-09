@@ -62,6 +62,7 @@ async function loginWithEth(){
         else{
             document.getElementById("ethers").value = ContractBal.toFixed(0);
         }
+        UpdatePercent();
         EtherInPoolOne.innerText = ContractBal.toFixed(2);
         EtherInPoolTwo.innerText = ContractBal.toFixed(2);
     } else { 
