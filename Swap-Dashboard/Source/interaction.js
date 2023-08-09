@@ -62,6 +62,7 @@ async function loginWithEth(){
         else{
             document.getElementById("ethers").value = ContractBal.toFixed(0);
         }
+        EtherInPoolOne.innerText = (document.getElementById("ethers").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     } else { 
         alert("No ETHER Wallet available")
     }
