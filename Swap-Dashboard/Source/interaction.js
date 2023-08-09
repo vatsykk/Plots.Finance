@@ -25,7 +25,8 @@ let GasFee = document.getElementById("GasFee");
 let GasPriceConfirmation = document.getElementById("GasPriceConfirmation");
 let total = document.getElementById("total");
 let vlndbal = document.getElementById("vlndbal");
-let Etherin
+let EtherInPoolOne = document.getElementById("EtherInPoolOne");
+let EtherInPoolTwo = document.getElementById("EtherInPoolTwo");
 ConectedGreen.style.display = "none";
 disconnectbtn.style.visibility = "hidden";
 
