@@ -12,18 +12,18 @@
   <!-- OpenGrah -->
   <meta property="og:title" content="Plots Fi">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://plots.kanzen.co/">
+  <meta property="og:url" content="https://app.plots.finance/">
   <meta property="og:description" content="No Description Yet.">
-  <meta property="og:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
+  <meta property="og:image" content="https://app.plots.finance/Source/img/logo.png">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://Plots.finance/">
   <meta property="twitter:title" content="Plots.Finance">
   <meta property="twitter:description" content="Under Construction">
-  <meta property="twitter:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
+  <meta property="twitter:image" content="https://app.plots.finance/Source/img/logo.png">
   <!-- Favicons -->
-  <link rel="icon" href="https://plots.kosmitodev.com.ar/Source/img/favicon.ico">
-  <link rel="apple-touch-icon" href="https://plots.kosmitodev.com.ar/Source/img/apple-touch-icon.png">
+  <link rel="icon" href="https://app.plots.finance/Source/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://app.plots.finance/Source/img/apple-touch-icon.png">
   <!-- CSS Loads -->
   <link rel="stylesheet" media="(min-width: 720px)" href="./Source/css/dashboard.css" crossorigin="anonymous" />
   <link rel="stylesheet" media="(max-width: 720px)" href="./Source/css/dashboard-mobil.css" crossorigin="anonymous" />
@@ -110,13 +110,13 @@
               </ul>
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <span class="eth-wallet"><span id="EtherBalance" class="nav-item-swap">0</span><span><img
-                      src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" class="icon-header-swap"></span></span>
+                      src="https://app.plots.finance/Source/img/eth.png" class="icon-header-swap"></span></span>
                 <button id="WalletButton" onclick="loginWithEth()" type="button" class="btn-dash-menu"><svg id="ConectedGreen" width="11" height="11" viewBox="0 0 11 11" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="11" rx="5.5" fill="#05FF00" />
                   </svg><a id="WalletButtonText">Connect Wallet</a></button>
                 <li><button class="btn-dash-menu-disconnected d-flex ">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
-                      src="https://cdn.kanzen.co/Plots.Finance/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
+                      src="https://app.plots.finance/Source/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
                 </li>
               </ul>
             </div>
@@ -129,7 +129,7 @@
 
       <div class="container-fluid">
         <button id="disconnectbtn" class="swap-disconnect d-flex">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
-            src="https://cdn.kanzen.co/Plots.Finance/img/disconnected.png" class="icon-disconnect"></button>
+            src="https://app.plots.finance/Source/img/disconnected.png" class="icon-disconnect"></button>
         <h1 style="text-align: center;" class="title-swap">If the fully diluted valuation of $PLOTS token is <span
             class="title-swap-input"><input oninput="UpdatePercent()" value="50" type="number" style="max-width: 8%; text-align: center;" id="millions"></input> Million</span> and the total amount of ETH in the VLND pool at snapshot is  <span class="title-swap-input"><input type="number" oninput="UpdatePercent()" value="100" style="max-width: 8%; text-align: center;" id="ethers"> ETH</span> then my expected percentage return is  <span
             class="title-swap-input"><a id="%">824.43</a>%</span> </h1>
@@ -140,7 +140,7 @@
               <div class="swap-input">
                 <div class="input-group mb-3">
                   <input type="number" id="ETH" oninput="Update(1)" class="form-control">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png"
+                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="https://app.plots.finance/Source/img/eth.png"
                       class="icon-swap"></span>
                 </div>
                 <div class="value-coin">$<a id="DollarValueOne">0</a></div>
@@ -152,7 +152,7 @@
               <div class="swap-input">
                 <div class="input-group mb-3">
                   <input type="number" id="VLND" oninput="Update(2)" class="form-control">
-                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png"
+                  <span class="input-group-text" id="inputGroup-sizing-lg"><img src="https://app.plots.finance/Source/img/plots.png"
                       class="icon-swap">
                   </span>
                 </div>
@@ -160,7 +160,7 @@
                 <div class="swap-balance">Balance: <a id="vlndbal">0</a></div>
               </div>
             </div>
-            <div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img src="https://cdn.kanzen.co/Plots.Finance/img/gas.png"
+            <div class="data-swap">1 VLND = 0.01 ETH <span class="value-swap"><img src="https://app.plots.finance/Source/img/gas.png"
                   class="icon-input"> $<a id="GasFee">-</a></span></div>
             <button onclick="UpdateConfirmation()" id="BuyButton" class="btn-swap swap-spacer-2" type="button" data-bs-toggle="modal" disabled="true"
               data-bs-target="#review-buy">Buy</button>
@@ -181,10 +181,10 @@
         </div>
         <div class="modal-body">
           <p class="swap-review-text">You pay</p>
-          <p class="swap-review-text"><a id="youpay">1</a> <img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" class="icon-input float-end"></p>
+          <p class="swap-review-text"><a id="youpay">1</a> <img src="https://app.plots.finance/Source/img/eth.png" class="icon-input float-end"></p>
           <p class="swap-review-text">$ <a id="ConfirmationUSD">0</a></p>
           <p class="swap-review-text">You Receive</p>
-          <p class="swap-review-text"><a id="youreceive">1</a> <img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png" class="icon-input float-end"></p>
+          <p class="swap-review-text"><a id="youreceive">1</a> <img src="https://app.plots.finance/Source/img/plots.png" class="icon-input float-end"></p>
           <p class="swap-review-text">$ <a id="ConfirmationUSD2">0</a></p>
           <div class="line-swap-review"></div>
           <p class="swap-review-text">Gas Fee <span class="float-end">$<a id="GasPriceConfirmation">4</a></span></p>
@@ -231,11 +231,11 @@
           <h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
           <span id="helo" class="swap-transaction-text py-2">
             <span class="float-start">
-              <img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
+              <img src="https://app.plots.finance/Source/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
             <span class="swap-middle-arrow">
-              <img src="https://cdn.kanzen.co/Plots.Finance/img/dir.png" width="28" height="20" class="icon-transaction"></span>
+              <img src="https://app.plots.finance/Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
             <span class="float-end">100 VLND
-              <img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
+              <img src="https://app.plots.finance/Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
           <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
         </div>
       </div>

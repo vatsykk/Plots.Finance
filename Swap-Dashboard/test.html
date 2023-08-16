@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<meta http-equiv="Cache-Control" content="no-cache" />
+
+<head>
+  <!-- Character Set and View -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swap - Plots.Finance</title>
+  <meta name="description" content="This site is under Construction.">
+  <meta name="keywords" content="Complete with keywords separe using (,)">
+  <!-- OpenGrah -->
+  <meta property="og:title" content="Plots Fi">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plots.kanzen.co/">
+  <meta property="og:description" content="No Description Yet.">
+  <meta property="og:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://Plots.finance/">
+  <meta property="twitter:title" content="Plots.Finance">
+  <meta property="twitter:description" content="Under Construction">
+  <meta property="twitter:image" content="https://plots.kosmitodev.com.ar/Source/img/logo.png">
+  <!-- Favicons -->
+  <link rel="icon" href="https://plots.kosmitodev.com.ar/Source/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://plots.kosmitodev.com.ar/Source/img/apple-touch-icon.png">
+  <!-- CSS Loads -->
+  <link rel="stylesheet" media="(min-width: 720px)" href="./Source/css/dashboard.css" crossorigin="anonymous" />
+  <link rel="stylesheet" media="(max-width: 720px)" href="./Source/css/dashboard-mobil.css" crossorigin="anonymous" />
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/qxq2irv.css">
+  <style>
+:root {
+  --golden-ratio: 1.61803398875;
+  --color-text: black;
+  --color-bg: white;
+  --gutter: 3ch;
+  --leading: 1.5;
+  --spacing-x: var(--gutter);
+  --spacing-y: calc(var(--leading) * var(--golden-ratio) * 1ex);
+  --page-padding-x: clamp(5vw, calc((100vw - 75ch) / 2), 38.2vw);
+  --border-width: 0.1em;
+  --transition: 250ms ease-out;
+}
+.dialog {
+  --animation-in-settings: 500ms cubic-bezier(0.25, 0, 0.3, 1) normal;
+  --animation-out-settings: 500ms cubic-bezier(0.5, -0.5, 0.1, 1.5) normal;
+  max-inline-size: min(90vw, 45ch);
+  max-block-size: min(80vh, 100%);
+  max-block-size: min(80dvb, 100%);
+  padding: 0;
+}
+.dialog[open] {
+  -webkit-animation: slidein var(--animation-in-settings);
+  animation: slidein var(--animation-in-settings);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dialog[open] {
+    -webkit-animation: fadein var(--animation-out-settings);
+    animation: fadein var(--animation-out-settings);
+  }
+}
+.dialog.is-hidden {
+  -webkit-animation: minimize var(--animation-out-settings);
+  animation: minimize var(--animation-out-settings);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dialog.is-hidden {
+    -webkit-animation: fadeout var(--animation-out-settings);
+    animation: fadeout var(--animation-out-settings);
+  }
+}
+.dialog header,
+.dialog main {
+  padding-inline: var(--spacing-x);
+}
+.dialog header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-block: calc(var(--spacing-y) / 2);
+  background-color: var(--color-bg);
+  border-bottom: var(--border-width) solid;
+}
+.dialog header>* {
+  margin: 0;
+  line-height: 1;
+}
+.dialog header button {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+.dialog article {
+  padding-block: var(--spacing-y);
+}
+.dialog::-webkit-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  -webkit-animation: none;
+  animation: none;
+}
+.dialog::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+  -webkit-animation: none;
+  animation: none;
+}
+.dialog[open]::-webkit-backdrop {
+  -webkit-animation: fadein var(--animation-in-settings);
+  animation: fadein var(--animation-in-settings);
+}
+.dialog[open]::backdrop {
+  -webkit-animation: fadein var(--animation-in-settings);
+  animation: fadein var(--animation-in-settings);
+}
+.dialog.is-hidden::-webkit-backdrop {
+  -webkit-animation: fadeout var(--animation-out-settings);
+  animation: fadeout var(--animation-out-settings);
+}
+.dialog.is-hidden::backdrop {
+  -webkit-animation: fadeout var(--animation-out-settings);
+  animation: fadeout var(--animation-out-settings);
+}
+svg {
+  width: 1em;
+  height: 1em;
+}
+a:focus,
+button:focus {
+  outline: calc(var(--border-width) * 2) solid blue;
+  outline-offset: var(--border-width);
+}
+@-webkit-keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes minimize {
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes minimize {
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav class="navbar navbar-expand mobile-menu" aria-label="Second navbar example">
+        <div class="container-fluid">
+          <div class="d-inline-flex align-items-center">
+            <svg class="landing-image-icon" width="44" height="72" viewBox="0 0 44 72" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2751 1.31652C0.226309 5.8092 18.3468 77.199 7.06436 71.6347C4.78108 69.2026 2.98221 66.3279 1.77048 63.1748C0.558756 60.0216 -0.0420815 56.6518 0.00228999 53.2579C0.0466615 49.8639 0.735372 46.5122 2.02908 43.3943C3.32279 40.2764 5.19616 37.4533 7.54218 35.0863C13.9436 28.6259 25.9919 44.24 38.0905 38.5216C55.8017 31.293 23.9892 -2.97227 14.2751 1.31652Z"
+                fill="url(#paint0_linear_4_665)" />
+              <defs>
+                <linearGradient id="paint0_linear_4_665" x1="-46.9587" y1="-2.45306" x2="83.0927" y2="75.4025"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF56F9" />
+                  <stop offset="0.9999" stop-color="#40FFFF" />
+                  <stop offset="1" stop-color="#009BFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="eth-wallet nav-item-swap-left">VLND Pool = 2,000 ETH</li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile"
+            aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mobile">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <button type="button" class="btn-dash-menu"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="11" height="11" rx="5.5" fill="#05FF00" />
+                </svg> 0x5c9...ac87</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg desktop-menu" aria-label="Plots.Finance">
+        <div class="container-fluid">
+          <div class="d-inline-flex align-items-center">
+            <svg class="landing-image-icon" width="44" height="72" viewBox="0 0 44 72" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2751 1.31652C0.226309 5.8092 18.3468 77.199 7.06436 71.6347C4.78108 69.2026 2.98221 66.3279 1.77048 63.1748C0.558756 60.0216 -0.0420815 56.6518 0.00228999 53.2579C0.0466615 49.8639 0.735372 46.5122 2.02908 43.3943C3.32279 40.2764 5.19616 37.4533 7.54218 35.0863C13.9436 28.6259 25.9919 44.24 38.0905 38.5216C55.8017 31.293 23.9892 -2.97227 14.2751 1.31652Z"
+                fill="url(#paint0_linear_4_665)" />
+              <defs>
+                <linearGradient id="paint0_linear_4_665" x1="-46.9587" y1="-2.45306" x2="83.0927" y2="75.4025"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF56F9" />
+                  <stop offset="0.9999" stop-color="#40FFFF" />
+                  <stop offset="1" stop-color="#009BFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlotsMenu"
+            aria-controls="offcanvasPlotsMenu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasPlotsMenu"
+            aria-labelledby="offcanvasPlotsMenu">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasPlotsMenu">Plots.Finance</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="eth-wallet nav-item-swap-left">VLND Pool = 2,000 ETH</li>
+              </ul>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <span class="eth-wallet"><span id="EtherBalance" class="nav-item-swap">0</span><span><img
+                      src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" class="icon-header-swap"></span></span>
+                <button id="WalletButton" onclick="loginWithEth()" type="button" class="btn-dash-menu"><svg id="ConectedGreen" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="11" height="11" rx="5.5" fill="#05FF00" />
+                  </svg><a id="WalletButtonText">Connect Wallet</a></button>
+                <li><button class="btn-dash-menu-disconnected d-flex ">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
+                      src="https://cdn.kanzen.co/Plots.Finance/img/disconnected.png" height="20" width="20" class="icon-auto"></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="top">
+
+      <div class="container-fluid">
+        <button id="disconnectbtn" class="swap-disconnect d-flex">Disconnect Wallet&nbsp;&nbsp;&nbsp;<img
+            src="https://cdn.kanzen.co/Plots.Finance/img/disconnected.png" class="icon-disconnect"></button>
+        <h1 style="text-align: center;" class="title-swap">If the fully diluted valuation of $PLOTS token is <span
+            class="title-swap-input"><input oninput="UpdatePercent()" value="50" type="number" style="max-width: 8%; text-align: center;" id="millions"></input> Million</span> and the total amount of ETH in the VLND pool at snapshot is  <span class="title-swap-input"><input type="number" oninput="UpdatePercent()" value="100" style="max-width: 8%; text-align: center;" id="ethers"> ETH</span> then my expected percentage return is  <span
+            class="title-swap-input"><a id="%">824.43</a>%</span> </h1>
+        </form>
+        <div class="d-flex align-items-center py-4">
+          <main class="form-signin w-100 m-auto">
+            <button onclick="openReviewMint()">Review Mint</button>
+            <button onclick="openWaiting()">Waiting</button>
+            <button onclick="openSuccessful()">Successful Mint</button>
+            <button onclick="openFailed()">Failed Mint</button>
+<!-- Review Mint-->
+            <dialog class="dialog" id="ReviewMint">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Mint</h1>
+                    <button type="button" class="btn-close" onclick="closeReviewMint()"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="swap-review-text">You pay</p>
+                    <p class="swap-review-text"><a id="youpay">1</a> <img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" class="icon-input float-end"></p>
+                    <p class="swap-review-text">$ <a id="ConfirmationUSD">0</a></p>
+                    <p class="swap-review-text">You Receive</p>
+                    <p class="swap-review-text"><a id="youreceive">1</a> <img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png" class="icon-input float-end"></p>
+                    <p class="swap-review-text">$ <a id="ConfirmationUSD2">0</a></p>
+                    <div class="line-swap-review"></div>
+                    <p class="swap-review-text">Gas Fee <span class="float-end">$<a id="GasPriceConfirmation">4</a></span></p>
+                    <p class="swap-review-text">Total: <span class="float-end">$<a id="total"></a></span></p>
+                    <button onclick="Buy()" id="ConfirmMint" class="btn-confirm-swap mb-3" type="button" data-bs-toggle="modal"
+                      data-bs-target="#successful">Confirm
+                      Mint</button>
+                    <div class="py-2"></div>
+                  </div>
+                </div>
+              </div>
+            </dialog>
+<!-- END -->
+<!-- Waiting transaction-->
+            <dialog class="dialog" id="Waiting">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" onclick="closeWaiting()"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                      <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Confirming...</span>
+                      </div>
+                    </div>
+                    <h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
+                    <span id="helo" class="swap-transaction-text py-2">
+                      <span class="float-start">
+                        <img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
+                      <span class="swap-middle-arrow">
+                        <img src="https://cdn.kanzen.co/Plots.Finance/img/dir.png" width="28" height="20" class="icon-transaction"></span>
+                      <span class="float-end">100 VLND
+                        <img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
+                    <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
+                  </div>
+                </div>
+              </div>
+            </dialog>
+<!-- END -->
+<!-- Successful Transaction -->
+<dialog class="dialog" id="Successful">
+<div class="modal-dialog">
+  <div class="modal-content-succefful">
+    <div class="modal-header">
+
+    </div>
+    <div class="modal-body">
+
+      <div class="spacer-swap"></div>
+      <h1 class="title-swap-connect text-center py-4">Mint Successful!</h1>
+      <button class="btn-confirm-swap mb-3" onclick="closeSuccessful()">Return</button>
+    </div>
+  </div>
+</div>
+</dialog>
+<!-- END -->
+<!-- Failed Transaction -->
+<dialog class="dialog" id="Failed">
+<div class="modal-dialog">
+  <div class="modal-content-decline">
+    <div class="modal-header">
+
+    </div>
+    <div class="modal-body">
+      <div class="spacer-swap"></div>
+      <h1 class="title-swap-connect text-center py-4">Mint Failed!</h1>
+      <button class="btn-confirm-swap mb-3" onclick="closeFailed()">Return</button>
+    </div>
+  </div>
+</div>
+</dialog>
+<!-- END -->
+</main>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- JS Loads -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"></script>
+	<script>
+		function openReviewMint() {
+			document.getElementById("ReviewMint").showModal();
+		}
+		function openSuccessful() {
+			document.getElementById("Successful").showModal();
+		}
+    function openWaiting() {
+			document.getElementById("Waiting").showModal();
+		}
+    function openFailed() {
+			document.getElementById("Failed").showModal();
+		}
+
+		function closeReviewMint() {
+			document.getElementById("ReviewMint").close();
+		}
+    function closeSuccessful() {
+			document.getElementById("Successful").close();
+		}
+    function closeWaiting() {
+			document.getElementById("Waiting").close();
+		}
+    function closeFailed() {
+			document.getElementById("Failed").close();
+		};
+
+	</script>
+  
+
+</body>
+
+
+</html>
