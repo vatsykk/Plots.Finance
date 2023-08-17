@@ -185,7 +185,7 @@ async function Buy(){
 }
 
 async function Maximise(){
-    document.getElementById("ETH").value = await (await getBalances() - 2);
+    document.getElementById("ETH").value = await (await getBalances() - GasEstimate);
     Update(1);
     console.log(await getBalances())
 }
