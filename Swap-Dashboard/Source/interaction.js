@@ -179,11 +179,11 @@ async function Buy(){
     if(document.getElementById("ETH").value > 0){
     let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
     let tx = await contract.methods.Deposit().send({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether'), gas: gas});
+    console.log(tx);
     }
     else{
         alert("Please enter a valid amount of ETH to deposit.")
     }
-    console.log(tx);
     EtherScanLaneLink = "https://etherscan.io/tx/" + tx.transactionHash;
     return(tx);
 }
