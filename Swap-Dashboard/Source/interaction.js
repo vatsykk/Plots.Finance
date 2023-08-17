@@ -170,7 +170,8 @@ async function UpdateConfirmation(){
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     total.innerText = (Number(document.getElementById("ETH").value) * Ethprice + Number(GasPriceConfirmation.innerText)).toLocaleString(undefined, { maximumFractionDigits: 2 });
-    if(document.getElementById("ETH").value > 0 && document.getElementById("ETH").value < await (await getBalances() - GasEstimate)){
+    if(document.getElementById("ETH").value > 0 && document.getElementById("ETH").value = (Math.floor((bal - GasEstimate) * 100) / 100).toFixed(2);
+    ){
         openReviewMint();
     }
     else{
