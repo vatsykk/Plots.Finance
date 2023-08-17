@@ -183,9 +183,9 @@ async function DisplayDisconnect(){
 }
 
 async function Buy(){
-    let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
-    let tx = await contract.methods.Deposit().send({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether'), gas: gas});
-    console.log(tx);
+  //  let gas = await contract.methods.Deposit().estimateGas({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether')});
+  //  let tx = await contract.methods.Deposit().send({from: account, value: web3.utils.toWei(document.getElementById("ETH").value, 'ether'), gas: gas});
+   console.log(tx);
     EtherScanLaneLink = "https://etherscan.io/tx/" + tx.transactionHash;
     return(tx);
 }
