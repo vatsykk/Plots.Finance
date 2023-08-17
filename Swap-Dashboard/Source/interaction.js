@@ -175,7 +175,6 @@ async function UpdateConfirmation(){
     }
     else{
         alert("Please enter a valid amount of ETH to deposit.");
-        openReviewMint();
     }
 
 }
