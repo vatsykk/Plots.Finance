@@ -194,8 +194,8 @@ async function Buy(){
     console.log(tx);
     EtherScanLaneLink = "https://etherscan.io/tx/" + tx.transactionHash;
     closeWaiting();
-    opens
-    //return(tx);
+    openSuccessful()
+    return(tx);
 }
 
 async function Maximise(){
