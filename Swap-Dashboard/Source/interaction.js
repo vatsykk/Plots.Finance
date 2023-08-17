@@ -28,6 +28,8 @@ let total = document.getElementById("total");
 let vlndbal = document.getElementById("vlndbal");
 let EtherInPoolOne = document.getElementById("EtherInPoolOne");
 let EtherInPoolTwo = document.getElementById("EtherInPoolTwo");
+let EtherWaiting = document.getElementById("EtherWaiting");
+let VLNDw
 ConectedGreen.style.display = "none";
 disconnectbtn.style.visibility = "hidden";
 
