@@ -167,8 +167,8 @@ async function UpdateConfirmation(){
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     total.innerText = (Number(document.getElementById("ETH").value) * Ethprice + Number(GasPriceConfirmation.innerText)).toLocaleString(undefined, { maximumFractionDigits: 2 });
     if(document.getElementById("ETH").value > 0 && document.getElementById("ETH").value < await (await getBalances() - GasEstimate)){
-
-    openReviewMint();
+        openReviewMint();
+    }
 }
 
 async function DisplayDisconnect(){
