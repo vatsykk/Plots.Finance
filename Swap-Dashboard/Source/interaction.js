@@ -169,6 +169,10 @@ async function UpdateConfirmation(){
     if(document.getElementById("ETH").value > 0 && document.getElementById("ETH").value < await (await getBalances() - GasEstimate)){
         openReviewMint();
     }
+    else{
+        alert("Please enter a valid amount of ETH to deposit.");
+    }
+
 }
 
 async function DisplayDisconnect(){
