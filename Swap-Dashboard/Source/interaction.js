@@ -29,7 +29,7 @@ let vlndbal = document.getElementById("vlndbal");
 let EtherInPoolOne = document.getElementById("EtherInPoolOne");
 let EtherInPoolTwo = document.getElementById("EtherInPoolTwo");
 let EtherWaiting = document.getElementById("EtherWaiting");
-let VLNDw
+let VLNDwaiting = document.getElementById("VLNDwaiting");
 ConectedGreen.style.display = "none";
 disconnectbtn.style.visibility = "hidden";
 
