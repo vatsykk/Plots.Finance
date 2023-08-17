@@ -134,7 +134,7 @@ async function Update(inputtype){
     if(inputtype == 1){
         document.getElementById("VLND").value = (document.getElementById("ETH").value * 100).toFixed(5);
     } else if(inputtype == 2){
-        document.getElementById("ETH").value = (document.getElementById("VLND").value / 100.toFixed(5);
+        document.getElementById("ETH").value = (document.getElementById("VLND").value / 100).toFixed(5);
     }
 
     document.getElementById("DollarValueOne").innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
