@@ -4,6 +4,7 @@ let account;
 let netID;
 let LoggedIn = false;
 let Ethprice;
+let GasEstimate;
 let HyperLaneLink;
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd') .then(response => response.json()) .then(data => Ethprice = data.ethereum.usd) .then(() => console.log(Ethprice));
 
@@ -108,8 +109,8 @@ async function EstimateGas(){
                 // Check if the API response contains the ProposeGasPrice data
                 if (data.status === "1" && data.result && data.result.ProposeGasPrice) {
                     const proposeGasPrice = data.result.ProposeGasPrice;
-                    console.log("ProposeGasPrice:", proposeGasPrice)
-                    
+                    console.log("ProposeGasPrice:", proposeGasPrice);
+
                     let final = (((proposeGasPrice * 110000 / 1000000000) * Ethprice)).toLocaleString(undefined, { maximumFractionDigits: 2 })
                     GasFee.innerText = final;
                     GasPriceConfirmation.innerText = final;
