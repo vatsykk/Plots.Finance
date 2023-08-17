@@ -164,6 +164,7 @@ async function UpdateConfirmation(){
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     total.innerText = (Number(document.getElementById("ETH").value) * Ethprice + Number(GasPriceConfirmation.innerText)).toLocaleString(undefined, { maximumFractionDigits: 2 });
+    openReviewMint();
 }
 
 async function DisplayDisconnect(){
