@@ -186,7 +186,8 @@ async function Buy(){
 
 async function Maximise(){
     let bal = await getBalances();
-    if()
+    if(bal - GasEstimate > 0){
+        
     document.getElementById("ETH").value = await (await getBalances() - GasEstimate);
     Update(1);
     console.log(await getBalances())
