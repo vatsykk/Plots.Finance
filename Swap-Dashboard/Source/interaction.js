@@ -183,7 +183,7 @@ async function Buy(){
 }
 
 async function Maximise(){
-    document.getElementById("ETH").value = await (await getBalances());
+    document.getElementById("ETH").value = await (await getBalances() - 2);
     Update(1);
     console.log(await getBalances())
 }
