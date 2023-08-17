@@ -165,6 +165,8 @@ async function getVLNDBalance() {
 async function UpdateConfirmation(){
     youpay.innerText = document.getElementById("ETH").value;
     youreceive.innerText = document.getElementById("VLND").value;
+    EtherWaiting.innerText = document.getElementById("ETH").value;
+    VLNDwaiting.innerText = document.getElementById("VLND").value;
     ConfirmationUSD.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     ConfirmationUSD2.innerText = (document.getElementById("ETH").value * Ethprice).toLocaleString(undefined, { maximumFractionDigits: 2 });
     total.innerText = (Number(document.getElementById("ETH").value) * Ethprice + Number(GasPriceConfirmation.innerText)).toLocaleString(undefined, { maximumFractionDigits: 2 });
