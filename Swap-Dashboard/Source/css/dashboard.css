@@ -1957,6 +1957,9 @@ input::-webkit-inner-spin-button {
     --bs-modal-margin: 10rem;
   }
 
+  .dialog {
+    width: 420px;
+  }
   .navbar {
     --bs-navbar-padding-y: 1rem;
   }
