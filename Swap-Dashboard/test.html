@@ -50,10 +50,7 @@
 .dialog {
   --animation-in-settings: 500ms cubic-bezier(0.25, 0, 0.3, 1) normal;
   --animation-out-settings: 500ms cubic-bezier(0.5, -0.5, 0.1, 1.5) normal;
-  max-inline-size: min(90vw, 45ch);
-  max-block-size: min(80vh, 100%);
-  max-block-size: min(80dvb, 100%);
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0rem;
 border-radius: 2rem;
 border-color: transparent;
 }
@@ -81,27 +78,7 @@ border-color: transparent;
 .dialog main {
   padding-inline: var(--spacing-x);
 }
-.dialog header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  padding-block: calc(var(--spacing-y) / 2);
-  background-color: var(--color-bg);
-  border-bottom: var(--border-width) solid;
-}
-.dialog header>* {
-  margin: 0;
-  line-height: 1;
-}
-.dialog header button {
-  display: grid;
-  place-items: center;
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-}
+
 .dialog article {
   padding-block: var(--spacing-y);
 }
@@ -320,89 +297,92 @@ button:focus {
             <button onclick="openSuccessful()">Successful Mint</button>
             <button onclick="openFailed()">Failed Mint</button>
 <!-- Review Mint-->
-            <dialog class="dialog" id="ReviewMint">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Mint</h1>
-                    <button type="button" class="btn-close" onclick="closeReviewMint()"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="swap-review-text">You pay</p>
-                    <p class="swap-review-text"><a id="youpay">1</a> <img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" class="icon-input float-end"></p>
-                    <p class="swap-review-text">$ <a id="ConfirmationUSD">0</a></p>
-                    <p class="swap-review-text">You Receive</p>
-                    <p class="swap-review-text"><a id="youreceive">1</a> <img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png" class="icon-input float-end"></p>
-                    <p class="swap-review-text">$ <a id="ConfirmationUSD2">0</a></p>
-                    <div class="line-swap-review"></div>
-                    <p class="swap-review-text">Gas Fee <span class="float-end">$<a id="GasPriceConfirmation">4</a></span></p>
-                    <p class="swap-review-text">Total: <span class="float-end">$<a id="total"></a></span></p>
-                    <button onclick="Buy()" id="ConfirmMint" class="btn-confirm-swap mb-3" type="button" data-bs-toggle="modal"
-                      data-bs-target="#successful">Confirm
-                      Mint</button>
-                    <div class="py-2"></div>
-                  </div>
-                </div>
-              </div>
-            </dialog>
+<dialog class="dialog" id="ReviewMint">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Mint</h1>
+        <button type="button" class="btn-close" aria-label="Close" onclick="closeReviewMint()"></button>
+      </div>
+      <div class="modal-body px-4">
+        <p class="swap-review-text">You pay</p>
+        <p class="swap-review-text"><a id="youpay">1</a> <img src="https://app.plots.finance/Source/img/eth.png" class="icon-input float-end"></p>
+        <p class="swap-review-text">$ <a id="ConfirmationUSD">0</a></p>
+        <p class="swap-review-text">You Receive</p>
+        <p class="swap-review-text"><a id="youreceive">1</a> <img src="https://app.plots.finance/Source/img/plots.png" class="icon-input float-end"></p>
+        <p class="swap-review-text">$ <a id="ConfirmationUSD2">0</a></p>
+        </div>
+        <div class="line-swap-review"></div>
+        <div class="modal-body px-4">
+        <p class="swap-review-text">Gas Fee <span class="float-end">$<a id="GasPriceConfirmation">4</a></span></p>
+        <p class="swap-review-text">Total: <span class="float-end">$<a id="total"></a></span></p>
+        </div>
+        <button onclick="Buy()" id="ConfirmMint" class="btn-confirm-swap mb-3" type="button" data-bs-toggle="modal"
+          data-bs-target="#successful">Confirm
+          Mint</button>
+        <div class="py-2"></div>
+      </div>
+    </div>
+  </div>
+</dialog>
 <!-- END -->
 <!-- Waiting transaction-->
-            <dialog class="dialog" id="Waiting">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="btn-close" onclick="closeWaiting()"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="d-flex justify-content-center">
-                      <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Confirming...</span>
-                      </div>
-                    </div>
-                    <h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
-                    <span id="helo" class="swap-transaction-text py-2">
-                      <span class="float-start">
-                        <img src="https://cdn.kanzen.co/Plots.Finance/img/eth.png" height="23" width="24" class="icon-transaction"> 1 ETH</span>
-                      <span class="swap-middle-arrow">
-                        <img src="https://cdn.kanzen.co/Plots.Finance/img/dir.png" width="28" height="20" class="icon-transaction"></span>
-                      <span class="float-end">100 VLND
-                        <img src="https://cdn.kanzen.co/Plots.Finance/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
-                    <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
-                  </div>
-                </div>
-              </div>
-            </dialog>
+<dialog class="dialog" id="Waiting">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" aria-label="Close" onclick="closeWaiting()"></button>
+      </div>
+      <div class="modal-body px-4">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Confirming...</span>
+          </div>
+        </div>
+        <h2 class="title-swap-transaction text-center py-2">Confirm Mint</h2>
+        <span id="helo" class="swap-transaction-text py-2">
+          <span class="float-start">
+            <img src="https://app.plots.finance/Source/img/eth.png" height="23" width="24" class="icon-transaction"> <a id="EtherWaiting">1</a> ETH</span>
+          <span class="swap-middle-arrow">
+            <img src="https://app.plots.finance/Source/img/dir.png" width="28" height="20" class="icon-transaction"></span>
+          <span class="float-end"><a id="VLNDwaiting">100</a> VLND
+            <img src="https://app.plots.finance/Source/img/plots.png" height="24" width="24" class="icon-transaction"></span></span>
+        </div>
+        <h1 class="title-swap-transaction text-center py-2">Proceed in your Wallet</h1>
+    </div>
+  </div>
+</dialog>
 <!-- END -->
 <!-- Successful Transaction -->
 <dialog class="dialog" id="Successful">
 <div class="modal-dialog">
-  <div class="modal-content-succefful">
-    <div class="modal-header">
+<div class="modal-content-succefful">
+<div class="modal-header">
 
-    </div>
-    <div class="modal-body">
+</div>
+<div class="modal-body">
 
-      <div class="spacer-swap"></div>
-      <h1 class="title-swap-connect text-center py-4">Mint Successful!</h1>
-      <button class="btn-confirm-swap mb-3" onclick="closeSuccessful()">Return</button>
-    </div>
-  </div>
+<div class="spacer-swap"></div>
+<h1 class="title-swap-transaction text-center py-4">Mint Successful!</h1>
+<button class="btn-confirm-swap mb-3" onclick="closeSuccessful()">Return</button>
+</div>
+</div>
 </div>
 </dialog>
 <!-- END -->
 <!-- Failed Transaction -->
 <dialog class="dialog" id="Failed">
 <div class="modal-dialog">
-  <div class="modal-content-decline">
-    <div class="modal-header">
+<div class="modal-content-decline">
+<div class="modal-header">
 
-    </div>
-    <div class="modal-body">
-      <div class="spacer-swap"></div>
-      <h1 class="title-swap-connect text-center py-4">Mint Failed!</h1>
-      <button class="btn-confirm-swap mb-3" onclick="closeFailed()">Return</button>
-    </div>
-  </div>
+</div>
+<div class="modal-body">
+<div class="spacer-swap"></div>
+<h1 class="title-swap-transaction text-center py-4">Mint Failed!</h1>
+<button class="btn-confirm-swap mb-3" onclick="closeFailed()">Return</button>
+</div>
+</div>
 </div>
 </dialog>
 <!-- END -->
