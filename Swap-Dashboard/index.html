@@ -33,185 +33,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
   </script>
-    <style>
-      :root {
-        --golden-ratio: 1.61803398875;
-        --color-text: black;
-        --color-bg: white;
-        --gutter: 3ch;
-        --leading: 1.5;
-        --spacing-x: var(--gutter);
-        --spacing-y: calc(var(--leading) * var(--golden-ratio) * 1ex);
-        --page-padding-x: clamp(5vw, calc((100vw - 75ch) / 2), 38.2vw);
-        --border-width: 0em;
-        --transition: 250ms ease-out;
-      }
-      .dialog {
-  --animation-in-settings: 500ms cubic-bezier(0.25, 0, 0.3, 1) normal;
-  --animation-out-settings: 500ms cubic-bezier(0.5, -0.5, 0.1, 1.5) normal;
-  max-inline-size: min(90vw, 45ch);
-  max-block-size: min(80vh, 100%);
-  max-block-size: min(80dvb, 100%);
-  padding: 1rem 2rem 1rem 2rem;
-border-radius: 2rem;
-border-color: transparent;
-}
-      .dialog[open] {
-        -webkit-animation: slidein var(--animation-in-settings);
-        animation: slidein var(--animation-in-settings);
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .dialog[open] {
-          -webkit-animation: fadein var(--animation-out-settings);
-          animation: fadein var(--animation-out-settings);
-        }
-      }
-      .dialog.is-hidden {
-        -webkit-animation: minimize var(--animation-out-settings);
-        animation: minimize var(--animation-out-settings);
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .dialog.is-hidden {
-          -webkit-animation: fadeout var(--animation-out-settings);
-          animation: fadeout var(--animation-out-settings);
-        }
-      }
-      .dialog header,
-      .dialog main {
-        padding-inline: var(--spacing-x);
-      }
-      .dialog header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        padding-block: calc(var(--spacing-y) / 2);
-        background-color: var(--color-bg);
-        border-bottom: var(--border-width) solid;
-      }
-      .dialog header>* {
-        margin: 0;
-        line-height: 1;
-      }
-      .dialog header button {
-        display: grid;
-        place-items: center;
-        width: 2rem;
-        height: 2rem;
-        padding: 0;
-      }
-      .dialog article {
-        padding-block: var(--spacing-y);
-      }
-      .dialog::-webkit-backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(0.5rem);
-        backdrop-filter: blur(0.5rem);
-        -webkit-animation: none;
-        animation: none;
-      }
-      .dialog::backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(0.5rem);
-        backdrop-filter: blur(0.5rem);
-        -webkit-animation: none;
-        animation: none;
-      }
-      .dialog[open]::-webkit-backdrop {
-        -webkit-animation: fadein var(--animation-in-settings);
-        animation: fadein var(--animation-in-settings);
-      }
-      .dialog[open]::backdrop {
-        -webkit-animation: fadein var(--animation-in-settings);
-        animation: fadein var(--animation-in-settings);
-      }
-      .dialog.is-hidden::-webkit-backdrop {
-        -webkit-animation: fadeout var(--animation-out-settings);
-        animation: fadeout var(--animation-out-settings);
-      }
-      .dialog.is-hidden::backdrop {
-        -webkit-animation: fadeout var(--animation-out-settings);
-        animation: fadeout var(--animation-out-settings);
-      }
-      svg {
-        width: 1em;
-        height: 1em;
-      }
-      a:focus,
-      button:focus {
-        outline: calc(var(--border-width) * 2) solid blue;
-        outline-offset: var(--border-width);
-      }
-      @-webkit-keyframes slidein {
-        from {
-          opacity: 0;
-          transform: translateY(50%);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes slidein {
-        from {
-          opacity: 0;
-          transform: translateY(50%);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @-webkit-keyframes fadein {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes fadein {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @-webkit-keyframes fadeout {
-        to {
-          opacity: 0;
-        }
-      }
-      @keyframes fadeout {
-        to {
-          opacity: 0;
-        }
-      }
-      @-webkit-keyframes minimize {
-        to {
-          opacity: 0;
-          transform: scale(0);
-        }
-      }
-      @keyframes minimize {
-        to {
-          opacity: 0;
-          transform: scale(0);
-        }
-      }
-        </style>
   <link rel="stylesheet" href="https://use.typekit.net/qxq2irv.css">
 </head>
 
@@ -354,7 +175,7 @@ border-color: transparent;
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title title-swap-connect text-center" id="review-buy">Review Mint</h1>
-          <button type="button" class="btn-close" aria-label="Close" onclick="closeReviewMint()"></button>
+          <button type="button" class="btn-close px-4 position-absolute end-0" aria-label="Close" onclick="closeReviewMint()"></button>
         </div>
         <div class="modal-body px-4">
           <p class="swap-review-text">You pay</p>
@@ -383,7 +204,7 @@ border-color: transparent;
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="btn-close" aria-label="Close" onclick="closeWaiting()"></button>
+          <button type="button" class="btn-close px-4 end-0" style="margin-top: 5% !important;" aria-label="Close" onclick="closeWaiting()"></button>
         </div>
         <div class="modal-body px-4">
           <div class="d-flex justify-content-center">
@@ -483,32 +304,5 @@ border-color: transparent;
 </body>
 <script src="Source/abi.js"></script>
 <script src="Source/interaction.js"></script>
-<script>
-  function openReviewMint() {
-    document.getElementById("ReviewMint").showModal();
-  }
-  function openSuccessful() {
-    document.getElementById("Successful").showModal();
-  }
-  function openWaiting() {
-    document.getElementById("Waiting").showModal();
-  }
-  function openFailed() {
-    document.getElementById("Failed").showModal();
-  }
-
-  function closeReviewMint() {
-    document.getElementById("ReviewMint").close();
-  }
-  function closeSuccessful() {
-    document.getElementById("Successful").close();
-  }
-  function closeWaiting() {
-    document.getElementById("Waiting").close();
-  }
-  function closeFailed() {
-    document.getElementById("Failed").close();
-  };
-
-</script>
+<script src="Source/modal.js"></script>
 </html>
