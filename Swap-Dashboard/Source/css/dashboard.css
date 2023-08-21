@@ -29,10 +29,34 @@ a:hover {
   width: 20px;
 }
 
+.calculator-input {
+  width: 12%;
+  text-align: center;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 50px;
+}
+
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number] {
+  height: 30px;
+
+}
+
+input[type=number]:hover::-webkit-inner-spin-button {  
+  width: 14px;
+  height: 30px;
 }
 
 .vertical-center {
@@ -76,6 +100,7 @@ input::-webkit-inner-spin-button {
   box-shadow: unset;
   opacity: var(--bs-btn-close-focus-opacity);
 }
+
 /* Modal Swap Page */
 :root {
   --golden-ratio: 1.61803398875;
@@ -89,33 +114,39 @@ input::-webkit-inner-spin-button {
   --border-width: 0em;
   --transition: 250ms ease-out;
 }
+
 .dialog {
   --animation-in-settings: 500ms cubic-bezier(0.25, 0, 0.3, 1) normal;
   --animation-out-settings: 500ms cubic-bezier(0.5, -0.5, 0.1, 1.5) normal;
   padding: 0rem;
-border-radius: 2rem;
-border-color: transparent;
+  border-radius: 2rem;
+  border-color: transparent;
 }
+
 .dialog[open] {
   -webkit-animation: slidein var(--animation-in-settings);
   animation: slidein var(--animation-in-settings);
 }
+
 @media (prefers-reduced-motion: reduce) {
   .dialog[open] {
     -webkit-animation: fadein var(--animation-out-settings);
     animation: fadein var(--animation-out-settings);
   }
 }
+
 .dialog.is-hidden {
   -webkit-animation: minimize var(--animation-out-settings);
   animation: minimize var(--animation-out-settings);
 }
+
 @media (prefers-reduced-motion: reduce) {
   .dialog.is-hidden {
     -webkit-animation: fadeout var(--animation-out-settings);
     animation: fadeout var(--animation-out-settings);
   }
 }
+
 .dialog header,
 .dialog main {
   padding-inline: var(--spacing-x);
@@ -124,6 +155,7 @@ border-color: transparent;
 .dialog article {
   padding-block: var(--spacing-y);
 }
+
 .dialog::-webkit-backdrop {
   position: fixed;
   top: 0;
@@ -136,6 +168,7 @@ border-color: transparent;
   -webkit-animation: none;
   animation: none;
 }
+
 .dialog::backdrop {
   position: fixed;
   top: 0;
@@ -148,83 +181,101 @@ border-color: transparent;
   -webkit-animation: none;
   animation: none;
 }
+
 .dialog[open]::-webkit-backdrop {
   -webkit-animation: fadein var(--animation-in-settings);
   animation: fadein var(--animation-in-settings);
 }
+
 .dialog[open]::backdrop {
   -webkit-animation: fadein var(--animation-in-settings);
   animation: fadein var(--animation-in-settings);
 }
+
 .dialog.is-hidden::-webkit-backdrop {
   -webkit-animation: fadeout var(--animation-out-settings);
   animation: fadeout var(--animation-out-settings);
 }
+
 .dialog.is-hidden::backdrop {
   -webkit-animation: fadeout var(--animation-out-settings);
   animation: fadeout var(--animation-out-settings);
 }
+
 svg {
   width: 1em;
   height: 1em;
 }
+
 a:focus,
 button:focus {
   outline: calc(var(--border-width) * 2) solid blue;
   outline-offset: var(--border-width);
 }
+
 @-webkit-keyframes slidein {
   from {
     opacity: 0;
     transform: translateY(50%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @keyframes slidein {
   from {
     opacity: 0;
     transform: translateY(50%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes fadein {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes fadeout {
   to {
     opacity: 0;
   }
 }
+
 @keyframes fadeout {
   to {
     opacity: 0;
   }
 }
+
 @-webkit-keyframes minimize {
   to {
     opacity: 0;
     transform: scale(0);
   }
 }
+
 @keyframes minimize {
   to {
     opacity: 0;
@@ -1964,6 +2015,11 @@ button:focus {
     margin-top: 5%;
   }
 
+  .calculator-input {
+    width: 8%;
+    padding-top: 0.5%;
+  }
+
   /** Swap Connect Page **/
 
   .title-swap {
@@ -2127,6 +2183,7 @@ button:focus {
   .dialog {
     width: 420px;
   }
+
   .navbar {
     --bs-navbar-padding-y: 1rem;
   }
@@ -2500,6 +2557,11 @@ button:focus {
     display: block;
   }
 
+  .calculator-input {
+    width: 10%;
+    padding-top: 0.9%;
+  }
+
   .btn-swap {
     background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
     border-radius: 50.5px;
@@ -2687,11 +2749,15 @@ button:focus {
     --bs-modal-margin: 9rem;
   }
 
+  .calculator-input {
+    width: 10%;
+  }
+
   .title-swap-connect {
     font-family: 'Uniwars';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 26px;
     line-height: 16px;
     margin-top: 4%;
   }
@@ -2900,6 +2966,10 @@ button:focus {
     line-height: 0.5;
     border-radius: 5rem;
     padding: 1.0rem 1.45rem;
+  }
+
+  .calculator-input {
+    width: 10%;
   }
 
   .btn-dash-menu-disconnected {
@@ -3125,6 +3195,10 @@ button:focus {
     padding-bottom: 0.6%;
     margin-bottom: 0%;
     margin-left: 0%;
+  }
+
+  .calculator-input {
+    width: 10%;
   }
 
   .eth-wallet {
@@ -3355,7 +3429,7 @@ button:focus {
     font-family: 'Uniwars';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 26px;
     line-height: 16px;
     margin-top: 2%;
   }
@@ -3398,6 +3472,10 @@ button:focus {
 
   .form-signin {
     max-width: 400px;
+  }
+
+  .dialog {
+    width: 360px;
   }
 
   .value-coin {
