@@ -46,6 +46,10 @@ input:hover{
   border: 1px solid;
 }
 
+input[type="number"] {
+  height: 30px;
+}
+
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -1256,7 +1260,8 @@ button:focus {
     height: 24px;
   }
   .calculator-input {
-    width: 10%;
+    width: 9%;
+    padding-top: 1%;
   }
   .btn-dash-menu-0 {
     border: solid 3px transparent !important;
@@ -1581,6 +1586,7 @@ button:focus {
   }
   .calculator-input {
     width: 12%;
+    padding-top: 1%;
   }
   /** End Swap Connected (Pre-Release) **/
 }
@@ -1870,7 +1876,10 @@ button:focus {
     float: unset;
     border: transparent;
   }
-
+  .calculator-input {
+    width: 14%;
+    padding-top: 1.4%;
+  }
   /** End Swap Connected (Pre-Release) **/
 }
 
@@ -2024,11 +2033,15 @@ button:focus {
     line-height: 19px;
   }
   .calculator-input {
-    width: 18%;
+    width: 14%;
   }
   .title-swap {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  input[type="number"] {
+    height: 20px;
   }
   /** End Swap Connected (Pre-Release) **/
 }
@@ -2176,7 +2189,9 @@ button:focus {
     font-size: 14px;
     line-height: 24px;
   }
-
+  .calculator-input {
+    width: 16%;
+  }
   /** End of Swap Connect Page (Pre-Release) **/
   /** -------------------------- **/
   /** Swap Connected Page (Pre-Release) **/
@@ -2284,7 +2299,9 @@ button:focus {
     width: 24px;
     height: 22px;
   }
-
+  .calculator-input {
+    width: 18%;
+  }
   /** End Swap Connected (Pre-Release) **/
 }
 

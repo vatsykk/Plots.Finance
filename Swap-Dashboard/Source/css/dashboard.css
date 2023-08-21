@@ -2019,7 +2019,9 @@ button:focus {
     width: 8%;
     padding-top: 0.5%;
   }
-
+  input[type="number"] {
+    height: 40px;
+  }
   /** Swap Connect Page **/
 
   .title-swap {
@@ -2202,7 +2204,7 @@ button:focus {
   }
 
   /** Swap Connected **/
-  .form-control-title {
+  .form-control {
     display: block;
     width: 100%;
     padding: 0rem 1.55rem;
@@ -2213,12 +2215,12 @@ button:focus {
     background-color: #ffffff;
     background-clip: padding-box;
     border: 0px;
-    appearance: none;
     border-radius: 5rem;
     transition: unset;
     z-index: 1020;
     margin-right: 0%;
-    margin-top: 6%;
+    margin-top: 7%;
+    padding-top: 4%;
   }
 
   .nav-item-swap-left {
@@ -2287,8 +2289,8 @@ button:focus {
     margin-left: 0% !important;
     z-index: 1030;
     text-align: left;
-    margin-top: -1.2%;
-    padding-left: 1.5%;
+    margin-top: 0%;
+    padding-left: 1%;
   }
 
   .swap-balance {
@@ -2300,8 +2302,8 @@ button:focus {
     color: #000;
     z-index: 1030;
     text-align: right;
-    margin-top: -5.4%;
-    margin-right: 6%;
+    margin-top: 0%;
+    margin-right: 1%;
   }
 
   .swap-balance-max {
@@ -2315,7 +2317,8 @@ button:focus {
     position: relative;
     width: 100% !important;
     text-align: right;
-    margin-top: -5%;
+    margin-top: 0%;
+    padding-right: unset;
   }
 
   .data-swap {
@@ -2382,7 +2385,7 @@ button:focus {
     z-index: 1020;
     width: 34px;
     height: 34px;
-    margin-top: 4%;
+    margin-top: 8%;
   }
 
   .icon-input {
@@ -2560,6 +2563,10 @@ button:focus {
   .calculator-input {
     width: 10%;
     padding-top: 0.9%;
+  }
+
+  input[type="number"] {
+    height: 36px;
   }
 
   .btn-swap {
@@ -2751,6 +2758,10 @@ button:focus {
 
   .calculator-input {
     width: 10%;
+  }
+
+  input[type="number"] {
+    height: 28px;
   }
 
   .title-swap-connect {
@@ -2970,6 +2981,10 @@ button:focus {
 
   .calculator-input {
     width: 10%;
+  }
+
+  input[type="number"] {
+    height: 25px;
   }
 
   .btn-dash-menu-disconnected {
@@ -3198,7 +3213,12 @@ button:focus {
   }
 
   .calculator-input {
-    width: 10%;
+    width: 12%;
+    padding-top: 0.6%;
+  }
+
+  input[type="number"] {
+    height: 25px;
   }
 
   .eth-wallet {
