@@ -49,16 +49,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input[type=number] {
-  height: 30px;
-
-}
-
-input[type=number]:hover::-webkit-inner-spin-button {  
-  width: 14px;
-  height: 30px;
-}
-
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -940,6 +930,16 @@ button:focus {
     width: 40px;
   }
 
+  .title-swap-input {
+    color: #8247E5;
+  }
+
+  .calculator-input {
+    width: 10%; 
+    height: 90px;
+    padding-top: 0.5%;
+  }
+
   .btn-swap {
     background: linear-gradient(138deg, rgb(255, 90, 249) 1%, rgba(255, 255, 255, 0.75) 50%, rgb(0, 155, 255) 100%);
     border-radius: 50.5px;
@@ -1491,6 +1491,11 @@ button:focus {
     width: 34px;
   }
 
+ .calculator-input{
+    height: 60px;
+    padding-top: 0.5%;
+  }
+
   .form-signin {
     max-width: 800px;
   }
@@ -2018,8 +2023,6 @@ button:focus {
   .calculator-input {
     width: 8%;
     padding-top: 0.5%;
-  }
-  input[type="number"] {
     height: 40px;
   }
   /** Swap Connect Page **/
@@ -2219,7 +2222,7 @@ button:focus {
     transition: unset;
     z-index: 1020;
     margin-right: 0%;
-    margin-top: 7%;
+    margin-top: 3%;
     padding-top: 4%;
   }
 
@@ -2269,7 +2272,6 @@ button:focus {
 
   .title-swap-input {
     color: #8247E5;
-
   }
 
   .value-swap {
@@ -2289,8 +2291,8 @@ button:focus {
     margin-left: 0% !important;
     z-index: 1030;
     text-align: left;
-    margin-top: 0%;
-    padding-left: 1%;
+    margin-top: -1.2%;
+    padding-left: 1.5%;
   }
 
   .swap-balance {
@@ -2302,8 +2304,8 @@ button:focus {
     color: #000;
     z-index: 1030;
     text-align: right;
-    margin-top: 0%;
-    margin-right: 1%;
+    margin-top: -5.4%;
+    margin-right: 6%;
   }
 
   .swap-balance-max {
@@ -2317,8 +2319,7 @@ button:focus {
     position: relative;
     width: 100% !important;
     text-align: right;
-    margin-top: 0%;
-    padding-right: unset;
+    margin-top: -5%;
   }
 
   .data-swap {
@@ -2385,7 +2386,7 @@ button:focus {
     z-index: 1020;
     width: 34px;
     height: 34px;
-    margin-top: 8%;
+    margin-top: 5%;
   }
 
   .icon-input {
@@ -2565,7 +2566,7 @@ button:focus {
     padding-top: 0.9%;
   }
 
-  input[type="number"] {
+ .calculator-input {
     height: 36px;
   }
 
@@ -2760,7 +2761,7 @@ button:focus {
     width: 10%;
   }
 
-  input[type="number"] {
+  .calculator-input {
     height: 28px;
   }
 
@@ -2981,9 +2982,6 @@ button:focus {
 
   .calculator-input {
     width: 10%;
-  }
-
-  input[type="number"] {
     height: 25px;
   }
 
@@ -3215,9 +3213,6 @@ button:focus {
   .calculator-input {
     width: 12%;
     padding-top: 0.6%;
-  }
-
-  input[type="number"] {
     height: 25px;
   }
 
